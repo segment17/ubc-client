@@ -16,11 +16,11 @@ class HomePage extends React.Component {
     render() {
         return (
             <Grid container spacing={3}>
-                <Grid item lg={10}>
+                <Grid item lg={6}>
                     <AllMatches />
                 </Grid>
 
-                <Grid item lg={2}>
+                <Grid item lg={6}>
                     <Standings />
                 </Grid>
             </Grid>
