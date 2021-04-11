@@ -19,8 +19,8 @@ function Routes(props) {
                 <BrowserRouter history={history}>
                     <Switch>
                         <Route exact path="/" component={HomePage} />
-                        <Route exact path="/boxers/:id" component={BoxerDetails} />
                         <Route exact path="/boxers/new" component={CreateBoxer} />
+                        <Route exact path="/boxers/:id" component={BoxerDetails} />
                         <Route exact path="/matches/new" component={CreateMatch} />
                     </Switch>
                 </BrowserRouter>

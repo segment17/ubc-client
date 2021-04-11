@@ -20,19 +20,7 @@ function Topbar() {
                     Unlimited Boxing Championship
                 </Typography>
                 <div>
-                    <Grid container spacing={1} alignItems="flex-end">
-                        <Grid item>
-                            <AccountCircle />
-                        </Grid>
-                        <Grid item>
-                            <TextField color="white" id="input-with-icon-grid" label="username" />
-                        </Grid>
-                        <Grid item>
-                            <TextField id="input-with-icon-grid" type="password" color="white" label="password" />
-                        </Grid>
-                        <Button color="inherit">Login</Button>
-                    </Grid>
-
+                    <Button color="inherit">Login</Button>
                 </div>
             </Toolbar>
         </AppBar>

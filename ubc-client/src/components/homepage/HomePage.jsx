@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Icon from '@material-ui/core/Icon';
 import Button from '@material-ui/core/Button';
 import SaveIcon from '@material-ui/icons/Save';
+import { NavLink } from "react-router-dom";
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -39,7 +40,9 @@ class HomePage extends React.Component {
                         color="secondary"
                         size="small"
                         startIcon={<SaveIcon />}
+                        onClick={() => this.props.history.push('/boxers/new')}
                     >Create a boxer</Button>
+
                 </Grid>
             </Grid>
         )
