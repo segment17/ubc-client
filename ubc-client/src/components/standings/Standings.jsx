@@ -22,6 +22,15 @@ export default function Standings() {
                         { id: 6, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
                         { id: 7, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
                         { id: 8, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
+                        { id: 9, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
+                        { id: 1, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
+                        { id: 2, boxer: 'Muhammad Ali', winCount: '76', lossCount: '4', score: 300 },
+                        { id: 3, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
+                        { id: 4, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
+                        { id: 5, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
+                        { id: 6, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
+                        { id: 7, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
+                        { id: 8, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
                         { id: 9, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 }
                     ]}
             />

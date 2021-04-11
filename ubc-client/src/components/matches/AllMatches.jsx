@@ -25,6 +25,15 @@ export default function AllMatches() {
                     { id: 7, homeBoxer: 'Mike Tyson', awayBoxer: 'Muhammad Ali', matchTime: '11/04/2021 08:00 PM', winnerBoxer: '-', isFinished: false },
                     { id: 8, homeBoxer: 'Mike Tyson', awayBoxer: 'Muhammad Ali', matchTime: '11/04/2021 08:00 PM', winnerBoxer: '-', isFinished: false },
                     { id: 9, homeBoxer: 'Mike Tyson', awayBoxer: 'Muhammad Ali', matchTime: '11/04/2021 08:00 PM', winnerBoxer: '-', isFinished: false },
+                    { id: 1, homeBoxer: 'Mike Tyson', awayBoxer: 'Muhammad Ali', matchTime: '11/04/2021 08:00 PM', winnerBoxer: '-', isFinished: false },
+                    { id: 2, homeBoxer: 'Mike Tyson', awayBoxer: 'Muhammad Ali', matchTime: '11/04/2021 08:00 PM', winnerBoxer: '-', isFinished: false },
+                    { id: 3, homeBoxer: 'Mike Tyson', awayBoxer: 'Muhammad Ali', matchTime: '11/04/2021 08:00 PM', winnerBoxer: '-', isFinished: false },
+                    { id: 4, homeBoxer: 'Mike Tyson', awayBoxer: 'Muhammad Ali', matchTime: '11/04/2021 08:00 PM', winnerBoxer: '-', isFinished: false },
+                    { id: 5, homeBoxer: 'Mike Tyson', awayBoxer: 'Muhammad Ali', matchTime: '11/04/2021 08:00 PM', winnerBoxer: '-', isFinished: false },
+                    { id: 6, homeBoxer: 'Mike Tyson', awayBoxer: 'Muhammad Ali', matchTime: '11/04/2021 08:00 PM', winnerBoxer: '-', isFinished: false },
+                    { id: 7, homeBoxer: 'Mike Tyson', awayBoxer: 'Muhammad Ali', matchTime: '11/04/2021 08:00 PM', winnerBoxer: '-', isFinished: false },
+                    { id: 8, homeBoxer: 'Mike Tyson', awayBoxer: 'Muhammad Ali', matchTime: '11/04/2021 08:00 PM', winnerBoxer: '-', isFinished: false },
+                    { id: 9, homeBoxer: 'Mike Tyson', awayBoxer: 'Muhammad Ali', matchTime: '11/04/2021 08:00 PM', winnerBoxer: '-', isFinished: false },
                 ]}
             />
         </div>
