@@ -12,15 +12,14 @@ class HomePage extends React.Component {
         }
     }
 
-
     render() {
         return (
             <Grid container spacing={3}>
-                <Grid item lg={6}>
+                <Grid item lg={7}>
                     <AllMatches />
                 </Grid>
 
-                <Grid item lg={6}>
+                <Grid item lg={5}>
                     <Standings />
                 </Grid>
             </Grid>
