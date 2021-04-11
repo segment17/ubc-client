@@ -1,21 +1,14 @@
-import React from 'react';
-
+import React from "react";
 
 class BoxerDetails extends React.Component {
-    constructor(props) {
-        super();
-        this.state = {
+  constructor(props) {
+    super();
+    this.state = {};
+  }
 
-        }
-    }
-
-    render() {
-        return (
-            <div>
-                Details...
-            </div>
-        )
-    }
+  render() {
+    return <div>Details...</div>;
+  }
 }
 
 export default BoxerDetails;

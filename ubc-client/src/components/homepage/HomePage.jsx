@@ -1,52 +1,56 @@
-import React from 'react';
-import AllMatches from '../matches/AllMatches';
-import Standings from '../standings/Standings';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Icon from '@material-ui/core/Icon';
-import Button from '@material-ui/core/Button';
-import SaveIcon from '@material-ui/icons/Save';
-import { NavLink } from "react-router-dom";
+import React from "react";
+import AllMatches from "../matches/AllMatches";
+import Standings from "../standings/Standings";
+import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
+import SaveIcon from "@material-ui/icons/Save";
+import CreateBoxerModal from "../boxers/CreateBoxerModal";
+import CreateMatchModal from "../matches/CreateMatchModal";
 
-class HomePage extends React.Component {
-    constructor(props) {
-        super();
-        this.state = {
+export default function HomePage() {
+  const [boxerModal, setBoxerModal] = React.useState(false);
+  const [matchModal, setMatchModal] = React.useState(false);
 
-        }
-    }
+  const CreateMatchButton = () => {
+    return (
+      <Button
+        style={{ marginLeft: "1rem", marginTop: "1rem" }}
+        variant="contained"
+        color="primary"
+        size="small"
+        startIcon={<SaveIcon />}
+        onClick={() => setMatchModal(true)}
+      >
+        Create a match
+      </Button>
+    )
+  }
 
-    render() {
-        return (
-            <Grid container spacing={2}>
-                <Grid item lg={7}>
-                    <AllMatches />
-                    <Button
-                        style={{ marginLeft: '1rem', marginTop: '1rem' }}
-                        variant="contained"
-                        color="primary"
-                        size="small"
-                        startIcon={<SaveIcon />}
-                    >
-                        Create a match
-                    </Button>
-                </Grid>
+  const CreateBoxerButton = () => {
+    return (
+      <Button
+        style={{ marginLeft: "1rem", marginTop: "1rem" }}
+        variant="contained"
+        color="secondary"
+        size="small"
+        startIcon={<SaveIcon />}
+        onClick={() => setBoxerModal(true)}
+      >
+        Create a boxer
+      </Button>
+    )
+  }
 
-                <Grid item lg={5}>
-                    <Standings />
-                    <Button
-                        style={{ marginLeft: '1rem', marginTop: '1rem' }}
-                        variant="contained"
-                        color="secondary"
-                        size="small"
-                        startIcon={<SaveIcon />}
-                        onClick={() => this.props.history.push('/boxers/new')}
-                    >Create a boxer</Button>
-
-                </Grid>
-            </Grid>
-        )
-    }
+  return (
+    <Grid container spacing={2}>
+      <CreateBoxerModal modal={boxerModal} setModal={setBoxerModal}/>
+      <CreateMatchModal modal={matchModal} setModal={setMatchModal}/>
+      <Grid item lg={7}>
+        <AllMatches CreateButton={CreateMatchButton}/>
+      </Grid>
+      <Grid item lg={5}>
+        <Standings CreateButton={CreateBoxerButton} style={{margin: 10}}/>
+      </Grid>
+    </Grid>
+  );
 }
-
-export default HomePage;
