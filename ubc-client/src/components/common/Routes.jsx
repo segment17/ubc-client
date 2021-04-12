@@ -5,26 +5,29 @@ import Grid from "@material-ui/core/Grid";
 import Topbar from "./Topbar";
 import HomePage from "../homepage/HomePage";
 import BoxerDetails from "../boxers/BoxerDetails";
+import NotFound from './NotFound';
+import Login from '../login/Login';
+
 
 function Routes(props) {
-  const history = createBrowserHistory();
-  return (
-    <Grid container spacing={4}>
-      <Grid item xs={12}>
-        <Topbar />
-      </Grid>
-      <Grid item xs={12} style={{ padding: "1.5rem" }}>
-        <BrowserRouter history={history}>
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/boxers/:id" component={BoxerDetails} />
-            {/* <Route exact path="/boxers/new" component={CreateBoxer} />
-                <Route exact path="/matches/new" component={CreateMatch} /> */}
-          </Switch>
-        </BrowserRouter>
-      </Grid>
-    </Grid>
-  );
+    const history = createBrowserHistory();
+    return (
+        <Grid container spacing={4}>
+            <Grid item xs={12}>
+                <Topbar />
+            </Grid>
+            <Grid item xs={12} style={{ padding: "1.5rem" }}>
+                <BrowserRouter history={history}>
+                    <Switch>
+                        <Route exact path="/" component={HomePage} />
+                        <Route exact path="/boxers/:id" component={BoxerDetails} />
+                        <Route exact path="/login" component={Login} />
+                        <Route exact path="*" component={NotFound} />
+                    </Switch>
+                </BrowserRouter>
+            </Grid>
+        </Grid>
+    );
 }
 
 export default Routes;

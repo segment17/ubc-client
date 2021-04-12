@@ -9,27 +9,27 @@ import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 
-function Topbar() {
-  return (
-    <AppBar position="static">
-      <Toolbar
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-        }}
-      >
-        <IconButton edge="start" color="inherit" aria-label="menu">
-          <MenuIcon />
-        </IconButton>
-        <Typography variant="h6">Unlimited Boxing Championship</Typography>
-        <div>
-          <Button color="inherit" variant="outlined">
-            Login
+function Topbar(props) {
+    return (
+        <AppBar position="static">
+            <Toolbar
+                style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                }}
+            >
+                <IconButton edge="start" color="inherit" aria-label="menu">
+                    <MenuIcon />
+                </IconButton>
+                <Typography variant="h6">Unlimited Boxing Championship</Typography>
+                <div>
+                    <Button color="inherit" variant="outlined" onClick={() => window.location = '/login'}>
+                        Login
           </Button>
-        </div>
-      </Toolbar>
-    </AppBar>
-  );
+                </div>
+            </Toolbar>
+        </AppBar>
+    );
 }
 export default Topbar;
