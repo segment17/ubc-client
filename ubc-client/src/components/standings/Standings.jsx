@@ -3,6 +3,13 @@ import { DataGrid } from '@material-ui/data-grid';
 import { Grid } from '@material-ui/core';
 
 export default function Standings({CreateButton}) {
+
+  const openBoxerDetails = (param) => {
+    if(param.field === "boxer") {
+      window.open("/boxers/" + param.data.id);
+    }
+  }
+
   return (
     <div style={{ height: 700, width: '100%' }}>
       <hr />
@@ -13,11 +20,16 @@ export default function Standings({CreateButton}) {
 			<hr />
       <DataGrid
         columns={[
-          { field: 'boxer', headerName: 'Boxer', width: 170 },
-          { field: 'winCount', headerName: 'Wins', width: 170 },
-          { field: 'lossCount', headerName: 'Losses', width: 170 },
-          { field: 'score', headerName: 'Score', width: 170 }
+          { field: 'boxer', headerName: 'Boxer', width: 170, disableClickEventBubbling: true },
+          { field: 'winCount', headerName: 'Wins', width: 170, disableClickEventBubbling: true },
+          { field: 'lossCount', headerName: 'Losses', width: 170, disableClickEventBubbling: true },
+          { field: 'score', headerName: 'Score', width: 170, disableClickEventBubbling: true }
         ]}
+        disableColumnSelector
+        disableSelectionOnClick
+        disableClickEventBubbling
+        onCellClick={(param) => openBoxerDetails(param)}
+        //onCellHover={(param) => console.log("ok")}
         rows={[
           { id: 1, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
           { id: 2, boxer: 'Muhammad Ali', winCount: '76', lossCount: '4', score: 300 },
