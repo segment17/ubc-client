@@ -1,10 +1,25 @@
 import * as React from 'react';
 import { DataGrid } from '@material-ui/data-grid';
 import { Grid } from '@material-ui/core';
-
-const MAX_ROW_LENGTH = 500;
+import { GetAllMatches } from '../common/Requests';
 
 export default function AllMatches({ CreateButton }) {
+	const [data, setData] = React.useState([]);
+
+	const getAllMatches = React.useCallback(() => {
+		const resp = GetAllMatches();
+    //TO-DO: Format response and add snackbar
+    let matches = [];
+    return matches;
+	}, [])
+
+	const init = React.useCallback(async () => {
+		setData(getAllMatches());
+	}, [getAllMatches])
+	React.useEffect(() => {
+		init();
+	}, [init]);
+
 	return (
 		<div style={{ height: 700, width: '100%' }}>
 			<hr />
@@ -14,7 +29,6 @@ export default function AllMatches({ CreateButton }) {
 			</Grid>
 			<hr />
 			<DataGrid
-				disableColumnSelector
 				columns={[
 					{ field: 'homeBoxer', headerName: 'Home Boxer', width: 200 },
 					{ field: 'awayBoxer', headerName: 'Away Boxer', width: 200 },
@@ -22,7 +36,12 @@ export default function AllMatches({ CreateButton }) {
 					{ field: 'winnerBoxer', headerName: 'Winner', width: 185 },
 					{ field: 'isFinished', headerName: 'Is Finished?', width: 185, valueFormatter: (value) => value === true ? 'Yes' : 'No' }
 				]}
-				rows={[
+				disableColumnSelector
+        disableSelectionOnClick
+        disableClickEventBubbling
+				rows={
+				//data
+				[
 					{ id: 1, homeBoxer: 'Mike Tyson', awayBoxer: 'Muhammad Ali', matchTime: '11/04/2021 08:00 PM', winnerBoxer: '-', isFinished: false },
 					{ id: 2, homeBoxer: 'Mike Tyson', awayBoxer: 'Muhammad Ali', matchTime: '11/04/2021 08:00 PM', winnerBoxer: '-', isFinished: false },
 					{ id: 3, homeBoxer: 'Mike Tyson', awayBoxer: 'Muhammad Ali', matchTime: '11/04/2021 08:00 PM', winnerBoxer: '-', isFinished: false },
