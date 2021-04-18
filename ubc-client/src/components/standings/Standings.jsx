@@ -1,64 +1,153 @@
-import * as React from 'react';
-import { DataGrid } from '@material-ui/data-grid';
-import { Grid } from '@material-ui/core';
+import React, { forwardRef } from 'react';
+import { Button, Grid, makeStyles } from '@material-ui/core';
 import { GetAllStandings } from '../common/Requests';
+import MaterialTable from '@material-table/core';
+import {
+  AddBox,
+  ArrowDownward,
+  Check,
+  ChevronLeft,
+  ChevronRight,
+  Clear,
+  DeleteOutline,
+  Edit,
+  FilterList,
+  FirstPage,
+  LastPage,
+  Remove,
+  SaveAlt,
+  Search,
+  ViewColumn
+} from '@material-ui/icons';
+import Session from '../common/Session';
+import SaveIcon from "@material-ui/icons/Save";
+import BoxerModal from "../boxers/BoxerModal";
 
-export default function Standings({ CreateButton }) {
+const tableIcons = {
+  Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
+  Check: forwardRef((props, ref) => <Check {...props} ref={ref} />),
+  Clear: forwardRef((props, ref) => <Clear {...props} ref={ref} />),
+  Delete: forwardRef((props, ref) => <DeleteOutline {...props} ref={ref} />),
+  DetailPanel: forwardRef((props, ref) => <ChevronRight {...props} ref={ref} />),
+  Edit: forwardRef((props, ref) => <Edit {...props} ref={ref} />),
+  Export: forwardRef((props, ref) => <SaveAlt {...props} ref={ref} />),
+  Filter: forwardRef((props, ref) => <FilterList {...props} ref={ref} />),
+  FirstPage: forwardRef((props, ref) => <FirstPage {...props} ref={ref} />),
+  LastPage: forwardRef((props, ref) => <LastPage {...props} ref={ref} />),
+  NextPage: forwardRef((props, ref) => <ChevronRight {...props} ref={ref} />),
+  PreviousPage: forwardRef((props, ref) => <ChevronLeft {...props} ref={ref} />),
+  ResetSearch: forwardRef((props, ref) => <Clear {...props} ref={ref} />),
+  Search: forwardRef((props, ref) => <Search {...props} ref={ref} />),
+  SortArrow: forwardRef((props, ref) => <ArrowDownward {...props} ref={ref} />),
+  ThirdStateCheck: forwardRef((props, ref) => <Remove {...props} ref={ref} />),
+  ViewColumn: forwardRef((props, ref) => <ViewColumn {...props} ref={ref} />)
+};
+
+const useStyles = makeStyles(() => ({
+  boxerButton: {
+    justifyContent: "flex-start",
+    textAlign: "left"
+  }
+}))
+
+export default function Standings() {
+  const classes = useStyles();
+
 	const [data, setData] = React.useState([]);
+	const [columns, setColumns] = React.useState([]);
+  const [boxerModal, setBoxerModal] = React.useState(false); 
 
-	const getAllStandings = React.useCallback(() => {
-    const resp = GetAllStandings();
+	const getAllStandings = React.useCallback(async () => {
+    const resp = await GetAllStandings();
     //TO-DO: Format response and add snackbar
-    let standings = [];
+    let standings = [
+      { id: 1, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
+      { id: 2, boxer: 'Muhammad Ali', winCount: '76', lossCount: '4', score: 300 },
+    ];
     return standings;
 	}, [])
 
-  const openBoxerDetails = (param) => {
-    if(param.field === "boxer") {
-      window.open("/boxers/" + param.data.id);
-    }
+  const openBoxerDetails = (id) => {
+    window.open("/boxers/" + id);
+  }
+
+  const deleteBoxer = async (oldData) => {
+		//TEMP
+		const dataDelete = [...data];
+		const index = oldData.tableData.id;
+		dataDelete.splice(index, 1);
+		setData([...dataDelete]);
+		//REAL
+		//await RemoveBoxer(oldData.id, Session.getUser().token);
+	}
+
+  const CreateBoxerButton = () => {
+    return (
+      <Button
+        style={{ marginLeft: "1rem", marginTop: "1rem" }}
+        variant="contained"
+        color="secondary"
+        size="small"
+        startIcon={<SaveIcon />}
+        onClick={() => setBoxerModal(true)}
+      >
+        Create a boxer
+      </Button>
+    )
   }
 
 	const init = React.useCallback(async () => {
-		setData(getAllStandings());
-	}, [getAllStandings])
+    setColumns([
+      { field: 'boxer', title: 'Boxer', width: 300, render: rowData => 
+        <Button 
+          onClick={() => openBoxerDetails(rowData.id)}
+          variant="text"
+          fullWidth
+          className={classes.boxerButton}
+        >
+          {rowData.boxer}
+        </Button>        
+      },
+      { field: 'winCount', title: 'Wins' },
+      { field: 'lossCount', title: 'Losses' },
+      { field: 'score', title: 'Score' }
+    ]);
+		setData(await getAllStandings());
+	}, [getAllStandings, classes])
 	React.useEffect(() => {
 		init();
 	}, [init]);
 
   return (
     <div style={{ height: 700, width: '100%' }}>
+      <BoxerModal modal={boxerModal} setModal={setBoxerModal} />
+
       <hr />
-			<Grid container justify="space-between">
-				<h4>Standings</h4>
-				<CreateButton/>
-			</Grid>
+        <Grid container justify="space-between">
+          <h2>Standings</h2>
+          {Session.getUser()?.isAdmin && <CreateBoxerButton/>}
+        </Grid>
 			<hr />
-      <DataGrid
-        columns={[
-          { field: 'boxer', headerName: 'Boxer', width: 170 },
-          { field: 'winCount', headerName: 'Wins', width: 170 },
-          { field: 'lossCount', headerName: 'Losses', width: 170 },
-          { field: 'score', headerName: 'Score', width: 170 }
-        ]}
-        disableColumnSelector
-        disableSelectionOnClick
-        disableClickEventBubbling
-        onCellClick={(param) => openBoxerDetails(param)}
-        //onCellHover={(param) => console.log("ok")}
-        rows={
-        //data
-        [
-          { id: 1, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
-          { id: 2, boxer: 'Muhammad Ali', winCount: '76', lossCount: '4', score: 300 },
-          { id: 3, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
-          { id: 4, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
-          { id: 5, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
-          { id: 6, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
-          { id: 7, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
-          { id: 8, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
-          { id: 9, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 }
-        ]}
+
+      <MaterialTable 
+        icons={tableIcons}
+        options={{
+          showTitle: false,
+          searchFieldVariant: "outlined",
+          searchFieldAlignment: "left",
+        }}
+        columns={columns}
+        editable={{
+          isDeleteHidden: () => !Session.getUser()?.isAdmin,
+          onRowDelete: Session.getUser()?.isAdmin && ((oldData) =>
+            new Promise((resolve, reject) => {
+              setTimeout(() => {
+                deleteBoxer(oldData);
+                resolve();
+              }, 500);
+            })),
+        }}
+        data={data}
       />
     </div>
   );

@@ -6,6 +6,8 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import TextField from "@material-ui/core/TextField";
 import Backdrop from '@material-ui/core/Backdrop';
 import { Button, Fade, makeStyles, Modal } from "@material-ui/core";
+import { AddBoxer, EditBoxer } from "../common/Requests";
+import Session from "../common/Session";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -35,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function CreateBoxerModal({modal, setModal}) {
+export default function BoxerModal({modal, setModal, oldBoxerProps}) {
   const classes = useStyles();
 
   const [boxerProps, setBoxerProps] = React.useState({
@@ -61,9 +63,41 @@ export default function CreateBoxerModal({modal, setModal}) {
     });
   }
 
-  const submitBoxer = () => {
+  const submitBoxer = async () => {
+    const resp = await AddBoxer(
+      boxerProps.name,
+      boxerProps.birthdate,
+      boxerProps.weight,
+      boxerProps.height,
+      Session.getUser().token
+    );
+    //SNACKBAR
+  };
 
-  }
+  const updateBoxer = async () => {
+    const resp = await EditBoxer(
+      oldBoxerProps.id,
+      boxerProps.name,
+      boxerProps.birthdate,
+      boxerProps.weight,
+      boxerProps.height,
+      Session.getUser().token
+    );
+    //SNACKBAR
+  };
+
+  const init = React.useCallback(async () => {
+    oldBoxerProps &&
+      setBoxerProps({
+        name: oldBoxerProps.name,
+        birthdate: oldBoxerProps.birthdate,
+        weight: oldBoxerProps.weight,
+        height: oldBoxerProps.height
+      });
+  }, [oldBoxerProps]);
+  React.useEffect(() => {
+    init();
+  }, [init]);
 
   return (
     <React.Fragment>
@@ -178,8 +212,8 @@ export default function CreateBoxerModal({modal, setModal}) {
                   fullWidth
                   variant="contained"
                   color="primary"
-                  onClick={() => submitBoxer()}>
-                  {"Create"}
+                  onClick={() => oldBoxerProps ? updateBoxer() : submitBoxer()}>
+                  {oldBoxerProps ? "Update" : "Create"}
                 </Button>
               </FormControl>
             </div>

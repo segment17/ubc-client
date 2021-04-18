@@ -1,16 +1,22 @@
 import React from "react";
-import { MuiPickersUtilsProvider, KeyboardTimePicker } from '@material-ui/pickers';
-import DateFnsUtils from '@date-io/date-fns';
+import {
+  MuiPickersUtilsProvider,
+  KeyboardDatePicker,
+} from "@material-ui/pickers";
+import DateFnsUtils from "@date-io/date-fns";
 import FormControl from "@material-ui/core/FormControl";
 import TextField from "@material-ui/core/TextField";
-import Backdrop from '@material-ui/core/Backdrop';
+import Backdrop from "@material-ui/core/Backdrop";
 import { Button, Fade, makeStyles, Modal } from "@material-ui/core";
+import moment from "moment";
+import { AddMatch, UpdateMatch } from "../common/Requests";
+import Session from "../common/Session";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
     border: "none",
   },
   paper: {
@@ -26,17 +32,16 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2, 4, 3),
   },
   textField: {
-    marginBottom: "1vw"
+    marginBottom: "1vw",
   },
-  dateField: {
-    marginTop: "-0.5vw",
-    marginBottom: "1vw"
-  }
+  timeField: {
+    marginTop: "-0.1vw",
+    marginBottom: "1vw",
+  },
 }));
 
-export default function CreateMatchModal({modal, setModal}) {
+export default function MatchModal({ modal, setModal, oldMatchProps }) {
   const classes = useStyles();
-
   const [options, setOptions] = React.useState({
     homeBoxerOptions: [],
     awayBoxerOptions: [],
@@ -48,12 +53,11 @@ export default function CreateMatchModal({modal, setModal}) {
     awayBoxer: null,
     matchTime: null,
     isFinished: null,
-    winnerBoxer: null
+    winnerBoxer: null,
   });
   const [errors, setErrors] = React.useState({
     homeBoxerError: null,
     awayBoxerError: null,
-    matchTimeError: null,
   });
 
   const handleCloseModal = () => {
@@ -63,13 +67,48 @@ export default function CreateMatchModal({modal, setModal}) {
       awayBoxer: null,
       matchTime: null,
       isFinished: null,
-      winnerBoxer: null
+      winnerBoxer: null,
     });
-  }
+  };
 
-  const submitMatch = () => {
+  const submitMatch = async () => {
+    const resp = await AddMatch(
+      matchProps.homeBoxer,
+      matchProps.awayBoxer,
+      matchProps.matchTime,
+      matchProps.isFinished,
+      matchProps.winnerBoxer,
+      Session.getUser().token
+    );
+    //SNACKBAR
+  };
 
-  }
+  const updateMatch = async () => {
+    const resp = await UpdateMatch(
+      oldMatchProps.id,
+      matchProps.homeBoxer,
+      matchProps.awayBoxer,
+      matchProps.matchTime,
+      matchProps.isFinished,
+      matchProps.winnerBoxer,
+      Session.getUser().token
+    );
+    //SNACKBAR
+  };
+
+  const init = React.useCallback(async () => {
+    oldMatchProps &&
+      setMatchProps({
+        homeBoxer: oldMatchProps.homeBoxer.id,
+        awayBoxer: oldMatchProps.awayBoxer.id,
+        matchTime: moment(oldMatchProps.matchTime),
+        isFinished: oldMatchProps.isFinished,
+        winnerBoxer: oldMatchProps.winnerBoxer.id,
+      });
+  }, [oldMatchProps]);
+  React.useEffect(() => {
+    init();
+  }, [init]);
 
   return (
     <React.Fragment>
@@ -81,7 +120,8 @@ export default function CreateMatchModal({modal, setModal}) {
         BackdropComponent={Backdrop}
         BackdropProps={{
           timeout: 500,
-        }}>
+        }}
+      >
         <Fade in={modal}>
           <div className={classes.paper}>
             <div>
@@ -97,12 +137,20 @@ export default function CreateMatchModal({modal, setModal}) {
                   label="Home Boxer"
                   variant="outlined"
                   value={matchProps.homeBoxer}
-                  onChange={value => {
-                    if(value.target.value  ) {
-                      setErrors({...errors, homeBoxerError: "Home boxer cannot be the same as away boxer."});
+                  onChange={(value) => {
+                    if (value.target.value) {
+                      setErrors({
+                        ...errors,
+                        homeBoxerError:
+                          "Home boxer cannot be the same as away boxer.",
+                      });
                     } else {
-                      errors.homeBoxerError && setErrors({...errors, homeBoxerError: null});
-                      setMatchProps({...matchProps, homeBoxer: value.target.value});
+                      errors.homeBoxerError &&
+                        setErrors({ ...errors, homeBoxerError: null });
+                      setMatchProps({
+                        ...matchProps,
+                        homeBoxer: value.target.value,
+                      });
                     }
                   }}
                 >
@@ -120,12 +168,20 @@ export default function CreateMatchModal({modal, setModal}) {
                   label="Away Boxer"
                   variant="outlined"
                   value={matchProps.awayBoxer}
-                  onChange={value => {
-                    if(value.target.value  ) {
-                      setErrors({...errors, awayBoxerError: "Away boxer cannot be the same as home boxer."});
+                  onChange={(value) => {
+                    if (value.target.value) {
+                      setErrors({
+                        ...errors,
+                        awayBoxerError:
+                          "Away boxer cannot be the same as home boxer.",
+                      });
                     } else {
-                      errors.awayBoxerError && setErrors({...errors, awayBoxerError: null});
-                      setMatchProps({...matchProps, awayBoxer: value.target.value});
+                      errors.awayBoxerError &&
+                        setErrors({ ...errors, awayBoxerError: null });
+                      setMatchProps({
+                        ...matchProps,
+                        awayBoxer: value.target.value,
+                      });
                     }
                   }}
                 >
@@ -133,30 +189,17 @@ export default function CreateMatchModal({modal, setModal}) {
                 </TextField>
 
                 <MuiPickersUtilsProvider utils={DateFnsUtils}>
-                  <KeyboardTimePicker
+                  <KeyboardDatePicker
                     margin="normal"
                     id="time-picker"
                     label="Match Time"
                     required
-                    openTo="seconds"
-                    ampm={false}
-                    format="HH:mm:ss"
-                    views={["hours", "minutes", "seconds"]}
+                    format="dd/MM/yyyy"
                     InputLabelProps={{ shrink: !!matchProps.matchTime }}
                     fullWidth
-                    variant="outlined"
-                    error={errors.matchTimeError}
-                    helperText={errors.matchTimeError}
+                    inputVariant="outlined"
                     value={matchProps.matchTime}
-                    onChange={value => {
-                      /* if(value ) {
-                        setErrors({...errors, matchTimeError: "Match time cannot be longer than 8 hours."});
-                      } else {
-                        errors.matchTimeError && setErrors({...errors, matchTimeError: null})
-                        setMatchProps({...matchProps, birthdate: value});
-                      } */
-                      setMatchProps({...matchProps, matchTime: value});
-                    }}
+                    onChange={(value) => setMatchProps({ ...matchProps, matchTime: value })}
                     className={classes.timeField}
                   />
                 </MuiPickersUtilsProvider>
@@ -170,12 +213,17 @@ export default function CreateMatchModal({modal, setModal}) {
                   label="Is The Match Finished?"
                   variant="outlined"
                   value={matchProps.isFinished}
-                  onChange={value => setMatchProps({...matchProps, isFinished: value.target.value})}
+                  onChange={(value) =>
+                    setMatchProps({
+                      ...matchProps,
+                      isFinished: value.target.value,
+                    })
+                  }
                 >
                   {options.winnerBoxerOptions}
                 </TextField>
 
-                <TextField    
+                <TextField
                   required
                   select
                   className={classes.textField}
@@ -185,18 +233,26 @@ export default function CreateMatchModal({modal, setModal}) {
                   variant="outlined"
                   disabled={!matchProps.isFinished}
                   value={matchProps.winnerBoxer}
-                  onChange={value => setMatchProps({...matchProps, winnerBoxer: value.target.value})}
+                  onChange={(value) =>
+                    setMatchProps({
+                      ...matchProps,
+                      winnerBoxer: value.target.value,
+                    })
+                  }
                 >
                   {options.winnerBoxerOptions}
                 </TextField>
-                
+
                 <Button
                   type="submit"
                   fullWidth
                   variant="contained"
                   color="primary"
-                  onClick={() => submitMatch()}>
-                  {"Create"}
+                  onClick={() =>
+                    oldMatchProps ? updateMatch() : submitMatch()
+                  }
+                >
+                  {oldMatchProps ? "Update" : "Create"}
                 </Button>
               </FormControl>
             </div>
