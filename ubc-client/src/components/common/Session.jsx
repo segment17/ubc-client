@@ -1,5 +1,5 @@
 class Session {
-	user = null;
+	user = {isAdmin: false, token: null};
 
   constructor() {
     const userInfo = localStorage.getItem("user");
@@ -15,7 +15,7 @@ class Session {
 
 	deleteUser() {
 		localStorage.removeItem('user');
-		this.user = null;
+		this.user = {isAdmin: false, token: null};
 	}
 
 	getUser() {

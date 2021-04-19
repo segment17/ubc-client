@@ -16,6 +16,10 @@ import {
   Search,
   ViewColumn
 } from '@material-ui/icons';
+import Session from "../common/Session";
+import EditIcon from '@material-ui/icons/Edit';
+import BoxerModal from "./BoxerModal";
+import moment from 'moment';
 
 const tableIcons = {
   Check: forwardRef((props, ref) => <Check {...props} ref={ref} />),
@@ -51,6 +55,7 @@ function BoxerDetails() {
   const location = useLocation();
   const id = location.pathname.substring(7);
 
+  const [boxerModal, setBoxerModal] = React.useState(false);
   const [boxerProps, setBoxerProps] = React.useState({});
   const [standing, setStanding] = React.useState({});
   const [matches, setMatches] = React.useState([]);
@@ -58,6 +63,21 @@ function BoxerDetails() {
   
   const openBoxerDetails = (id) => {
     window.open("/boxers/" + id);
+  }
+
+  const EditBoxerButton = () => {
+    return (
+      <Button
+        style={{ marginLeft: "1rem", marginTop: "1rem" }}
+        variant="contained"
+        color="primary"
+        size="small"
+        startIcon={<EditIcon />}
+        onClick={() => setBoxerModal(true)}
+      >
+        Edit Boxer
+      </Button>
+    )
   }
 
   const init = React.useCallback(async () => {
@@ -98,6 +118,7 @@ function BoxerDetails() {
 
     const resp = await GetBoxerWithStandingAndMatches(id);
     resp.boxer && setBoxerProps({
+      id: resp.boxer?.id,
       name: resp.boxer?.fullName,
       birthdate: resp.boxer?.birthDate,
       weight: resp.boxer?.weight,
@@ -112,13 +133,16 @@ function BoxerDetails() {
 
   return (
     <Grid container className={classes.root} spacing={2}>
+      <BoxerModal modal={boxerModal} setModal={setBoxerModal} oldBoxerProps={boxerProps} />
+
       <Grid item xs={5}>
 
         <Typography variant="h2">{boxerProps.name}</Typography>
         <Divider/>
-        <Typography variant="h6" className={classes.desc}>{"Birthdate: " + boxerProps.birthdate}</Typography>
+        <Typography variant="h6" className={classes.desc}>{"Birthdate: " + moment.unix(boxerProps.birthdate).format("MMMM Do, YYYY")}</Typography>
         <Typography variant="h6" className={classes.desc}>{"Weight: " + boxerProps.weight + " kg"}</Typography>
         <Typography variant="h6" className={classes.desc}>{"Height: " + boxerProps.height + " cm"}</Typography>
+        {Session.getUser().isAdmin && <EditBoxerButton/>}
 
         <Typography variant="h4" style={{marginTop: "10%"}}>{"Standing"}</Typography>
         <Divider/>

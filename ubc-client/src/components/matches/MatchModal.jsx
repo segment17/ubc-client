@@ -7,9 +7,9 @@ import DateFnsUtils from "@date-io/date-fns";
 import FormControl from "@material-ui/core/FormControl";
 import TextField from "@material-ui/core/TextField";
 import Backdrop from "@material-ui/core/Backdrop";
-import { Button, Fade, makeStyles, Modal } from "@material-ui/core";
+import { Button, Fade, makeStyles, MenuItem, Modal } from "@material-ui/core";
 import moment from "moment";
-import { AddMatch, UpdateMatch } from "../common/Requests";
+import { AddMatch, GetAllBoxers, UpdateMatch } from "../common/Requests";
 import Session from "../common/Session";
 
 const useStyles = makeStyles((theme) => ({
@@ -51,7 +51,7 @@ export default function MatchModal({ modal, setModal, oldMatchProps }) {
   const [matchProps, setMatchProps] = React.useState({
     homeBoxer: null,
     awayBoxer: null,
-    matchTime: null,
+    matchTime: moment(),
     isFinished: null,
     winnerBoxer: null,
   });
@@ -65,7 +65,7 @@ export default function MatchModal({ modal, setModal, oldMatchProps }) {
     setMatchProps({
       homeBoxer: null,
       awayBoxer: null,
-      matchTime: null,
+      matchTime: moment(),
       isFinished: null,
       winnerBoxer: null,
     });
@@ -96,12 +96,32 @@ export default function MatchModal({ modal, setModal, oldMatchProps }) {
     //SNACKBAR
   };
 
+  const getOptions = async () => {
+    const boxers = (await GetAllBoxers()).boxers;
+    let boxerOptions = [];
+    for (let index in boxers) {
+      const boxer = boxers[index];
+      boxerOptions.push(<MenuItem key={boxer.id} value={boxer.id}>{boxer.fullName}</MenuItem>);
+    }
+    const yesNo = [
+      <MenuItem key={1} value={true}>{"Yes"}</MenuItem>,
+      <MenuItem key={2} value={false}>{"No"}</MenuItem>,
+    ];
+    return {
+      homeBoxerOptions: boxerOptions,
+      awayBoxerOptions: boxerOptions,
+      yesNoOptions: yesNo,
+      winnerBoxerOptions: [],
+    };
+  };
+
   const init = React.useCallback(async () => {
+    setOptions(await getOptions());
     oldMatchProps &&
       setMatchProps({
         homeBoxer: oldMatchProps.homeBoxer.id,
         awayBoxer: oldMatchProps.awayBoxer.id,
-        matchTime: moment(oldMatchProps.matchTime),
+        matchTime: moment.unix(oldMatchProps.matchTime).format(),
         isFinished: oldMatchProps.isFinished,
         winnerBoxer: oldMatchProps.winnerBoxer.id,
       });
@@ -136,9 +156,9 @@ export default function MatchModal({ modal, setModal, oldMatchProps }) {
                   helperText={errors.homeBoxerError}
                   label="Home Boxer"
                   variant="outlined"
-                  value={matchProps.homeBoxer}
+                  value={matchProps.homeBoxer || ""}
                   onChange={(value) => {
-                    if (value.target.value) {
+                    if (value.target.value === matchProps.awayBoxer) {
                       setErrors({
                         ...errors,
                         homeBoxerError:
@@ -147,6 +167,15 @@ export default function MatchModal({ modal, setModal, oldMatchProps }) {
                     } else {
                       errors.homeBoxerError &&
                         setErrors({ ...errors, homeBoxerError: null });
+                      /* setOptions({
+                        ...options,
+                        winnerBoxerOptions: [
+                          ...options.winnerBoxerOptions,
+                          <MenuItem value={value.target.value}>
+                            {"ok"}
+                          </MenuItem>,
+                        ],
+                      }); */
                       setMatchProps({
                         ...matchProps,
                         homeBoxer: value.target.value,
@@ -167,9 +196,9 @@ export default function MatchModal({ modal, setModal, oldMatchProps }) {
                   helperText={errors.awayBoxerError}
                   label="Away Boxer"
                   variant="outlined"
-                  value={matchProps.awayBoxer}
+                  value={matchProps.awayBoxer || ""}
                   onChange={(value) => {
-                    if (value.target.value) {
+                    if (value.target.value === matchProps.homeBoxer) {
                       setErrors({
                         ...errors,
                         awayBoxerError:
@@ -198,8 +227,10 @@ export default function MatchModal({ modal, setModal, oldMatchProps }) {
                     InputLabelProps={{ shrink: !!matchProps.matchTime }}
                     fullWidth
                     inputVariant="outlined"
-                    value={matchProps.matchTime}
-                    onChange={(value) => setMatchProps({ ...matchProps, matchTime: value })}
+                    value={matchProps.matchTime || ""}
+                    onChange={(value) =>
+                      setMatchProps({ ...matchProps, matchTime: value })
+                    }
                     className={classes.timeField}
                   />
                 </MuiPickersUtilsProvider>
@@ -208,11 +239,21 @@ export default function MatchModal({ modal, setModal, oldMatchProps }) {
                   required
                   select
                   className={classes.textField}
-                  InputLabelProps={{ shrink: !!matchProps.isFinished }}
+                  InputLabelProps={{
+                    shrink: !(
+                      matchProps.isFinished === null ||
+                      matchProps.isFinished === undefined
+                    ),
+                  }}
                   fullWidth
                   label="Is The Match Finished?"
                   variant="outlined"
-                  value={matchProps.isFinished}
+                  value={
+                    matchProps.isFinished === null ||
+                    matchProps.isFinished === undefined
+                      ? ""
+                      : matchProps.isFinished
+                  }
                   onChange={(value) =>
                     setMatchProps({
                       ...matchProps,
@@ -220,7 +261,7 @@ export default function MatchModal({ modal, setModal, oldMatchProps }) {
                     })
                   }
                 >
-                  {options.winnerBoxerOptions}
+                  {options.yesNoOptions}
                 </TextField>
 
                 <TextField
@@ -231,8 +272,12 @@ export default function MatchModal({ modal, setModal, oldMatchProps }) {
                   fullWidth
                   label="Winner Boxer"
                   variant="outlined"
-                  disabled={!matchProps.isFinished}
-                  value={matchProps.winnerBoxer}
+                  disabled={
+                    !matchProps.isFinished ||
+                    !matchProps.homeBoxer ||
+                    !matchProps.awayBoxer
+                  }
+                  value={matchProps.winnerBoxer || ""}
                   onChange={(value) =>
                     setMatchProps({
                       ...matchProps,
@@ -240,7 +285,7 @@ export default function MatchModal({ modal, setModal, oldMatchProps }) {
                     })
                   }
                 >
-                  {options.winnerBoxerOptions}
+                  {options.homeBoxerOptions}
                 </TextField>
 
                 <Button

@@ -22,6 +22,7 @@ import {
 import Session from '../common/Session';
 import SaveIcon from "@material-ui/icons/Save";
 import MatchModal from './MatchModal';
+import moment from 'moment';
 
 const tableIcons = {
   Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
@@ -62,15 +63,15 @@ export default function AllMatches() {
 		const resp = GetAllMatches();
     //TO-DO: Format response and add snackbar
     let matches = [
-			{ id: 1, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: '11/04/2021 08:00 PM', winnerBoxer: {id:2, name: 'Muhammad Ali'}, isFinished: true },
-			{ id: 2, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: '11/04/2021 08:00 PM', winnerBoxer: null, isFinished: false },
-			{ id: 3, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: '11/04/2021 08:00 PM', winnerBoxer: null, isFinished: false },
-			{ id: 4, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: '11/04/2021 08:00 PM', winnerBoxer: {id: 1, name: 'Mike Tyson'}, isFinished: true },
-			{ id: 5, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: '11/04/2021 08:00 PM', winnerBoxer: {id:2, name: 'Muhammad Ali'}, isFinished: true },
-			{ id: 6, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: '11/04/2021 08:00 PM', winnerBoxer: null, isFinished: false },
-			{ id: 7, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: '11/04/2021 08:00 PM', winnerBoxer: {id:2, name: 'Muhammad Ali'}, isFinished: true },
-			{ id: 8, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: '11/04/2021 08:00 PM', winnerBoxer: null, isFinished: false },
-			{ id: 9, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: '11/04/2021 08:00 PM', winnerBoxer: null, isFinished: false },
+			{ id: 1, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: {id:2, name: 'Muhammad Ali'}, isFinished: true },
+			{ id: 2, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: null, isFinished: false },
+			{ id: 3, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: null, isFinished: false },
+			{ id: 4, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: {id: 1, name: 'Mike Tyson'}, isFinished: true },
+			{ id: 5, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: {id:2, name: 'Muhammad Ali'}, isFinished: true },
+			{ id: 6, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: null, isFinished: false },
+			{ id: 7, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: {id:2, name: 'Muhammad Ali'}, isFinished: true },
+			{ id: 8, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: null, isFinished: false },
+			{ id: 9, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: null, isFinished: false },
 		];
     return matches;
 	}, [])
@@ -114,7 +115,7 @@ export default function AllMatches() {
 
 	const init = React.useCallback(async () => {
 		setColumns([
-			{ field: 'homeBoxer', title: 'Home Boxer', width: 300, render: rowData => 
+			{ field: 'homeBoxer', title: 'Home Boxer', width: 200, render: rowData => 
 				<Button
 					onClick={() => openBoxerDetails(rowData.homeBoxer?.id)}
 					variant="text"
@@ -124,7 +125,7 @@ export default function AllMatches() {
 					{rowData.homeBoxer?.name}
 				</Button>        
 			},
-			{ field: 'awayBoxer', title: 'Away Boxer', width: 300, render: rowData => 
+			{ field: 'awayBoxer', title: 'Away Boxer', width: 200, render: rowData => 
 				<Button 
 					onClick={() => openBoxerDetails(rowData.awayBoxer?.id)}
 					variant="text"
@@ -134,8 +135,8 @@ export default function AllMatches() {
 					{rowData.awayBoxer?.name}
 				</Button>        
 			},
-			{ field: 'matchTime', title: 'Match Time' },
-			{ emptyValue: "-", field: 'winnerBoxer', title: 'Winner', width: 300, render: rowData => 
+			{ field: 'matchTime', title: 'Match Time', render: rowData => moment.unix(rowData.matchTime).format("DD/MM/yyyy HH:mm") },
+			{ emptyValue: "-", field: 'winnerBoxer', title: 'Winner', width: 200, render: rowData => 
 				<Button 
 					onClick={() => openBoxerDetails(rowData.winnerBoxer?.id)}
 					variant="text"

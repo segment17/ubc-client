@@ -3,7 +3,39 @@ export const Login = async (username, password) => { // AuthService
 	return LoginResponse;
 }
 export const GetAllBoxers = async () => { // BoxerService
-	const GetAllBoxersResponse = null;
+	const GetAllBoxersResponse = {
+    code: 200,
+    boxers: [
+      {
+        id: 1,
+        fullName: "Mike Tyson",
+        birthDate: 127419968,
+        height: 178,
+        weight: 100,
+      },
+      {
+        id: 4,
+        fullName: "Connor McGregor",
+        birthDate: 127419968,
+        height: 175,
+        weight: 80,
+      },
+      {
+        id: 6,
+        fullName: "Logan Paul",
+        birthDate: 127419968,
+        height: 195,
+        weight: 120,
+      },
+      {
+        id: 8,
+        fullName: 'Dwayne "The Rock" Johnson',
+        birthDate: 127419968,
+        height: 196,
+        weight: 118,
+      }
+    ]
+  };
 	return GetAllBoxersResponse;
 }
 export const GetBoxerWithStandingAndMatches = async (int) => { // BoxerService

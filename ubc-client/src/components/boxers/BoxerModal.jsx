@@ -8,6 +8,7 @@ import Backdrop from '@material-ui/core/Backdrop';
 import { Button, Fade, makeStyles, Modal } from "@material-ui/core";
 import { AddBoxer, EditBoxer } from "../common/Requests";
 import Session from "../common/Session";
+import moment from 'moment';
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -32,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "1vw"
   },
   dateField: {
-    marginTop: "-0.5vw",
+    marginTop: "-0.1vw",
     marginBottom: "1vw"
   }
 }));
@@ -90,7 +91,7 @@ export default function BoxerModal({modal, setModal, oldBoxerProps}) {
     oldBoxerProps &&
       setBoxerProps({
         name: oldBoxerProps.name,
-        birthdate: oldBoxerProps.birthdate,
+        birthdate: moment.unix(oldBoxerProps.birthdate),
         weight: oldBoxerProps.weight,
         height: oldBoxerProps.height
       });
@@ -123,7 +124,7 @@ export default function BoxerModal({modal, setModal, oldBoxerProps}) {
                   helperText={errors.nameError}
                   label="Name"
                   variant="outlined"
-                  value={boxerProps.name}
+                  value={boxerProps.name || ""}
                   onChange={value => {
                     if(value.target.value.length > 250) {
                       setErrors({...errors, nameError: "Name cannot be longer than 250 characters."});
@@ -143,9 +144,9 @@ export default function BoxerModal({modal, setModal, oldBoxerProps}) {
                     fullWidth
                     error={errors.birthdateError}
                     helperText={errors.birthdateError}
-                    variant="outlined"
+                    inputVariant="outlined"
                     label={"Birthdate"}
-                    value={boxerProps.birthdate}
+                    value={boxerProps.birthdate || ""}
                     onChange={value => {
                       /* if(value ) {
                         setErrors({...errors, birthdateError: "Boxer must be older than 18 years old."});
@@ -161,7 +162,7 @@ export default function BoxerModal({modal, setModal, oldBoxerProps}) {
 
                 <TextField
                   className={classes.textField}
-                  value={boxerProps.weight}
+                  value={boxerProps.weight || ""}
                   required
                   fullWidth
                   error={errors.weightError}
@@ -185,7 +186,7 @@ export default function BoxerModal({modal, setModal, oldBoxerProps}) {
 
                 <TextField
                   className={classes.textField}
-                  value={boxerProps.height}
+                  value={boxerProps.height || ""}
                   fullWidth
                   required
                   error={errors.heightError}
