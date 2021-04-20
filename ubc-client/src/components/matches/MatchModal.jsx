@@ -42,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function MatchModal({ modal, setModal, oldMatchProps }) {
   const classes = useStyles();
+  
   const [options, setOptions] = React.useState({
     homeBoxerOptions: [],
     awayBoxerOptions: [],
