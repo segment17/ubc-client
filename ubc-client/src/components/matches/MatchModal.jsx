@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function MatchModal({ modal, setModal, oldMatchProps }) {
+export default function MatchModal({ modal, setModal, oldMatchProps, requestClient }) {
   const classes = useStyles();
   
   const [options, setOptions] = React.useState({
@@ -73,7 +73,7 @@ export default function MatchModal({ modal, setModal, oldMatchProps }) {
   };
 
   const submitMatch = async () => {
-    const resp = await AddMatch(
+    const resp = await requestClient.AddMatch(
       matchProps.homeBoxer,
       matchProps.awayBoxer,
       matchProps.matchTime,
@@ -85,7 +85,7 @@ export default function MatchModal({ modal, setModal, oldMatchProps }) {
   };
 
   const updateMatch = async () => {
-    const resp = await UpdateMatch(
+    const resp = await requestClient.UpdateMatch(
       oldMatchProps.id,
       matchProps.homeBoxer,
       matchProps.awayBoxer,
@@ -98,7 +98,7 @@ export default function MatchModal({ modal, setModal, oldMatchProps }) {
   };
 
   const getOptions = async () => {
-    const boxers = (await GetAllBoxers()).boxers;
+    const boxers = (await requestClient.GetAllBoxers()).boxers;
     let boxerOptions = [];
     for (let index in boxers) {
       const boxer = boxers[index];

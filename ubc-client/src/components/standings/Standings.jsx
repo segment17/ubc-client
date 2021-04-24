@@ -1,6 +1,5 @@
 import React, { forwardRef } from 'react';
 import { Button, Grid, makeStyles } from '@material-ui/core';
-import { GetAllStandings } from '../common/Requests';
 import MaterialTable from '@material-table/core';
 import {
   AddBox,
@@ -50,7 +49,7 @@ const useStyles = makeStyles(() => ({
   }
 }))
 
-export default function Standings() {
+export default function Standings({requestClient}) {
   const classes = useStyles();
 
 	const [data, setData] = React.useState([]);
@@ -58,7 +57,7 @@ export default function Standings() {
   const [boxerModal, setBoxerModal] = React.useState(false); 
 
 	const getAllStandings = React.useCallback(async () => {
-    const resp = await GetAllStandings();
+    const resp = await requestClient.GetAllStandings();
     //TO-DO: Format response and add snackbar
     let standings = [
       { id: 1, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
@@ -120,7 +119,7 @@ export default function Standings() {
 
   return (
     <div style={{ height: 700, width: '100%' }}>
-      <BoxerModal modal={boxerModal} setModal={setBoxerModal} />
+      <BoxerModal modal={boxerModal} setModal={setBoxerModal} requestClient={requestClient} />
 
       <hr />
         <Grid container justify="space-between">

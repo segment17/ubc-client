@@ -9,7 +9,6 @@ import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import { Login } from "../common/Requests";
 import Session from "../common/Session";
 
 function Copyright() {
@@ -45,14 +44,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignIn() {
+export default function SignIn({requestClient}) {
   const classes = useStyles();
 
   const [username, setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
 
   const handleLogin = async () => {
-    const resp = await Login(username, password);
+    const resp = await requestClient.Login(username, password);
     if (resp.code === 200) {
       Session.setUser({
 				isAdmin: true,
