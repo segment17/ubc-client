@@ -25,6 +25,138 @@ const proto = require('./Requests_pb.js');
  * @struct
  * @final
  */
+proto.BoxerServiceClient =
+    function(hostname, credentials, options) {
+  if (!options) options = {};
+  options['format'] = 'text';
+
+  /**
+   * @private @const {!grpc.web.GrpcWebClientBase} The client
+   */
+  this.client_ = new grpc.web.GrpcWebClientBase(options);
+
+  /**
+   * @private @const {string} The hostname
+   */
+  this.hostname_ = hostname;
+
+};
+
+
+/**
+ * @param {string} hostname
+ * @param {?Object} credentials
+ * @param {?Object} options
+ * @constructor
+ * @struct
+ * @final
+ */
+proto.BoxerServicePromiseClient =
+    function(hostname, credentials, options) {
+  if (!options) options = {};
+  options['format'] = 'text';
+
+  /**
+   * @private @const {!grpc.web.GrpcWebClientBase} The client
+   */
+  this.client_ = new grpc.web.GrpcWebClientBase(options);
+
+  /**
+   * @private @const {string} The hostname
+   */
+  this.hostname_ = hostname;
+
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.GetBoxerWithStandingAndMatchesRequest,
+ *   !proto.GetBoxerWithStandingAndMatchesResponse>}
+ */
+const methodDescriptor_BoxerService_GetBoxerWithStandingAndMatches = new grpc.web.MethodDescriptor(
+  '/BoxerService/GetBoxerWithStandingAndMatches',
+  grpc.web.MethodType.UNARY,
+  proto.GetBoxerWithStandingAndMatchesRequest,
+  proto.GetBoxerWithStandingAndMatchesResponse,
+  /**
+   * @param {!proto.GetBoxerWithStandingAndMatchesRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.GetBoxerWithStandingAndMatchesResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.GetBoxerWithStandingAndMatchesRequest,
+ *   !proto.GetBoxerWithStandingAndMatchesResponse>}
+ */
+const methodInfo_BoxerService_GetBoxerWithStandingAndMatches = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.GetBoxerWithStandingAndMatchesResponse,
+  /**
+   * @param {!proto.GetBoxerWithStandingAndMatchesRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.GetBoxerWithStandingAndMatchesResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.GetBoxerWithStandingAndMatchesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.GetBoxerWithStandingAndMatchesResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.GetBoxerWithStandingAndMatchesResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.BoxerServiceClient.prototype.getBoxerWithStandingAndMatches =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/BoxerService/GetBoxerWithStandingAndMatches',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_GetBoxerWithStandingAndMatches,
+      callback);
+};
+
+
+/**
+ * @param {!proto.GetBoxerWithStandingAndMatchesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.GetBoxerWithStandingAndMatchesResponse>}
+ *     Promise that resolves to the response
+ */
+proto.BoxerServicePromiseClient.prototype.getBoxerWithStandingAndMatches =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/BoxerService/GetBoxerWithStandingAndMatches',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_GetBoxerWithStandingAndMatches);
+};
+
+
+/**
+ * @param {string} hostname
+ * @param {?Object} credentials
+ * @param {?Object} options
+ * @constructor
+ * @struct
+ * @final
+ */
 proto.FrontendServiceClient =
     function(hostname, credentials, options) {
   if (!options) options = {};
@@ -226,86 +358,6 @@ proto.FrontendServicePromiseClient.prototype.getAllBoxers =
       request,
       metadata || {},
       methodDescriptor_FrontendService_GetAllBoxers);
-};
-
-
-/**
- * @const
- * @type {!grpc.web.MethodDescriptor<
- *   !proto.GetBoxerWithStandingAndMatchesRequest,
- *   !proto.GetBoxerWithStandingAndMatchesResponse>}
- */
-const methodDescriptor_FrontendService_GetBoxerWithStandingAndMatches = new grpc.web.MethodDescriptor(
-  '/FrontendService/GetBoxerWithStandingAndMatches',
-  grpc.web.MethodType.UNARY,
-  proto.GetBoxerWithStandingAndMatchesRequest,
-  proto.GetBoxerWithStandingAndMatchesResponse,
-  /**
-   * @param {!proto.GetBoxerWithStandingAndMatchesRequest} request
-   * @return {!Uint8Array}
-   */
-  function(request) {
-    return request.serializeBinary();
-  },
-  proto.GetBoxerWithStandingAndMatchesResponse.deserializeBinary
-);
-
-
-/**
- * @const
- * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.GetBoxerWithStandingAndMatchesRequest,
- *   !proto.GetBoxerWithStandingAndMatchesResponse>}
- */
-const methodInfo_FrontendService_GetBoxerWithStandingAndMatches = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.GetBoxerWithStandingAndMatchesResponse,
-  /**
-   * @param {!proto.GetBoxerWithStandingAndMatchesRequest} request
-   * @return {!Uint8Array}
-   */
-  function(request) {
-    return request.serializeBinary();
-  },
-  proto.GetBoxerWithStandingAndMatchesResponse.deserializeBinary
-);
-
-
-/**
- * @param {!proto.GetBoxerWithStandingAndMatchesRequest} request The
- *     request proto
- * @param {?Object<string, string>} metadata User defined
- *     call metadata
- * @param {function(?grpc.web.Error, ?proto.GetBoxerWithStandingAndMatchesResponse)}
- *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.GetBoxerWithStandingAndMatchesResponse>|undefined}
- *     The XHR Node Readable Stream
- */
-proto.FrontendServiceClient.prototype.getBoxerWithStandingAndMatches =
-    function(request, metadata, callback) {
-  return this.client_.rpcCall(this.hostname_ +
-      '/FrontendService/GetBoxerWithStandingAndMatches',
-      request,
-      metadata || {},
-      methodDescriptor_FrontendService_GetBoxerWithStandingAndMatches,
-      callback);
-};
-
-
-/**
- * @param {!proto.GetBoxerWithStandingAndMatchesRequest} request The
- *     request proto
- * @param {?Object<string, string>} metadata User defined
- *     call metadata
- * @return {!Promise<!proto.GetBoxerWithStandingAndMatchesResponse>}
- *     Promise that resolves to the response
- */
-proto.FrontendServicePromiseClient.prototype.getBoxerWithStandingAndMatches =
-    function(request, metadata) {
-  return this.client_.unaryCall(this.hostname_ +
-      '/FrontendService/GetBoxerWithStandingAndMatches',
-      request,
-      metadata || {},
-      methodDescriptor_FrontendService_GetBoxerWithStandingAndMatches);
 };
 
 

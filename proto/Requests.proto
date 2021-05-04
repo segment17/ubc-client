@@ -153,13 +153,17 @@ message UpdateMatchResponse {
 	Match match = 3;
 }
 
+service BoxerService {
+	rpc GetBoxerWithStandingAndMatches(GetBoxerWithStandingAndMatchesRequest) // BoxerService
+		returns (GetBoxerWithStandingAndMatchesResponse) {};
+}
+
 service FrontendService {
 	rpc Login(LoginRequest) // AuthService
 		returns (LoginResponse) {}; 
 	rpc GetAllBoxers(Null) // BoxerService
 		returns (GetAllBoxersResponse) {}; 
-	rpc GetBoxerWithStandingAndMatches(GetBoxerWithStandingAndMatchesRequest) // BoxerService
-		returns (GetBoxerWithStandingAndMatchesResponse) {};
+	
 	rpc AddBoxer(AddBoxerRequest) // BoxerService
 		returns (AddBoxerResponse) {}; 
 	rpc RemoveBoxer(RemoveBoxerRequest) // BoxerService
