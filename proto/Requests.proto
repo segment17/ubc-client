@@ -16,7 +16,7 @@ message Match {
 	Boxer awayBoxer = 3;
 	int64 matchTime = 4;
 	bool isFinished = 5;
-	Boxer winnerBoxer = 6;
+	optional Boxer winnerBoxer = 6;
 }
 
 message Standing {
