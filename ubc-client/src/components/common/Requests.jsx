@@ -1,9 +1,9 @@
 import { GetBoxerWithStandingAndMatchesRequest } from '../../requests_pb/Requests_pb';
-import { FrontendServiceClient } from '../../requests_pb/Requests_grpc_web_pb';
+import { BoxerServiceClient } from '../../requests_pb/Requests_grpc_web_pb';
 
 export default class Requests {
   constructor() {
-    this.client = new FrontendServiceClient('http://localhost:8000');
+    this.client = new BoxerServiceClient('http://localhost:8000');
   }
   Login = async (username, password) => { // AuthService
     const LoginResponse = {code: 200};
@@ -45,9 +45,16 @@ export default class Requests {
     };
     return GetAllBoxersResponse;
   }
-  GetBoxerWithStandingAndMatches = async (int) => { // BoxerService
-    const GetBoxerWithStandingAndMatchesResponse = this.client.getBoxerWithStandingAndMatches(GetBoxerWithStandingAndMatchesRequest, {int});
-
+  GetBoxerWithStandingAndMatches = async (arg) => { // BoxerService
+    const int = parseInt(arg);
+    let getBoxerWithStandingAndMatchesRequest = new GetBoxerWithStandingAndMatchesRequest();
+    getBoxerWithStandingAndMatchesRequest.setId(int);
+    const GetBoxerWithStandingAndMatchesResponse = this.client.getBoxerWithStandingAndMatches(getBoxerWithStandingAndMatchesRequest, {}, 
+      (err, res) => {
+        console.log(err);
+        console.log(res);
+    });
+    console.log(GetBoxerWithStandingAndMatchesResponse);
     /* const GetBoxerWithStandingAndMatchesResponse = 
     {
       code: 200,
