@@ -50,7 +50,7 @@ const useStyles = makeStyles(() => ({
   }
 }))
 
-function BoxerDetails() {
+function BoxerDetails({requestClient}) {
   const classes = useStyles();
   const location = useLocation();
   const id = location.pathname.substring(7);
@@ -116,7 +116,7 @@ function BoxerDetails() {
 			{ field: 'isFinished', title: 'Is Finished?', render: rowData =>  rowData.isFinished === true ? 'Yes' : 'No' }
 		]);
 
-    const resp = await GetBoxerWithStandingAndMatches(id);
+    const resp = await requestClient.GetBoxerWithStandingAndMatches(id);
     resp.boxer && setBoxerProps({
       id: resp.boxer?.id,
       name: resp.boxer?.fullName,

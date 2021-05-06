@@ -8,7 +8,7 @@ import BoxerDetails from "../boxers/BoxerDetails";
 import NotFound from "./NotFound";
 import Login from "../login/Login";
 
-function Routes(props) {
+function Routes({requestClient}) {
   const history = createBrowserHistory();
   return (
     <Grid container spacing={4}>
@@ -18,10 +18,18 @@ function Routes(props) {
       <Grid item xs={12} style={{ padding: "1.5rem" }}>
         <Router history={history}>
           <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/boxers/:id" component={BoxerDetails} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="*" component={NotFound} />
+            <Route exact path="/" > 
+              <HomePage requestClient={requestClient}/>
+            </Route>
+            <Route exact path="/boxers/:id" >
+              <BoxerDetails requestClient={requestClient}/>
+            </Route>
+            <Route exact path="/login">
+              <Login requestClient={requestClient}/>
+            </Route>
+            <Route exact path="*" >
+              <NotFound requestClient={requestClient} />
+            </Route>
           </Switch>
         </Router>
       </Grid>

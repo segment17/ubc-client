@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function BoxerModal({modal, setModal, oldBoxerProps}) {
+export default function BoxerModal({modal, setModal, oldBoxerProps, requestClient}) {
   const classes = useStyles();
 
   const [boxerProps, setBoxerProps] = React.useState({
@@ -65,7 +65,7 @@ export default function BoxerModal({modal, setModal, oldBoxerProps}) {
   }
 
   const submitBoxer = async () => {
-    const resp = await AddBoxer(
+    const resp = await requestClient.AddBoxer(
       boxerProps.name,
       boxerProps.birthdate,
       boxerProps.weight,
@@ -76,7 +76,7 @@ export default function BoxerModal({modal, setModal, oldBoxerProps}) {
   };
 
   const updateBoxer = async () => {
-    const resp = await EditBoxer(
+    const resp = await requestClient.EditBoxer(
       oldBoxerProps.id,
       boxerProps.name,
       boxerProps.birthdate,

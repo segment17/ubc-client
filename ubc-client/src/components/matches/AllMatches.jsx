@@ -51,7 +51,7 @@ const useStyles = makeStyles(() => ({
   }
 }))
 
-export default function AllMatches() {
+export default function AllMatches({requestClient}) {
   const classes = useStyles();
 
 	const [data, setData] = React.useState([]);
@@ -60,7 +60,7 @@ export default function AllMatches() {
   const [oldMatchProps, setOldMatchProps] = React.useState(null);
 
 	const getAllMatches = React.useCallback(async () => {
-		const resp = GetAllMatches();
+		const resp = await requestClient.GetAllMatches();
     //TO-DO: Format response and add snackbar
     let matches = [
 			{ id: 1, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: {id:2, name: 'Muhammad Ali'}, isFinished: true },
@@ -156,7 +156,7 @@ export default function AllMatches() {
 
 	return (
 		<div style={{ height: 700, width: '100%' }}>
-      <MatchModal modal={matchModal} setModal={setMatchModal} oldMatchProps={oldMatchProps}/>
+      <MatchModal modal={matchModal} setModal={setMatchModal} oldMatchProps={oldMatchProps} requestClient={requestClient}/>
 
 			<hr />
         <Grid container justify="space-between">
