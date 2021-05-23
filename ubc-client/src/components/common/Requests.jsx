@@ -6,15 +6,20 @@ export default class Requests {
     this.client = new BoxerServiceClient('');
     this.authServiceClient = new AuthServiceClient('');
   }
-  GetBoxerWithStandingAndMatches = async (username, password) => { // AuthService
+  Login = async (username, password) => { // AuthService
     const req = new LoginRequest();
-    req.setUsername('test-password');
-    req.setPassword('test-password-1234');
-    const x = this.authServiceClient.login(req, {}, (err, res) => {
-      console.log('auth err: ', err);
-      console.log('auth res: ', res);
-    })
-    return x;
+    req.setUsername(username);
+    req.setPassword(password);
+    return new Promise((resolve, reject) => {
+      this.authServiceClient.login(req, {}, async (err, res) => {
+        // TODO :: handle err, and 403
+        resolve({
+          code: res.getCode(),
+          message: res.getMessage(),
+          token: res.getToken()
+        });
+      });
+    });
   }
   GetAllBoxers = async () => { // BoxerService
     const GetAllBoxersResponse = {
@@ -52,7 +57,7 @@ export default class Requests {
     };
     return GetAllBoxersResponse;
   }
-  Login = async (arg) => { // BoxerService
+  GetBoxerWithStandingAndMatches = async (arg) => { // BoxerService
     console.log('arg: ', arg);
     const int = parseInt(arg.slice(1), 10);
     console.log('int: ', int);
