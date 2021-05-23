@@ -1,13 +1,20 @@
-import { GetBoxerWithStandingAndMatchesRequest } from '../../requests_pb/Requests_pb';
-import { BoxerServiceClient } from '../../requests_pb/Requests_grpc_web_pb';
+import { GetBoxerWithStandingAndMatchesRequest, LoginRequest } from '../../requests_pb/Requests_pb';
+import { BoxerServiceClient, AuthServiceClient } from '../../requests_pb/Requests_grpc_web_pb';
 
 export default class Requests {
   constructor() {
-    this.client = new BoxerServiceClient('http://localhost:8000');
+    this.client = new BoxerServiceClient('');
+    this.authServiceClient = new AuthServiceClient('');
   }
-  Login = async (username, password) => { // AuthService
-    const LoginResponse = {code: 200};
-    return LoginResponse;
+  GetBoxerWithStandingAndMatches = async (username, password) => { // AuthService
+    const req = new LoginRequest();
+    req.setUsername('test-password');
+    req.setPassword('test-password-1234');
+    const x = this.authServiceClient.login(req, {}, (err, res) => {
+      console.log('auth err: ', err);
+      console.log('auth res: ', res);
+    })
+    return x;
   }
   GetAllBoxers = async () => { // BoxerService
     const GetAllBoxersResponse = {
@@ -45,12 +52,16 @@ export default class Requests {
     };
     return GetAllBoxersResponse;
   }
-  GetBoxerWithStandingAndMatches = async (arg) => { // BoxerService
-    const int = new Int32Array(arg);
+  Login = async (arg) => { // BoxerService
+    console.log('arg: ', arg);
+    const int = parseInt(arg.slice(1), 10);
+    console.log('int: ', int);
     let getBoxerWithStandingAndMatchesRequest = new GetBoxerWithStandingAndMatchesRequest();
     getBoxerWithStandingAndMatchesRequest.setId(int);
     const GetBoxerWithStandingAndMatchesResponse = this.client.getBoxerWithStandingAndMatches(getBoxerWithStandingAndMatchesRequest, {}, 
       (err, res) => {
+        console.log('err: ', err);
+        console.log('res: ', res);
         console.log(err);
         console.log(res);
     });

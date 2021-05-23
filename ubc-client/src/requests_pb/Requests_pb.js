@@ -1,4 +1,4 @@
-/* eslint-disable */
+// source: Requests.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -7,36 +7,61 @@
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
-goog.exportSymbol('proto.boxerservice_package.AddBoxerRequest', null, global);
-goog.exportSymbol('proto.boxerservice_package.AddBoxerResponse', null, global);
-goog.exportSymbol('proto.boxerservice_package.AddMatchRequest', null, global);
-goog.exportSymbol('proto.boxerservice_package.AddMatchResponse', null, global);
-goog.exportSymbol('proto.boxerservice_package.Boxer', null, global);
-goog.exportSymbol('proto.boxerservice_package.EditBoxerRequest', null, global);
-goog.exportSymbol('proto.boxerservice_package.EditBoxerResponse', null, global);
-goog.exportSymbol('proto.boxerservice_package.GetAllBoxersResponse', null, global);
-goog.exportSymbol('proto.boxerservice_package.GetAllMatchesResponse', null, global);
-goog.exportSymbol('proto.boxerservice_package.GetAllStandingsResponse', null, global);
-goog.exportSymbol('proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest', null, global);
-goog.exportSymbol('proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse', null, global);
-goog.exportSymbol('proto.boxerservice_package.LoginRequest', null, global);
-goog.exportSymbol('proto.boxerservice_package.LoginResponse', null, global);
-goog.exportSymbol('proto.boxerservice_package.Match', null, global);
-goog.exportSymbol('proto.boxerservice_package.Null', null, global);
-goog.exportSymbol('proto.boxerservice_package.RemoveBoxerRequest', null, global);
-goog.exportSymbol('proto.boxerservice_package.RemoveBoxerResponse', null, global);
-goog.exportSymbol('proto.boxerservice_package.RemoveMatchRequest', null, global);
-goog.exportSymbol('proto.boxerservice_package.RemoveMatchResponse', null, global);
-goog.exportSymbol('proto.boxerservice_package.Standing', null, global);
-goog.exportSymbol('proto.boxerservice_package.StandingAndMatches', null, global);
-goog.exportSymbol('proto.boxerservice_package.UpdateMatchRequest', null, global);
-goog.exportSymbol('proto.boxerservice_package.UpdateMatchResponse', null, global);
-
+goog.exportSymbol('proto.ubc_package.AddBoxerRequest', null, global);
+goog.exportSymbol('proto.ubc_package.AddBoxerResponse', null, global);
+goog.exportSymbol('proto.ubc_package.AddMatchRequest', null, global);
+goog.exportSymbol('proto.ubc_package.AddMatchResponse', null, global);
+goog.exportSymbol('proto.ubc_package.Boxer', null, global);
+goog.exportSymbol('proto.ubc_package.EditBoxerRequest', null, global);
+goog.exportSymbol('proto.ubc_package.EditBoxerResponse', null, global);
+goog.exportSymbol('proto.ubc_package.Empty', null, global);
+goog.exportSymbol('proto.ubc_package.GetAllMatchesResponse', null, global);
+goog.exportSymbol('proto.ubc_package.GetAllStandingsResponse', null, global);
+goog.exportSymbol('proto.ubc_package.GetBoxerRequest', null, global);
+goog.exportSymbol('proto.ubc_package.GetBoxerResponse', null, global);
+goog.exportSymbol('proto.ubc_package.GetBoxerWithStandingAndMatchesRequest', null, global);
+goog.exportSymbol('proto.ubc_package.GetBoxerWithStandingAndMatchesResponse', null, global);
+goog.exportSymbol('proto.ubc_package.GetMatchesOfBoxerRequest', null, global);
+goog.exportSymbol('proto.ubc_package.GetMatchesOfBoxerResponse', null, global);
+goog.exportSymbol('proto.ubc_package.GetStandingAndMatchesOfBoxerRequest', null, global);
+goog.exportSymbol('proto.ubc_package.GetStandingAndMatchesOfBoxerResponse', null, global);
+goog.exportSymbol('proto.ubc_package.LoginRequest', null, global);
+goog.exportSymbol('proto.ubc_package.LoginResponse', null, global);
+goog.exportSymbol('proto.ubc_package.Match', null, global);
+goog.exportSymbol('proto.ubc_package.Null', null, global);
+goog.exportSymbol('proto.ubc_package.RemoveBoxerRequest', null, global);
+goog.exportSymbol('proto.ubc_package.RemoveBoxerResponse', null, global);
+goog.exportSymbol('proto.ubc_package.RemoveMatchRequest', null, global);
+goog.exportSymbol('proto.ubc_package.RemoveMatchResponse', null, global);
+goog.exportSymbol('proto.ubc_package.RemoveMatchesOfBoxerRequest', null, global);
+goog.exportSymbol('proto.ubc_package.RemoveMatchesOfBoxerResponse', null, global);
+goog.exportSymbol('proto.ubc_package.SetupAddAdminRequest', null, global);
+goog.exportSymbol('proto.ubc_package.SetupAddAdminResponse', null, global);
+goog.exportSymbol('proto.ubc_package.SetupAddBoxerRequest', null, global);
+goog.exportSymbol('proto.ubc_package.SetupAddBoxerResponse', null, global);
+goog.exportSymbol('proto.ubc_package.SetupAddBoxersRequest', null, global);
+goog.exportSymbol('proto.ubc_package.SetupAddBoxersResponse', null, global);
+goog.exportSymbol('proto.ubc_package.SetupAddMatchesRequest', null, global);
+goog.exportSymbol('proto.ubc_package.SetupAddMatchesResponse', null, global);
+goog.exportSymbol('proto.ubc_package.SetupAddStandingAndMatchesRequest', null, global);
+goog.exportSymbol('proto.ubc_package.SetupAddStandingAndMatchesResponse', null, global);
+goog.exportSymbol('proto.ubc_package.SetupAddTokenRequest', null, global);
+goog.exportSymbol('proto.ubc_package.SetupAddTokenResponse', null, global);
+goog.exportSymbol('proto.ubc_package.SetupCleanUpResponse', null, global);
+goog.exportSymbol('proto.ubc_package.SetupClearBoxersResponse', null, global);
+goog.exportSymbol('proto.ubc_package.Standing', null, global);
+goog.exportSymbol('proto.ubc_package.StandingAndMatches', null, global);
+goog.exportSymbol('proto.ubc_package.UpdateMatchRequest', null, global);
+goog.exportSymbol('proto.ubc_package.UpdateMatchResponse', null, global);
+goog.exportSymbol('proto.ubc_package.ValidateRequest', null, global);
+goog.exportSymbol('proto.ubc_package.ValidateResponse', null, global);
 /**
  * Generated by JsPbCodeGenerator.
  * @param {Array=} opt_data Optional initial data array, typically from a
@@ -47,112 +72,17 @@ goog.exportSymbol('proto.boxerservice_package.UpdateMatchResponse', null, global
  * @extends {jspb.Message}
  * @constructor
  */
-proto.boxerservice_package.Null = function(opt_data) {
+proto.ubc_package.Boxer = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.boxerservice_package.Null, jspb.Message);
+goog.inherits(proto.ubc_package.Boxer, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.Null.displayName = 'proto.boxerservice_package.Null';
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.Boxer.displayName = 'proto.ubc_package.Boxer';
 }
-
-
-if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto suitable for use in Soy templates.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.boxerservice_package.Null.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.Null.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.Null} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.boxerservice_package.Null.toObject = function(includeInstance, msg) {
-  var f, obj = {
-
-  };
-
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
-
-
-/**
- * Deserializes binary data (in protobuf wire format).
- * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.Null}
- */
-proto.boxerservice_package.Null.deserializeBinary = function(bytes) {
-  var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.Null;
-  return proto.boxerservice_package.Null.deserializeBinaryFromReader(msg, reader);
-};
-
-
-/**
- * Deserializes binary data (in protobuf wire format) from the
- * given reader into the given message object.
- * @param {!proto.boxerservice_package.Null} msg The message object to deserialize into.
- * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.Null}
- */
-proto.boxerservice_package.Null.deserializeBinaryFromReader = function(msg, reader) {
-  while (reader.nextField()) {
-    if (reader.isEndGroup()) {
-      break;
-    }
-    var field = reader.getFieldNumber();
-    switch (field) {
-    default:
-      reader.skipField();
-      break;
-    }
-  }
-  return msg;
-};
-
-
-/**
- * Serializes the message to binary data (in protobuf wire format).
- * @return {!Uint8Array}
- */
-proto.boxerservice_package.Null.prototype.serializeBinary = function() {
-  var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.Null.serializeBinaryToWriter(this, writer);
-  return writer.getResultBuffer();
-};
-
-
-/**
- * Serializes the given message to binary data (in protobuf wire
- * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.Null} message
- * @param {!jspb.BinaryWriter} writer
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.boxerservice_package.Null.serializeBinaryToWriter = function(message, writer) {
-  var f = undefined;
-};
-
-
-
 /**
  * Generated by JsPbCodeGenerator.
  * @param {Array=} opt_data Optional initial data array, typically from a
@@ -163,47 +93,1020 @@ proto.boxerservice_package.Null.serializeBinaryToWriter = function(message, writ
  * @extends {jspb.Message}
  * @constructor
  */
-proto.boxerservice_package.Boxer = function(opt_data) {
+proto.ubc_package.Match = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.boxerservice_package.Boxer, jspb.Message);
+goog.inherits(proto.ubc_package.Match, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.Boxer.displayName = 'proto.boxerservice_package.Boxer';
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.Match.displayName = 'proto.ubc_package.Match';
 }
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.Standing = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.Standing, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.Standing.displayName = 'proto.ubc_package.Standing';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.StandingAndMatches = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.ubc_package.StandingAndMatches.repeatedFields_, null);
+};
+goog.inherits(proto.ubc_package.StandingAndMatches, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.StandingAndMatches.displayName = 'proto.ubc_package.StandingAndMatches';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.Empty = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.Empty, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.Empty.displayName = 'proto.ubc_package.Empty';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.Null = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.Null, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.Null.displayName = 'proto.ubc_package.Null';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.LoginRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.LoginRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.LoginRequest.displayName = 'proto.ubc_package.LoginRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.ValidateRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.ValidateRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.ValidateRequest.displayName = 'proto.ubc_package.ValidateRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.LoginResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.LoginResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.LoginResponse.displayName = 'proto.ubc_package.LoginResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.ValidateResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.ValidateResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.ValidateResponse.displayName = 'proto.ubc_package.ValidateResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.GetBoxerRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.GetBoxerRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.GetBoxerRequest.displayName = 'proto.ubc_package.GetBoxerRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.GetBoxerResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.GetBoxerResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.GetBoxerResponse.displayName = 'proto.ubc_package.GetBoxerResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.GetBoxerWithStandingAndMatchesRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.GetBoxerWithStandingAndMatchesRequest.displayName = 'proto.ubc_package.GetBoxerWithStandingAndMatchesRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.GetBoxerWithStandingAndMatchesResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.displayName = 'proto.ubc_package.GetBoxerWithStandingAndMatchesResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.AddBoxerRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.AddBoxerRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.AddBoxerRequest.displayName = 'proto.ubc_package.AddBoxerRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.AddBoxerResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.AddBoxerResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.AddBoxerResponse.displayName = 'proto.ubc_package.AddBoxerResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.EditBoxerRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.EditBoxerRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.EditBoxerRequest.displayName = 'proto.ubc_package.EditBoxerRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.EditBoxerResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.EditBoxerResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.EditBoxerResponse.displayName = 'proto.ubc_package.EditBoxerResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.RemoveBoxerRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.RemoveBoxerRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.RemoveBoxerRequest.displayName = 'proto.ubc_package.RemoveBoxerRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.RemoveBoxerResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.RemoveBoxerResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.RemoveBoxerResponse.displayName = 'proto.ubc_package.RemoveBoxerResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.GetAllMatchesResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.ubc_package.GetAllMatchesResponse.repeatedFields_, null);
+};
+goog.inherits(proto.ubc_package.GetAllMatchesResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.GetAllMatchesResponse.displayName = 'proto.ubc_package.GetAllMatchesResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.GetMatchesOfBoxerRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.GetMatchesOfBoxerRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.GetMatchesOfBoxerRequest.displayName = 'proto.ubc_package.GetMatchesOfBoxerRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.ubc_package.GetMatchesOfBoxerResponse.repeatedFields_, null);
+};
+goog.inherits(proto.ubc_package.GetMatchesOfBoxerResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.GetMatchesOfBoxerResponse.displayName = 'proto.ubc_package.GetMatchesOfBoxerResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.UpdateMatchRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.UpdateMatchRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.UpdateMatchRequest.displayName = 'proto.ubc_package.UpdateMatchRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.UpdateMatchResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.UpdateMatchResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.UpdateMatchResponse.displayName = 'proto.ubc_package.UpdateMatchResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.AddMatchRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.AddMatchRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.AddMatchRequest.displayName = 'proto.ubc_package.AddMatchRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.AddMatchResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.AddMatchResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.AddMatchResponse.displayName = 'proto.ubc_package.AddMatchResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.RemoveMatchRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.RemoveMatchRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.RemoveMatchRequest.displayName = 'proto.ubc_package.RemoveMatchRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.RemoveMatchResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.RemoveMatchResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.RemoveMatchResponse.displayName = 'proto.ubc_package.RemoveMatchResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.RemoveMatchesOfBoxerRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.RemoveMatchesOfBoxerRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.RemoveMatchesOfBoxerRequest.displayName = 'proto.ubc_package.RemoveMatchesOfBoxerRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.RemoveMatchesOfBoxerResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.RemoveMatchesOfBoxerResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.RemoveMatchesOfBoxerResponse.displayName = 'proto.ubc_package.RemoveMatchesOfBoxerResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.GetAllStandingsResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.ubc_package.GetAllStandingsResponse.repeatedFields_, null);
+};
+goog.inherits(proto.ubc_package.GetAllStandingsResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.GetAllStandingsResponse.displayName = 'proto.ubc_package.GetAllStandingsResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.GetStandingAndMatchesOfBoxerRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.GetStandingAndMatchesOfBoxerRequest.displayName = 'proto.ubc_package.GetStandingAndMatchesOfBoxerRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.GetStandingAndMatchesOfBoxerResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.displayName = 'proto.ubc_package.GetStandingAndMatchesOfBoxerResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.SetupAddBoxersRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.ubc_package.SetupAddBoxersRequest.repeatedFields_, null);
+};
+goog.inherits(proto.ubc_package.SetupAddBoxersRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.SetupAddBoxersRequest.displayName = 'proto.ubc_package.SetupAddBoxersRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.SetupAddBoxersResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.SetupAddBoxersResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.SetupAddBoxersResponse.displayName = 'proto.ubc_package.SetupAddBoxersResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.SetupAddAdminResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.SetupAddAdminResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.SetupAddAdminResponse.displayName = 'proto.ubc_package.SetupAddAdminResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.SetupCleanUpResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.SetupCleanUpResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.SetupCleanUpResponse.displayName = 'proto.ubc_package.SetupCleanUpResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.SetupAddBoxerRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.SetupAddBoxerRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.SetupAddBoxerRequest.displayName = 'proto.ubc_package.SetupAddBoxerRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.SetupAddBoxerResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.SetupAddBoxerResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.SetupAddBoxerResponse.displayName = 'proto.ubc_package.SetupAddBoxerResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.SetupClearBoxersResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.SetupClearBoxersResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.SetupClearBoxersResponse.displayName = 'proto.ubc_package.SetupClearBoxersResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.SetupAddStandingAndMatchesRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.SetupAddStandingAndMatchesRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.SetupAddStandingAndMatchesRequest.displayName = 'proto.ubc_package.SetupAddStandingAndMatchesRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.SetupAddStandingAndMatchesResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.SetupAddStandingAndMatchesResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.SetupAddStandingAndMatchesResponse.displayName = 'proto.ubc_package.SetupAddStandingAndMatchesResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.SetupAddTokenRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.SetupAddTokenRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.SetupAddTokenRequest.displayName = 'proto.ubc_package.SetupAddTokenRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.SetupAddTokenResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.SetupAddTokenResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.SetupAddTokenResponse.displayName = 'proto.ubc_package.SetupAddTokenResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.SetupAddMatchesRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.ubc_package.SetupAddMatchesRequest.repeatedFields_, null);
+};
+goog.inherits(proto.ubc_package.SetupAddMatchesRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.SetupAddMatchesRequest.displayName = 'proto.ubc_package.SetupAddMatchesRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.SetupAddMatchesResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.SetupAddMatchesResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.SetupAddMatchesResponse.displayName = 'proto.ubc_package.SetupAddMatchesResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.ubc_package.SetupAddAdminRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.ubc_package.SetupAddAdminRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.ubc_package.SetupAddAdminRequest.displayName = 'proto.ubc_package.SetupAddAdminRequest';
+}
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.Boxer.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.Boxer.toObject(opt_includeInstance, this);
+proto.ubc_package.Boxer.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.Boxer.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.Boxer} msg The msg instance to transform.
+ * @param {!proto.ubc_package.Boxer} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.Boxer.toObject = function(includeInstance, msg) {
+proto.ubc_package.Boxer.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: jspb.Message.getFieldWithDefault(msg, 1, 0),
     fullname: jspb.Message.getFieldWithDefault(msg, 2, ""),
     birthdate: jspb.Message.getFieldWithDefault(msg, 3, 0),
     height: jspb.Message.getFieldWithDefault(msg, 4, 0),
-    weight: +jspb.Message.getFieldWithDefault(msg, 5, 0.0)
+    weight: jspb.Message.getFloatingPointFieldWithDefault(msg, 5, 0.0)
   };
 
   if (includeInstance) {
@@ -217,23 +1120,23 @@ proto.boxerservice_package.Boxer.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.Boxer}
+ * @return {!proto.ubc_package.Boxer}
  */
-proto.boxerservice_package.Boxer.deserializeBinary = function(bytes) {
+proto.ubc_package.Boxer.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.Boxer;
-  return proto.boxerservice_package.Boxer.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.Boxer;
+  return proto.ubc_package.Boxer.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.Boxer} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.Boxer} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.Boxer}
+ * @return {!proto.ubc_package.Boxer}
  */
-proto.boxerservice_package.Boxer.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.Boxer.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -273,9 +1176,9 @@ proto.boxerservice_package.Boxer.deserializeBinaryFromReader = function(msg, rea
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.Boxer.prototype.serializeBinary = function() {
+proto.ubc_package.Boxer.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.Boxer.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.Boxer.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -283,11 +1186,11 @@ proto.boxerservice_package.Boxer.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.Boxer} message
+ * @param {!proto.ubc_package.Boxer} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.Boxer.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.Boxer.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
@@ -331,14 +1234,17 @@ proto.boxerservice_package.Boxer.serializeBinaryToWriter = function(message, wri
  * optional int32 id = 1;
  * @return {number}
  */
-proto.boxerservice_package.Boxer.prototype.getId = function() {
+proto.ubc_package.Boxer.prototype.getId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.Boxer.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.Boxer} returns this
+ */
+proto.ubc_package.Boxer.prototype.setId = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -346,14 +1252,17 @@ proto.boxerservice_package.Boxer.prototype.setId = function(value) {
  * optional string fullName = 2;
  * @return {string}
  */
-proto.boxerservice_package.Boxer.prototype.getFullname = function() {
+proto.ubc_package.Boxer.prototype.getFullname = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.Boxer.prototype.setFullname = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.Boxer} returns this
+ */
+proto.ubc_package.Boxer.prototype.setFullname = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -361,14 +1270,17 @@ proto.boxerservice_package.Boxer.prototype.setFullname = function(value) {
  * optional int64 birthDate = 3;
  * @return {number}
  */
-proto.boxerservice_package.Boxer.prototype.getBirthdate = function() {
+proto.ubc_package.Boxer.prototype.getBirthdate = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.Boxer.prototype.setBirthdate = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.Boxer} returns this
+ */
+proto.ubc_package.Boxer.prototype.setBirthdate = function(value) {
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -376,14 +1288,17 @@ proto.boxerservice_package.Boxer.prototype.setBirthdate = function(value) {
  * optional int32 height = 4;
  * @return {number}
  */
-proto.boxerservice_package.Boxer.prototype.getHeight = function() {
+proto.ubc_package.Boxer.prototype.getHeight = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.Boxer.prototype.setHeight = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.Boxer} returns this
+ */
+proto.ubc_package.Boxer.prototype.setHeight = function(value) {
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -391,70 +1306,58 @@ proto.boxerservice_package.Boxer.prototype.setHeight = function(value) {
  * optional double weight = 5;
  * @return {number}
  */
-proto.boxerservice_package.Boxer.prototype.getWeight = function() {
-  return /** @type {number} */ (+jspb.Message.getFieldWithDefault(this, 5, 0.0));
+proto.ubc_package.Boxer.prototype.getWeight = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 5, 0.0));
 };
-
-
-/** @param {number} value */
-proto.boxerservice_package.Boxer.prototype.setWeight = function(value) {
-  jspb.Message.setProto3FloatField(this, 5, value);
-};
-
 
 
 /**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
+ * @param {number} value
+ * @return {!proto.ubc_package.Boxer} returns this
  */
-proto.boxerservice_package.Match = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+proto.ubc_package.Boxer.prototype.setWeight = function(value) {
+  return jspb.Message.setProto3FloatField(this, 5, value);
 };
-goog.inherits(proto.boxerservice_package.Match, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.Match.displayName = 'proto.boxerservice_package.Match';
-}
+
+
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.Match.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.Match.toObject(opt_includeInstance, this);
+proto.ubc_package.Match.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.Match.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.Match} msg The msg instance to transform.
+ * @param {!proto.ubc_package.Match} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.Match.toObject = function(includeInstance, msg) {
+proto.ubc_package.Match.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    homeboxer: (f = msg.getHomeboxer()) && proto.boxerservice_package.Boxer.toObject(includeInstance, f),
-    awayboxer: (f = msg.getAwayboxer()) && proto.boxerservice_package.Boxer.toObject(includeInstance, f),
+    homeboxerid: jspb.Message.getFieldWithDefault(msg, 2, 0),
+    awayboxerid: jspb.Message.getFieldWithDefault(msg, 3, 0),
     matchtime: jspb.Message.getFieldWithDefault(msg, 4, 0),
-    isfinished: jspb.Message.getFieldWithDefault(msg, 5, false),
-    winnerboxer: (f = msg.getWinnerboxer()) && proto.boxerservice_package.Boxer.toObject(includeInstance, f)
+    isfinished: jspb.Message.getBooleanFieldWithDefault(msg, 5, false),
+    winnerboxerid: jspb.Message.getFieldWithDefault(msg, 6, 0)
   };
 
   if (includeInstance) {
@@ -468,23 +1371,23 @@ proto.boxerservice_package.Match.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.Match}
+ * @return {!proto.ubc_package.Match}
  */
-proto.boxerservice_package.Match.deserializeBinary = function(bytes) {
+proto.ubc_package.Match.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.Match;
-  return proto.boxerservice_package.Match.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.Match;
+  return proto.ubc_package.Match.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.Match} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.Match} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.Match}
+ * @return {!proto.ubc_package.Match}
  */
-proto.boxerservice_package.Match.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.Match.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -496,14 +1399,12 @@ proto.boxerservice_package.Match.deserializeBinaryFromReader = function(msg, rea
       msg.setId(value);
       break;
     case 2:
-      var value = new proto.boxerservice_package.Boxer;
-      reader.readMessage(value,proto.boxerservice_package.Boxer.deserializeBinaryFromReader);
-      msg.setHomeboxer(value);
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setHomeboxerid(value);
       break;
     case 3:
-      var value = new proto.boxerservice_package.Boxer;
-      reader.readMessage(value,proto.boxerservice_package.Boxer.deserializeBinaryFromReader);
-      msg.setAwayboxer(value);
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setAwayboxerid(value);
       break;
     case 4:
       var value = /** @type {number} */ (reader.readInt64());
@@ -514,9 +1415,8 @@ proto.boxerservice_package.Match.deserializeBinaryFromReader = function(msg, rea
       msg.setIsfinished(value);
       break;
     case 6:
-      var value = new proto.boxerservice_package.Boxer;
-      reader.readMessage(value,proto.boxerservice_package.Boxer.deserializeBinaryFromReader);
-      msg.setWinnerboxer(value);
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setWinnerboxerid(value);
       break;
     default:
       reader.skipField();
@@ -531,9 +1431,9 @@ proto.boxerservice_package.Match.deserializeBinaryFromReader = function(msg, rea
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.Match.prototype.serializeBinary = function() {
+proto.ubc_package.Match.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.Match.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.Match.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -541,11 +1441,11 @@ proto.boxerservice_package.Match.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.Match} message
+ * @param {!proto.ubc_package.Match} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.Match.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.Match.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
@@ -554,20 +1454,18 @@ proto.boxerservice_package.Match.serializeBinaryToWriter = function(message, wri
       f
     );
   }
-  f = message.getHomeboxer();
-  if (f != null) {
-    writer.writeMessage(
+  f = message.getHomeboxerid();
+  if (f !== 0) {
+    writer.writeInt32(
       2,
-      f,
-      proto.boxerservice_package.Boxer.serializeBinaryToWriter
+      f
     );
   }
-  f = message.getAwayboxer();
-  if (f != null) {
-    writer.writeMessage(
+  f = message.getAwayboxerid();
+  if (f !== 0) {
+    writer.writeInt32(
       3,
-      f,
-      proto.boxerservice_package.Boxer.serializeBinaryToWriter
+      f
     );
   }
   f = message.getMatchtime();
@@ -584,12 +1482,11 @@ proto.boxerservice_package.Match.serializeBinaryToWriter = function(message, wri
       f
     );
   }
-  f = message.getWinnerboxer();
+  f = /** @type {number} */ (jspb.Message.getField(message, 6));
   if (f != null) {
-    writer.writeMessage(
+    writer.writeInt32(
       6,
-      f,
-      proto.boxerservice_package.Boxer.serializeBinaryToWriter
+      f
     );
   }
 };
@@ -599,74 +1496,53 @@ proto.boxerservice_package.Match.serializeBinaryToWriter = function(message, wri
  * optional int32 id = 1;
  * @return {number}
  */
-proto.boxerservice_package.Match.prototype.getId = function() {
+proto.ubc_package.Match.prototype.getId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.Match.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.Match} returns this
+ */
+proto.ubc_package.Match.prototype.setId = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
 /**
- * optional Boxer homeBoxer = 2;
- * @return {?proto.boxerservice_package.Boxer}
+ * optional int32 homeBoxerId = 2;
+ * @return {number}
  */
-proto.boxerservice_package.Match.prototype.getHomeboxer = function() {
-  return /** @type{?proto.boxerservice_package.Boxer} */ (
-    jspb.Message.getWrapperField(this, proto.boxerservice_package.Boxer, 2));
-};
-
-
-/** @param {?proto.boxerservice_package.Boxer|undefined} value */
-proto.boxerservice_package.Match.prototype.setHomeboxer = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
-};
-
-
-proto.boxerservice_package.Match.prototype.clearHomeboxer = function() {
-  this.setHomeboxer(undefined);
+proto.ubc_package.Match.prototype.getHomeboxerid = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /**
- * Returns whether this field is set.
- * @return {!boolean}
+ * @param {number} value
+ * @return {!proto.ubc_package.Match} returns this
  */
-proto.boxerservice_package.Match.prototype.hasHomeboxer = function() {
-  return jspb.Message.getField(this, 2) != null;
+proto.ubc_package.Match.prototype.setHomeboxerid = function(value) {
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
 /**
- * optional Boxer awayBoxer = 3;
- * @return {?proto.boxerservice_package.Boxer}
+ * optional int32 awayBoxerId = 3;
+ * @return {number}
  */
-proto.boxerservice_package.Match.prototype.getAwayboxer = function() {
-  return /** @type{?proto.boxerservice_package.Boxer} */ (
-    jspb.Message.getWrapperField(this, proto.boxerservice_package.Boxer, 3));
-};
-
-
-/** @param {?proto.boxerservice_package.Boxer|undefined} value */
-proto.boxerservice_package.Match.prototype.setAwayboxer = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
-};
-
-
-proto.boxerservice_package.Match.prototype.clearAwayboxer = function() {
-  this.setAwayboxer(undefined);
+proto.ubc_package.Match.prototype.getAwayboxerid = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
 /**
- * Returns whether this field is set.
- * @return {!boolean}
+ * @param {number} value
+ * @return {!proto.ubc_package.Match} returns this
  */
-proto.boxerservice_package.Match.prototype.hasAwayboxer = function() {
-  return jspb.Message.getField(this, 3) != null;
+proto.ubc_package.Match.prototype.setAwayboxerid = function(value) {
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -674,115 +1550,110 @@ proto.boxerservice_package.Match.prototype.hasAwayboxer = function() {
  * optional int64 matchTime = 4;
  * @return {number}
  */
-proto.boxerservice_package.Match.prototype.getMatchtime = function() {
+proto.ubc_package.Match.prototype.getMatchtime = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.Match.prototype.setMatchtime = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.Match} returns this
+ */
+proto.ubc_package.Match.prototype.setMatchtime = function(value) {
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
 /**
  * optional bool isFinished = 5;
- * Note that Boolean fields may be set to 0/1 when serialized from a Java server.
- * You should avoid comparisons like {@code val === true/false} in those cases.
  * @return {boolean}
  */
-proto.boxerservice_package.Match.prototype.getIsfinished = function() {
-  return /** @type {boolean} */ (jspb.Message.getFieldWithDefault(this, 5, false));
-};
-
-
-/** @param {boolean} value */
-proto.boxerservice_package.Match.prototype.setIsfinished = function(value) {
-  jspb.Message.setProto3BooleanField(this, 5, value);
+proto.ubc_package.Match.prototype.getIsfinished = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 5, false));
 };
 
 
 /**
- * optional Boxer winnerBoxer = 6;
- * @return {?proto.boxerservice_package.Boxer}
+ * @param {boolean} value
+ * @return {!proto.ubc_package.Match} returns this
  */
-proto.boxerservice_package.Match.prototype.getWinnerboxer = function() {
-  return /** @type{?proto.boxerservice_package.Boxer} */ (
-    jspb.Message.getWrapperField(this, proto.boxerservice_package.Boxer, 6));
+proto.ubc_package.Match.prototype.setIsfinished = function(value) {
+  return jspb.Message.setProto3BooleanField(this, 5, value);
 };
 
 
-/** @param {?proto.boxerservice_package.Boxer|undefined} value */
-proto.boxerservice_package.Match.prototype.setWinnerboxer = function(value) {
-  jspb.Message.setWrapperField(this, 6, value);
+/**
+ * optional int32 winnerBoxerId = 6;
+ * @return {number}
+ */
+proto.ubc_package.Match.prototype.getWinnerboxerid = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
 };
 
 
-proto.boxerservice_package.Match.prototype.clearWinnerboxer = function() {
-  this.setWinnerboxer(undefined);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.Match} returns this
+ */
+proto.ubc_package.Match.prototype.setWinnerboxerid = function(value) {
+  return jspb.Message.setField(this, 6, value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.ubc_package.Match} returns this
+ */
+proto.ubc_package.Match.prototype.clearWinnerboxerid = function() {
+  return jspb.Message.setField(this, 6, undefined);
 };
 
 
 /**
  * Returns whether this field is set.
- * @return {!boolean}
+ * @return {boolean}
  */
-proto.boxerservice_package.Match.prototype.hasWinnerboxer = function() {
+proto.ubc_package.Match.prototype.hasWinnerboxerid = function() {
   return jspb.Message.getField(this, 6) != null;
 };
 
 
 
-/**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
- */
-proto.boxerservice_package.Standing = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
-};
-goog.inherits(proto.boxerservice_package.Standing, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.Standing.displayName = 'proto.boxerservice_package.Standing';
-}
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.Standing.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.Standing.toObject(opt_includeInstance, this);
+proto.ubc_package.Standing.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.Standing.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.Standing} msg The msg instance to transform.
+ * @param {!proto.ubc_package.Standing} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.Standing.toObject = function(includeInstance, msg) {
+proto.ubc_package.Standing.toObject = function(includeInstance, msg) {
   var f, obj = {
-    boxer: (f = msg.getBoxer()) && proto.boxerservice_package.Boxer.toObject(includeInstance, f),
+    boxerid: jspb.Message.getFieldWithDefault(msg, 1, 0),
     wincount: jspb.Message.getFieldWithDefault(msg, 2, 0),
     losscount: jspb.Message.getFieldWithDefault(msg, 3, 0),
-    score: +jspb.Message.getFieldWithDefault(msg, 4, 0.0)
+    score: jspb.Message.getFloatingPointFieldWithDefault(msg, 4, 0.0)
   };
 
   if (includeInstance) {
@@ -796,23 +1667,23 @@ proto.boxerservice_package.Standing.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.Standing}
+ * @return {!proto.ubc_package.Standing}
  */
-proto.boxerservice_package.Standing.deserializeBinary = function(bytes) {
+proto.ubc_package.Standing.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.Standing;
-  return proto.boxerservice_package.Standing.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.Standing;
+  return proto.ubc_package.Standing.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.Standing} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.Standing} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.Standing}
+ * @return {!proto.ubc_package.Standing}
  */
-proto.boxerservice_package.Standing.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.Standing.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -820,9 +1691,8 @@ proto.boxerservice_package.Standing.deserializeBinaryFromReader = function(msg, 
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.boxerservice_package.Boxer;
-      reader.readMessage(value,proto.boxerservice_package.Boxer.deserializeBinaryFromReader);
-      msg.setBoxer(value);
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setBoxerid(value);
       break;
     case 2:
       var value = /** @type {number} */ (reader.readInt32());
@@ -849,9 +1719,9 @@ proto.boxerservice_package.Standing.deserializeBinaryFromReader = function(msg, 
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.Standing.prototype.serializeBinary = function() {
+proto.ubc_package.Standing.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.Standing.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.Standing.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -859,18 +1729,17 @@ proto.boxerservice_package.Standing.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.Standing} message
+ * @param {!proto.ubc_package.Standing} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.Standing.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.Standing.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
-  f = message.getBoxer();
-  if (f != null) {
-    writer.writeMessage(
+  f = message.getBoxerid();
+  if (f !== 0) {
+    writer.writeInt32(
       1,
-      f,
-      proto.boxerservice_package.Boxer.serializeBinaryToWriter
+      f
     );
   }
   f = message.getWincount();
@@ -898,32 +1767,20 @@ proto.boxerservice_package.Standing.serializeBinaryToWriter = function(message, 
 
 
 /**
- * optional Boxer boxer = 1;
- * @return {?proto.boxerservice_package.Boxer}
+ * optional int32 boxerId = 1;
+ * @return {number}
  */
-proto.boxerservice_package.Standing.prototype.getBoxer = function() {
-  return /** @type{?proto.boxerservice_package.Boxer} */ (
-    jspb.Message.getWrapperField(this, proto.boxerservice_package.Boxer, 1));
-};
-
-
-/** @param {?proto.boxerservice_package.Boxer|undefined} value */
-proto.boxerservice_package.Standing.prototype.setBoxer = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
-};
-
-
-proto.boxerservice_package.Standing.prototype.clearBoxer = function() {
-  this.setBoxer(undefined);
+proto.ubc_package.Standing.prototype.getBoxerid = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
- * Returns whether this field is set.
- * @return {!boolean}
+ * @param {number} value
+ * @return {!proto.ubc_package.Standing} returns this
  */
-proto.boxerservice_package.Standing.prototype.hasBoxer = function() {
-  return jspb.Message.getField(this, 1) != null;
+proto.ubc_package.Standing.prototype.setBoxerid = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -931,14 +1788,17 @@ proto.boxerservice_package.Standing.prototype.hasBoxer = function() {
  * optional int32 winCount = 2;
  * @return {number}
  */
-proto.boxerservice_package.Standing.prototype.getWincount = function() {
+proto.ubc_package.Standing.prototype.getWincount = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.Standing.prototype.setWincount = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.Standing} returns this
+ */
+proto.ubc_package.Standing.prototype.setWincount = function(value) {
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -946,14 +1806,17 @@ proto.boxerservice_package.Standing.prototype.setWincount = function(value) {
  * optional int32 lossCount = 3;
  * @return {number}
  */
-proto.boxerservice_package.Standing.prototype.getLosscount = function() {
+proto.ubc_package.Standing.prototype.getLosscount = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.Standing.prototype.setLosscount = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.Standing} returns this
+ */
+proto.ubc_package.Standing.prototype.setLosscount = function(value) {
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -961,74 +1824,62 @@ proto.boxerservice_package.Standing.prototype.setLosscount = function(value) {
  * optional double score = 4;
  * @return {number}
  */
-proto.boxerservice_package.Standing.prototype.getScore = function() {
-  return /** @type {number} */ (+jspb.Message.getFieldWithDefault(this, 4, 0.0));
+proto.ubc_package.Standing.prototype.getScore = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 4, 0.0));
 };
-
-
-/** @param {number} value */
-proto.boxerservice_package.Standing.prototype.setScore = function(value) {
-  jspb.Message.setProto3FloatField(this, 4, value);
-};
-
 
 
 /**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
+ * @param {number} value
+ * @return {!proto.ubc_package.Standing} returns this
  */
-proto.boxerservice_package.StandingAndMatches = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, proto.boxerservice_package.StandingAndMatches.repeatedFields_, null);
+proto.ubc_package.Standing.prototype.setScore = function(value) {
+  return jspb.Message.setProto3FloatField(this, 4, value);
 };
-goog.inherits(proto.boxerservice_package.StandingAndMatches, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.StandingAndMatches.displayName = 'proto.boxerservice_package.StandingAndMatches';
-}
+
+
+
 /**
  * List of repeated fields within this message type.
  * @private {!Array<number>}
  * @const
  */
-proto.boxerservice_package.StandingAndMatches.repeatedFields_ = [2];
+proto.ubc_package.StandingAndMatches.repeatedFields_ = [2];
 
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.StandingAndMatches.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.StandingAndMatches.toObject(opt_includeInstance, this);
+proto.ubc_package.StandingAndMatches.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.StandingAndMatches.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.StandingAndMatches} msg The msg instance to transform.
+ * @param {!proto.ubc_package.StandingAndMatches} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.StandingAndMatches.toObject = function(includeInstance, msg) {
+proto.ubc_package.StandingAndMatches.toObject = function(includeInstance, msg) {
   var f, obj = {
-    standing: (f = msg.getStanding()) && proto.boxerservice_package.Standing.toObject(includeInstance, f),
+    standing: (f = msg.getStanding()) && proto.ubc_package.Standing.toObject(includeInstance, f),
     matchesList: jspb.Message.toObjectList(msg.getMatchesList(),
-    proto.boxerservice_package.Match.toObject, includeInstance)
+    proto.ubc_package.Match.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -1042,23 +1893,23 @@ proto.boxerservice_package.StandingAndMatches.toObject = function(includeInstanc
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.StandingAndMatches}
+ * @return {!proto.ubc_package.StandingAndMatches}
  */
-proto.boxerservice_package.StandingAndMatches.deserializeBinary = function(bytes) {
+proto.ubc_package.StandingAndMatches.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.StandingAndMatches;
-  return proto.boxerservice_package.StandingAndMatches.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.StandingAndMatches;
+  return proto.ubc_package.StandingAndMatches.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.StandingAndMatches} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.StandingAndMatches} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.StandingAndMatches}
+ * @return {!proto.ubc_package.StandingAndMatches}
  */
-proto.boxerservice_package.StandingAndMatches.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.StandingAndMatches.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1066,13 +1917,13 @@ proto.boxerservice_package.StandingAndMatches.deserializeBinaryFromReader = func
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.boxerservice_package.Standing;
-      reader.readMessage(value,proto.boxerservice_package.Standing.deserializeBinaryFromReader);
+      var value = new proto.ubc_package.Standing;
+      reader.readMessage(value,proto.ubc_package.Standing.deserializeBinaryFromReader);
       msg.setStanding(value);
       break;
     case 2:
-      var value = new proto.boxerservice_package.Match;
-      reader.readMessage(value,proto.boxerservice_package.Match.deserializeBinaryFromReader);
+      var value = new proto.ubc_package.Match;
+      reader.readMessage(value,proto.ubc_package.Match.deserializeBinaryFromReader);
       msg.addMatches(value);
       break;
     default:
@@ -1088,9 +1939,9 @@ proto.boxerservice_package.StandingAndMatches.deserializeBinaryFromReader = func
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.StandingAndMatches.prototype.serializeBinary = function() {
+proto.ubc_package.StandingAndMatches.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.StandingAndMatches.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.StandingAndMatches.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -1098,18 +1949,18 @@ proto.boxerservice_package.StandingAndMatches.prototype.serializeBinary = functi
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.StandingAndMatches} message
+ * @param {!proto.ubc_package.StandingAndMatches} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.StandingAndMatches.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.StandingAndMatches.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getStanding();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.boxerservice_package.Standing.serializeBinaryToWriter
+      proto.ubc_package.Standing.serializeBinaryToWriter
     );
   }
   f = message.getMatchesList();
@@ -1117,7 +1968,7 @@ proto.boxerservice_package.StandingAndMatches.serializeBinaryToWriter = function
     writer.writeRepeatedMessage(
       2,
       f,
-      proto.boxerservice_package.Match.serializeBinaryToWriter
+      proto.ubc_package.Match.serializeBinaryToWriter
     );
   }
 };
@@ -1125,111 +1976,312 @@ proto.boxerservice_package.StandingAndMatches.serializeBinaryToWriter = function
 
 /**
  * optional Standing standing = 1;
- * @return {?proto.boxerservice_package.Standing}
+ * @return {?proto.ubc_package.Standing}
  */
-proto.boxerservice_package.StandingAndMatches.prototype.getStanding = function() {
-  return /** @type{?proto.boxerservice_package.Standing} */ (
-    jspb.Message.getWrapperField(this, proto.boxerservice_package.Standing, 1));
+proto.ubc_package.StandingAndMatches.prototype.getStanding = function() {
+  return /** @type{?proto.ubc_package.Standing} */ (
+    jspb.Message.getWrapperField(this, proto.ubc_package.Standing, 1));
 };
 
 
-/** @param {?proto.boxerservice_package.Standing|undefined} value */
-proto.boxerservice_package.StandingAndMatches.prototype.setStanding = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+/**
+ * @param {?proto.ubc_package.Standing|undefined} value
+ * @return {!proto.ubc_package.StandingAndMatches} returns this
+*/
+proto.ubc_package.StandingAndMatches.prototype.setStanding = function(value) {
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
-proto.boxerservice_package.StandingAndMatches.prototype.clearStanding = function() {
-  this.setStanding(undefined);
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.ubc_package.StandingAndMatches} returns this
+ */
+proto.ubc_package.StandingAndMatches.prototype.clearStanding = function() {
+  return this.setStanding(undefined);
 };
 
 
 /**
  * Returns whether this field is set.
- * @return {!boolean}
+ * @return {boolean}
  */
-proto.boxerservice_package.StandingAndMatches.prototype.hasStanding = function() {
+proto.ubc_package.StandingAndMatches.prototype.hasStanding = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
 
 /**
  * repeated Match matches = 2;
- * @return {!Array<!proto.boxerservice_package.Match>}
+ * @return {!Array<!proto.ubc_package.Match>}
  */
-proto.boxerservice_package.StandingAndMatches.prototype.getMatchesList = function() {
-  return /** @type{!Array<!proto.boxerservice_package.Match>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.boxerservice_package.Match, 2));
-};
-
-
-/** @param {!Array<!proto.boxerservice_package.Match>} value */
-proto.boxerservice_package.StandingAndMatches.prototype.setMatchesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 2, value);
+proto.ubc_package.StandingAndMatches.prototype.getMatchesList = function() {
+  return /** @type{!Array<!proto.ubc_package.Match>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.ubc_package.Match, 2));
 };
 
 
 /**
- * @param {!proto.boxerservice_package.Match=} opt_value
+ * @param {!Array<!proto.ubc_package.Match>} value
+ * @return {!proto.ubc_package.StandingAndMatches} returns this
+*/
+proto.ubc_package.StandingAndMatches.prototype.setMatchesList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 2, value);
+};
+
+
+/**
+ * @param {!proto.ubc_package.Match=} opt_value
  * @param {number=} opt_index
- * @return {!proto.boxerservice_package.Match}
+ * @return {!proto.ubc_package.Match}
  */
-proto.boxerservice_package.StandingAndMatches.prototype.addMatches = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.boxerservice_package.Match, opt_index);
+proto.ubc_package.StandingAndMatches.prototype.addMatches = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.ubc_package.Match, opt_index);
 };
-
-
-proto.boxerservice_package.StandingAndMatches.prototype.clearMatchesList = function() {
-  this.setMatchesList([]);
-};
-
 
 
 /**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
+ * Clears the list making it empty but non-null.
+ * @return {!proto.ubc_package.StandingAndMatches} returns this
  */
-proto.boxerservice_package.LoginRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+proto.ubc_package.StandingAndMatches.prototype.clearMatchesList = function() {
+  return this.setMatchesList([]);
 };
-goog.inherits(proto.boxerservice_package.LoginRequest, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.LoginRequest.displayName = 'proto.boxerservice_package.LoginRequest';
-}
+
+
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.LoginRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.LoginRequest.toObject(opt_includeInstance, this);
+proto.ubc_package.Empty.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.Empty.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.LoginRequest} msg The msg instance to transform.
+ * @param {!proto.ubc_package.Empty} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.LoginRequest.toObject = function(includeInstance, msg) {
+proto.ubc_package.Empty.toObject = function(includeInstance, msg) {
+  var f, obj = {
+
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.Empty}
+ */
+proto.ubc_package.Empty.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.Empty;
+  return proto.ubc_package.Empty.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.Empty} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.Empty}
+ */
+proto.ubc_package.Empty.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.Empty.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.Empty.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.Empty} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.Empty.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.Null.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.Null.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.Null} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.Null.toObject = function(includeInstance, msg) {
+  var f, obj = {
+
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.Null}
+ */
+proto.ubc_package.Null.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.Null;
+  return proto.ubc_package.Null.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.Null} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.Null}
+ */
+proto.ubc_package.Null.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.Null.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.Null.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.Null} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.Null.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.LoginRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.LoginRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.LoginRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.LoginRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     username: jspb.Message.getFieldWithDefault(msg, 1, ""),
     password: jspb.Message.getFieldWithDefault(msg, 2, "")
@@ -1246,23 +2298,23 @@ proto.boxerservice_package.LoginRequest.toObject = function(includeInstance, msg
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.LoginRequest}
+ * @return {!proto.ubc_package.LoginRequest}
  */
-proto.boxerservice_package.LoginRequest.deserializeBinary = function(bytes) {
+proto.ubc_package.LoginRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.LoginRequest;
-  return proto.boxerservice_package.LoginRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.LoginRequest;
+  return proto.ubc_package.LoginRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.LoginRequest} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.LoginRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.LoginRequest}
+ * @return {!proto.ubc_package.LoginRequest}
  */
-proto.boxerservice_package.LoginRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.LoginRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1290,9 +2342,9 @@ proto.boxerservice_package.LoginRequest.deserializeBinaryFromReader = function(m
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.LoginRequest.prototype.serializeBinary = function() {
+proto.ubc_package.LoginRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.LoginRequest.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.LoginRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -1300,11 +2352,11 @@ proto.boxerservice_package.LoginRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.LoginRequest} message
+ * @param {!proto.ubc_package.LoginRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.LoginRequest.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.LoginRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getUsername();
   if (f.length > 0) {
@@ -1327,14 +2379,17 @@ proto.boxerservice_package.LoginRequest.serializeBinaryToWriter = function(messa
  * optional string username = 1;
  * @return {string}
  */
-proto.boxerservice_package.LoginRequest.prototype.getUsername = function() {
+proto.ubc_package.LoginRequest.prototype.getUsername = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.LoginRequest.prototype.setUsername = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.LoginRequest} returns this
+ */
+proto.ubc_package.LoginRequest.prototype.setUsername = function(value) {
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -1342,63 +2397,181 @@ proto.boxerservice_package.LoginRequest.prototype.setUsername = function(value) 
  * optional string password = 2;
  * @return {string}
  */
-proto.boxerservice_package.LoginRequest.prototype.getPassword = function() {
+proto.ubc_package.LoginRequest.prototype.getPassword = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.LoginRequest.prototype.setPassword = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
-};
-
-
-
 /**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
+ * @param {string} value
+ * @return {!proto.ubc_package.LoginRequest} returns this
  */
-proto.boxerservice_package.LoginResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+proto.ubc_package.LoginRequest.prototype.setPassword = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
-goog.inherits(proto.boxerservice_package.LoginResponse, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.LoginResponse.displayName = 'proto.boxerservice_package.LoginResponse';
-}
+
+
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.LoginResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.LoginResponse.toObject(opt_includeInstance, this);
+proto.ubc_package.ValidateRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.ValidateRequest.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.LoginResponse} msg The msg instance to transform.
+ * @param {!proto.ubc_package.ValidateRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.LoginResponse.toObject = function(includeInstance, msg) {
+proto.ubc_package.ValidateRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    token: jspb.Message.getFieldWithDefault(msg, 1, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.ValidateRequest}
+ */
+proto.ubc_package.ValidateRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.ValidateRequest;
+  return proto.ubc_package.ValidateRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.ValidateRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.ValidateRequest}
+ */
+proto.ubc_package.ValidateRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setToken(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.ValidateRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.ValidateRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.ValidateRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.ValidateRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getToken();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string token = 1;
+ * @return {string}
+ */
+proto.ubc_package.ValidateRequest.prototype.getToken = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.ValidateRequest} returns this
+ */
+proto.ubc_package.ValidateRequest.prototype.setToken = function(value) {
+  return jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.LoginResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.LoginResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.LoginResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.LoginResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     code: jspb.Message.getFieldWithDefault(msg, 1, 0),
     message: jspb.Message.getFieldWithDefault(msg, 2, ""),
@@ -1416,23 +2589,23 @@ proto.boxerservice_package.LoginResponse.toObject = function(includeInstance, ms
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.LoginResponse}
+ * @return {!proto.ubc_package.LoginResponse}
  */
-proto.boxerservice_package.LoginResponse.deserializeBinary = function(bytes) {
+proto.ubc_package.LoginResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.LoginResponse;
-  return proto.boxerservice_package.LoginResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.LoginResponse;
+  return proto.ubc_package.LoginResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.LoginResponse} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.LoginResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.LoginResponse}
+ * @return {!proto.ubc_package.LoginResponse}
  */
-proto.boxerservice_package.LoginResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.LoginResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1464,9 +2637,9 @@ proto.boxerservice_package.LoginResponse.deserializeBinaryFromReader = function(
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.LoginResponse.prototype.serializeBinary = function() {
+proto.ubc_package.LoginResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.LoginResponse.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.LoginResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -1474,11 +2647,11 @@ proto.boxerservice_package.LoginResponse.prototype.serializeBinary = function() 
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.LoginResponse} message
+ * @param {!proto.ubc_package.LoginResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.LoginResponse.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.LoginResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCode();
   if (f !== 0) {
@@ -1508,14 +2681,17 @@ proto.boxerservice_package.LoginResponse.serializeBinaryToWriter = function(mess
  * optional int32 code = 1;
  * @return {number}
  */
-proto.boxerservice_package.LoginResponse.prototype.getCode = function() {
+proto.ubc_package.LoginResponse.prototype.getCode = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.LoginResponse.prototype.setCode = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.LoginResponse} returns this
+ */
+proto.ubc_package.LoginResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1523,14 +2699,17 @@ proto.boxerservice_package.LoginResponse.prototype.setCode = function(value) {
  * optional string message = 2;
  * @return {string}
  */
-proto.boxerservice_package.LoginResponse.prototype.getMessage = function() {
+proto.ubc_package.LoginResponse.prototype.getMessage = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.LoginResponse.prototype.setMessage = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.LoginResponse} returns this
+ */
+proto.ubc_package.LoginResponse.prototype.setMessage = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1538,75 +2717,54 @@ proto.boxerservice_package.LoginResponse.prototype.setMessage = function(value) 
  * optional string token = 3;
  * @return {string}
  */
-proto.boxerservice_package.LoginResponse.prototype.getToken = function() {
+proto.ubc_package.LoginResponse.prototype.getToken = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.LoginResponse.prototype.setToken = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.LoginResponse} returns this
+ */
+proto.ubc_package.LoginResponse.prototype.setToken = function(value) {
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
-
-/**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
- */
-proto.boxerservice_package.GetAllBoxersResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, proto.boxerservice_package.GetAllBoxersResponse.repeatedFields_, null);
-};
-goog.inherits(proto.boxerservice_package.GetAllBoxersResponse, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.GetAllBoxersResponse.displayName = 'proto.boxerservice_package.GetAllBoxersResponse';
-}
-/**
- * List of repeated fields within this message type.
- * @private {!Array<number>}
- * @const
- */
-proto.boxerservice_package.GetAllBoxersResponse.repeatedFields_ = [3];
 
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.GetAllBoxersResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.GetAllBoxersResponse.toObject(opt_includeInstance, this);
+proto.ubc_package.ValidateResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.ValidateResponse.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.GetAllBoxersResponse} msg The msg instance to transform.
+ * @param {!proto.ubc_package.ValidateResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.GetAllBoxersResponse.toObject = function(includeInstance, msg) {
+proto.ubc_package.ValidateResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     code: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    message: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    boxersList: jspb.Message.toObjectList(msg.getBoxersList(),
-    proto.boxerservice_package.Boxer.toObject, includeInstance)
+    message: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
   if (includeInstance) {
@@ -1620,23 +2778,23 @@ proto.boxerservice_package.GetAllBoxersResponse.toObject = function(includeInsta
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.GetAllBoxersResponse}
+ * @return {!proto.ubc_package.ValidateResponse}
  */
-proto.boxerservice_package.GetAllBoxersResponse.deserializeBinary = function(bytes) {
+proto.ubc_package.ValidateResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.GetAllBoxersResponse;
-  return proto.boxerservice_package.GetAllBoxersResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.ValidateResponse;
+  return proto.ubc_package.ValidateResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.GetAllBoxersResponse} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.ValidateResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.GetAllBoxersResponse}
+ * @return {!proto.ubc_package.ValidateResponse}
  */
-proto.boxerservice_package.GetAllBoxersResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.ValidateResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1651,11 +2809,6 @@ proto.boxerservice_package.GetAllBoxersResponse.deserializeBinaryFromReader = fu
       var value = /** @type {string} */ (reader.readString());
       msg.setMessage(value);
       break;
-    case 3:
-      var value = new proto.boxerservice_package.Boxer;
-      reader.readMessage(value,proto.boxerservice_package.Boxer.deserializeBinaryFromReader);
-      msg.addBoxers(value);
-      break;
     default:
       reader.skipField();
       break;
@@ -1669,9 +2822,9 @@ proto.boxerservice_package.GetAllBoxersResponse.deserializeBinaryFromReader = fu
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.GetAllBoxersResponse.prototype.serializeBinary = function() {
+proto.ubc_package.ValidateResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.GetAllBoxersResponse.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.ValidateResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -1679,11 +2832,11 @@ proto.boxerservice_package.GetAllBoxersResponse.prototype.serializeBinary = func
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.GetAllBoxersResponse} message
+ * @param {!proto.ubc_package.ValidateResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.GetAllBoxersResponse.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.ValidateResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCode();
   if (f !== 0) {
@@ -1699,14 +2852,6 @@ proto.boxerservice_package.GetAllBoxersResponse.serializeBinaryToWriter = functi
       f
     );
   }
-  f = message.getBoxersList();
-  if (f.length > 0) {
-    writer.writeRepeatedMessage(
-      3,
-      f,
-      proto.boxerservice_package.Boxer.serializeBinaryToWriter
-    );
-  }
 };
 
 
@@ -1714,14 +2859,17 @@ proto.boxerservice_package.GetAllBoxersResponse.serializeBinaryToWriter = functi
  * optional int32 code = 1;
  * @return {number}
  */
-proto.boxerservice_package.GetAllBoxersResponse.prototype.getCode = function() {
+proto.ubc_package.ValidateResponse.prototype.getCode = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.GetAllBoxersResponse.prototype.setCode = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.ValidateResponse} returns this
+ */
+proto.ubc_package.ValidateResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1729,94 +2877,51 @@ proto.boxerservice_package.GetAllBoxersResponse.prototype.setCode = function(val
  * optional string message = 2;
  * @return {string}
  */
-proto.boxerservice_package.GetAllBoxersResponse.prototype.getMessage = function() {
+proto.ubc_package.ValidateResponse.prototype.getMessage = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.GetAllBoxersResponse.prototype.setMessage = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
-};
-
-
 /**
- * repeated Boxer boxers = 3;
- * @return {!Array<!proto.boxerservice_package.Boxer>}
+ * @param {string} value
+ * @return {!proto.ubc_package.ValidateResponse} returns this
  */
-proto.boxerservice_package.GetAllBoxersResponse.prototype.getBoxersList = function() {
-  return /** @type{!Array<!proto.boxerservice_package.Boxer>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.boxerservice_package.Boxer, 3));
-};
-
-
-/** @param {!Array<!proto.boxerservice_package.Boxer>} value */
-proto.boxerservice_package.GetAllBoxersResponse.prototype.setBoxersList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
-};
-
-
-/**
- * @param {!proto.boxerservice_package.Boxer=} opt_value
- * @param {number=} opt_index
- * @return {!proto.boxerservice_package.Boxer}
- */
-proto.boxerservice_package.GetAllBoxersResponse.prototype.addBoxers = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.boxerservice_package.Boxer, opt_index);
-};
-
-
-proto.boxerservice_package.GetAllBoxersResponse.prototype.clearBoxersList = function() {
-  this.setBoxersList([]);
+proto.ubc_package.ValidateResponse.prototype.setMessage = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
 
-/**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
- */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
-};
-goog.inherits(proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest.displayName = 'proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest';
-}
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest.toObject(opt_includeInstance, this);
+proto.ubc_package.GetBoxerRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.GetBoxerRequest.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest} msg The msg instance to transform.
+ * @param {!proto.ubc_package.GetBoxerRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest.toObject = function(includeInstance, msg) {
+proto.ubc_package.GetBoxerRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -1832,23 +2937,23 @@ proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest.toObject = func
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest}
+ * @return {!proto.ubc_package.GetBoxerRequest}
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest.deserializeBinary = function(bytes) {
+proto.ubc_package.GetBoxerRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest;
-  return proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.GetBoxerRequest;
+  return proto.ubc_package.GetBoxerRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.GetBoxerRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest}
+ * @return {!proto.ubc_package.GetBoxerRequest}
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.GetBoxerRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1872,9 +2977,9 @@ proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest.deserializeBina
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest.prototype.serializeBinary = function() {
+proto.ubc_package.GetBoxerRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.GetBoxerRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -1882,11 +2987,11 @@ proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest.prototype.seria
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest} message
+ * @param {!proto.ubc_package.GetBoxerRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.GetBoxerRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
@@ -1902,68 +3007,55 @@ proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest.serializeBinary
  * optional int32 id = 1;
  * @return {number}
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest.prototype.getId = function() {
+proto.ubc_package.GetBoxerRequest.prototype.getId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
-};
-
-
-
 /**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
+ * @param {number} value
+ * @return {!proto.ubc_package.GetBoxerRequest} returns this
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+proto.ubc_package.GetBoxerRequest.prototype.setId = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
-goog.inherits(proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.displayName = 'proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse';
-}
+
+
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.toObject(opt_includeInstance, this);
+proto.ubc_package.GetBoxerResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.GetBoxerResponse.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse} msg The msg instance to transform.
+ * @param {!proto.ubc_package.GetBoxerResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.toObject = function(includeInstance, msg) {
+proto.ubc_package.GetBoxerResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     code: jspb.Message.getFieldWithDefault(msg, 1, 0),
     message: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    boxer: (f = msg.getBoxer()) && proto.boxerservice_package.Boxer.toObject(includeInstance, f),
-    standingandmatches: (f = msg.getStandingandmatches()) && proto.boxerservice_package.StandingAndMatches.toObject(includeInstance, f)
+    boxer: (f = msg.getBoxer()) && proto.ubc_package.Boxer.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -1977,23 +3069,23 @@ proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.toObject = fun
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse}
+ * @return {!proto.ubc_package.GetBoxerResponse}
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.deserializeBinary = function(bytes) {
+proto.ubc_package.GetBoxerResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse;
-  return proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.GetBoxerResponse;
+  return proto.ubc_package.GetBoxerResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.GetBoxerResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse}
+ * @return {!proto.ubc_package.GetBoxerResponse}
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.GetBoxerResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2009,13 +3101,355 @@ proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.deserializeBin
       msg.setMessage(value);
       break;
     case 3:
-      var value = new proto.boxerservice_package.Boxer;
-      reader.readMessage(value,proto.boxerservice_package.Boxer.deserializeBinaryFromReader);
+      var value = new proto.ubc_package.Boxer;
+      reader.readMessage(value,proto.ubc_package.Boxer.deserializeBinaryFromReader);
+      msg.setBoxer(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.GetBoxerResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.GetBoxerResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.GetBoxerResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.GetBoxerResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCode();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+  f = message.getMessage();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+  f = message.getBoxer();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      proto.ubc_package.Boxer.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional int32 code = 1;
+ * @return {number}
+ */
+proto.ubc_package.GetBoxerResponse.prototype.getCode = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.GetBoxerResponse} returns this
+ */
+proto.ubc_package.GetBoxerResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional string message = 2;
+ * @return {string}
+ */
+proto.ubc_package.GetBoxerResponse.prototype.getMessage = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.GetBoxerResponse} returns this
+ */
+proto.ubc_package.GetBoxerResponse.prototype.setMessage = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional Boxer boxer = 3;
+ * @return {?proto.ubc_package.Boxer}
+ */
+proto.ubc_package.GetBoxerResponse.prototype.getBoxer = function() {
+  return /** @type{?proto.ubc_package.Boxer} */ (
+    jspb.Message.getWrapperField(this, proto.ubc_package.Boxer, 3));
+};
+
+
+/**
+ * @param {?proto.ubc_package.Boxer|undefined} value
+ * @return {!proto.ubc_package.GetBoxerResponse} returns this
+*/
+proto.ubc_package.GetBoxerResponse.prototype.setBoxer = function(value) {
+  return jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.ubc_package.GetBoxerResponse} returns this
+ */
+proto.ubc_package.GetBoxerResponse.prototype.clearBoxer = function() {
+  return this.setBoxer(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.ubc_package.GetBoxerResponse.prototype.hasBoxer = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.GetBoxerWithStandingAndMatchesRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.GetBoxerWithStandingAndMatchesRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    id: jspb.Message.getFieldWithDefault(msg, 1, 0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.GetBoxerWithStandingAndMatchesRequest}
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.GetBoxerWithStandingAndMatchesRequest;
+  return proto.ubc_package.GetBoxerWithStandingAndMatchesRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.GetBoxerWithStandingAndMatchesRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.GetBoxerWithStandingAndMatchesRequest}
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setId(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.GetBoxerWithStandingAndMatchesRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.GetBoxerWithStandingAndMatchesRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getId();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional int32 id = 1;
+ * @return {number}
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesRequest.prototype.getId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.GetBoxerWithStandingAndMatchesRequest} returns this
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesRequest.prototype.setId = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.GetBoxerWithStandingAndMatchesResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    code: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    message: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    boxer: (f = msg.getBoxer()) && proto.ubc_package.Boxer.toObject(includeInstance, f),
+    standingandmatches: (f = msg.getStandingandmatches()) && proto.ubc_package.StandingAndMatches.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.GetBoxerWithStandingAndMatchesResponse}
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.GetBoxerWithStandingAndMatchesResponse;
+  return proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.GetBoxerWithStandingAndMatchesResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.GetBoxerWithStandingAndMatchesResponse}
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setCode(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setMessage(value);
+      break;
+    case 3:
+      var value = new proto.ubc_package.Boxer;
+      reader.readMessage(value,proto.ubc_package.Boxer.deserializeBinaryFromReader);
       msg.setBoxer(value);
       break;
     case 4:
-      var value = new proto.boxerservice_package.StandingAndMatches;
-      reader.readMessage(value,proto.boxerservice_package.StandingAndMatches.deserializeBinaryFromReader);
+      var value = new proto.ubc_package.StandingAndMatches;
+      reader.readMessage(value,proto.ubc_package.StandingAndMatches.deserializeBinaryFromReader);
       msg.setStandingandmatches(value);
       break;
     default:
@@ -2031,9 +3465,9 @@ proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.deserializeBin
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.prototype.serializeBinary = function() {
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2041,11 +3475,11 @@ proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.prototype.seri
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse} message
+ * @param {!proto.ubc_package.GetBoxerWithStandingAndMatchesResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCode();
   if (f !== 0) {
@@ -2066,7 +3500,7 @@ proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.serializeBinar
     writer.writeMessage(
       3,
       f,
-      proto.boxerservice_package.Boxer.serializeBinaryToWriter
+      proto.ubc_package.Boxer.serializeBinaryToWriter
     );
   }
   f = message.getStandingandmatches();
@@ -2074,7 +3508,7 @@ proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.serializeBinar
     writer.writeMessage(
       4,
       f,
-      proto.boxerservice_package.StandingAndMatches.serializeBinaryToWriter
+      proto.ubc_package.StandingAndMatches.serializeBinaryToWriter
     );
   }
 };
@@ -2084,14 +3518,17 @@ proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.serializeBinar
  * optional int32 code = 1;
  * @return {number}
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.prototype.getCode = function() {
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.prototype.getCode = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.prototype.setCode = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.GetBoxerWithStandingAndMatchesResponse} returns this
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2099,618 +3536,130 @@ proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.prototype.setC
  * optional string message = 2;
  * @return {string}
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.prototype.getMessage = function() {
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.prototype.getMessage = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.prototype.setMessage = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.GetBoxerWithStandingAndMatchesResponse} returns this
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.prototype.setMessage = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
 /**
  * optional Boxer boxer = 3;
- * @return {?proto.boxerservice_package.Boxer}
+ * @return {?proto.ubc_package.Boxer}
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.prototype.getBoxer = function() {
-  return /** @type{?proto.boxerservice_package.Boxer} */ (
-    jspb.Message.getWrapperField(this, proto.boxerservice_package.Boxer, 3));
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.prototype.getBoxer = function() {
+  return /** @type{?proto.ubc_package.Boxer} */ (
+    jspb.Message.getWrapperField(this, proto.ubc_package.Boxer, 3));
 };
 
 
-/** @param {?proto.boxerservice_package.Boxer|undefined} value */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.prototype.setBoxer = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+/**
+ * @param {?proto.ubc_package.Boxer|undefined} value
+ * @return {!proto.ubc_package.GetBoxerWithStandingAndMatchesResponse} returns this
+*/
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.prototype.setBoxer = function(value) {
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.prototype.clearBoxer = function() {
-  this.setBoxer(undefined);
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.ubc_package.GetBoxerWithStandingAndMatchesResponse} returns this
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.prototype.clearBoxer = function() {
+  return this.setBoxer(undefined);
 };
 
 
 /**
  * Returns whether this field is set.
- * @return {!boolean}
+ * @return {boolean}
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.prototype.hasBoxer = function() {
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.prototype.hasBoxer = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
 
 /**
  * optional StandingAndMatches standingAndMatches = 4;
- * @return {?proto.boxerservice_package.StandingAndMatches}
+ * @return {?proto.ubc_package.StandingAndMatches}
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.prototype.getStandingandmatches = function() {
-  return /** @type{?proto.boxerservice_package.StandingAndMatches} */ (
-    jspb.Message.getWrapperField(this, proto.boxerservice_package.StandingAndMatches, 4));
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.prototype.getStandingandmatches = function() {
+  return /** @type{?proto.ubc_package.StandingAndMatches} */ (
+    jspb.Message.getWrapperField(this, proto.ubc_package.StandingAndMatches, 4));
 };
 
 
-/** @param {?proto.boxerservice_package.StandingAndMatches|undefined} value */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.prototype.setStandingandmatches = function(value) {
-  jspb.Message.setWrapperField(this, 4, value);
+/**
+ * @param {?proto.ubc_package.StandingAndMatches|undefined} value
+ * @return {!proto.ubc_package.GetBoxerWithStandingAndMatchesResponse} returns this
+*/
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.prototype.setStandingandmatches = function(value) {
+  return jspb.Message.setWrapperField(this, 4, value);
 };
 
 
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.prototype.clearStandingandmatches = function() {
-  this.setStandingandmatches(undefined);
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.ubc_package.GetBoxerWithStandingAndMatchesResponse} returns this
+ */
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.prototype.clearStandingandmatches = function() {
+  return this.setStandingandmatches(undefined);
 };
 
 
 /**
  * Returns whether this field is set.
- * @return {!boolean}
+ * @return {boolean}
  */
-proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.prototype.hasStandingandmatches = function() {
+proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.prototype.hasStandingandmatches = function() {
   return jspb.Message.getField(this, 4) != null;
 };
 
 
 
-/**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
- */
-proto.boxerservice_package.EditBoxerRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
-};
-goog.inherits(proto.boxerservice_package.EditBoxerRequest, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.EditBoxerRequest.displayName = 'proto.boxerservice_package.EditBoxerRequest';
-}
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.EditBoxerRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.EditBoxerRequest.toObject(opt_includeInstance, this);
+proto.ubc_package.AddBoxerRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.AddBoxerRequest.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.EditBoxerRequest} msg The msg instance to transform.
+ * @param {!proto.ubc_package.AddBoxerRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.EditBoxerRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    fullname: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    birthdate: jspb.Message.getFieldWithDefault(msg, 3, 0),
-    height: jspb.Message.getFieldWithDefault(msg, 4, 0),
-    weight: +jspb.Message.getFieldWithDefault(msg, 5, 0.0),
-    token: jspb.Message.getFieldWithDefault(msg, 6, "")
-  };
-
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
-
-
-/**
- * Deserializes binary data (in protobuf wire format).
- * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.EditBoxerRequest}
- */
-proto.boxerservice_package.EditBoxerRequest.deserializeBinary = function(bytes) {
-  var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.EditBoxerRequest;
-  return proto.boxerservice_package.EditBoxerRequest.deserializeBinaryFromReader(msg, reader);
-};
-
-
-/**
- * Deserializes binary data (in protobuf wire format) from the
- * given reader into the given message object.
- * @param {!proto.boxerservice_package.EditBoxerRequest} msg The message object to deserialize into.
- * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.EditBoxerRequest}
- */
-proto.boxerservice_package.EditBoxerRequest.deserializeBinaryFromReader = function(msg, reader) {
-  while (reader.nextField()) {
-    if (reader.isEndGroup()) {
-      break;
-    }
-    var field = reader.getFieldNumber();
-    switch (field) {
-    case 1:
-      var value = /** @type {number} */ (reader.readInt32());
-      msg.setId(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setFullname(value);
-      break;
-    case 3:
-      var value = /** @type {number} */ (reader.readInt64());
-      msg.setBirthdate(value);
-      break;
-    case 4:
-      var value = /** @type {number} */ (reader.readInt32());
-      msg.setHeight(value);
-      break;
-    case 5:
-      var value = /** @type {number} */ (reader.readDouble());
-      msg.setWeight(value);
-      break;
-    case 6:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setToken(value);
-      break;
-    default:
-      reader.skipField();
-      break;
-    }
-  }
-  return msg;
-};
-
-
-/**
- * Serializes the message to binary data (in protobuf wire format).
- * @return {!Uint8Array}
- */
-proto.boxerservice_package.EditBoxerRequest.prototype.serializeBinary = function() {
-  var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.EditBoxerRequest.serializeBinaryToWriter(this, writer);
-  return writer.getResultBuffer();
-};
-
-
-/**
- * Serializes the given message to binary data (in protobuf wire
- * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.EditBoxerRequest} message
- * @param {!jspb.BinaryWriter} writer
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.boxerservice_package.EditBoxerRequest.serializeBinaryToWriter = function(message, writer) {
-  var f = undefined;
-  f = message.getId();
-  if (f !== 0) {
-    writer.writeInt32(
-      1,
-      f
-    );
-  }
-  f = message.getFullname();
-  if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
-  }
-  f = message.getBirthdate();
-  if (f !== 0) {
-    writer.writeInt64(
-      3,
-      f
-    );
-  }
-  f = message.getHeight();
-  if (f !== 0) {
-    writer.writeInt32(
-      4,
-      f
-    );
-  }
-  f = message.getWeight();
-  if (f !== 0.0) {
-    writer.writeDouble(
-      5,
-      f
-    );
-  }
-  f = message.getToken();
-  if (f.length > 0) {
-    writer.writeString(
-      6,
-      f
-    );
-  }
-};
-
-
-/**
- * optional int32 id = 1;
- * @return {number}
- */
-proto.boxerservice_package.EditBoxerRequest.prototype.getId = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
-};
-
-
-/** @param {number} value */
-proto.boxerservice_package.EditBoxerRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
-};
-
-
-/**
- * optional string fullName = 2;
- * @return {string}
- */
-proto.boxerservice_package.EditBoxerRequest.prototype.getFullname = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
-};
-
-
-/** @param {string} value */
-proto.boxerservice_package.EditBoxerRequest.prototype.setFullname = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
-};
-
-
-/**
- * optional int64 birthDate = 3;
- * @return {number}
- */
-proto.boxerservice_package.EditBoxerRequest.prototype.getBirthdate = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
-};
-
-
-/** @param {number} value */
-proto.boxerservice_package.EditBoxerRequest.prototype.setBirthdate = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
-};
-
-
-/**
- * optional int32 height = 4;
- * @return {number}
- */
-proto.boxerservice_package.EditBoxerRequest.prototype.getHeight = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
-};
-
-
-/** @param {number} value */
-proto.boxerservice_package.EditBoxerRequest.prototype.setHeight = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
-};
-
-
-/**
- * optional double weight = 5;
- * @return {number}
- */
-proto.boxerservice_package.EditBoxerRequest.prototype.getWeight = function() {
-  return /** @type {number} */ (+jspb.Message.getFieldWithDefault(this, 5, 0.0));
-};
-
-
-/** @param {number} value */
-proto.boxerservice_package.EditBoxerRequest.prototype.setWeight = function(value) {
-  jspb.Message.setProto3FloatField(this, 5, value);
-};
-
-
-/**
- * optional string token = 6;
- * @return {string}
- */
-proto.boxerservice_package.EditBoxerRequest.prototype.getToken = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 6, ""));
-};
-
-
-/** @param {string} value */
-proto.boxerservice_package.EditBoxerRequest.prototype.setToken = function(value) {
-  jspb.Message.setProto3StringField(this, 6, value);
-};
-
-
-
-/**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
- */
-proto.boxerservice_package.EditBoxerResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
-};
-goog.inherits(proto.boxerservice_package.EditBoxerResponse, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.EditBoxerResponse.displayName = 'proto.boxerservice_package.EditBoxerResponse';
-}
-
-
-if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto suitable for use in Soy templates.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.boxerservice_package.EditBoxerResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.EditBoxerResponse.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.EditBoxerResponse} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.boxerservice_package.EditBoxerResponse.toObject = function(includeInstance, msg) {
-  var f, obj = {
-    code: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    message: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    boxer: (f = msg.getBoxer()) && proto.boxerservice_package.Boxer.toObject(includeInstance, f)
-  };
-
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
-
-
-/**
- * Deserializes binary data (in protobuf wire format).
- * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.EditBoxerResponse}
- */
-proto.boxerservice_package.EditBoxerResponse.deserializeBinary = function(bytes) {
-  var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.EditBoxerResponse;
-  return proto.boxerservice_package.EditBoxerResponse.deserializeBinaryFromReader(msg, reader);
-};
-
-
-/**
- * Deserializes binary data (in protobuf wire format) from the
- * given reader into the given message object.
- * @param {!proto.boxerservice_package.EditBoxerResponse} msg The message object to deserialize into.
- * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.EditBoxerResponse}
- */
-proto.boxerservice_package.EditBoxerResponse.deserializeBinaryFromReader = function(msg, reader) {
-  while (reader.nextField()) {
-    if (reader.isEndGroup()) {
-      break;
-    }
-    var field = reader.getFieldNumber();
-    switch (field) {
-    case 1:
-      var value = /** @type {number} */ (reader.readInt32());
-      msg.setCode(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setMessage(value);
-      break;
-    case 3:
-      var value = new proto.boxerservice_package.Boxer;
-      reader.readMessage(value,proto.boxerservice_package.Boxer.deserializeBinaryFromReader);
-      msg.setBoxer(value);
-      break;
-    default:
-      reader.skipField();
-      break;
-    }
-  }
-  return msg;
-};
-
-
-/**
- * Serializes the message to binary data (in protobuf wire format).
- * @return {!Uint8Array}
- */
-proto.boxerservice_package.EditBoxerResponse.prototype.serializeBinary = function() {
-  var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.EditBoxerResponse.serializeBinaryToWriter(this, writer);
-  return writer.getResultBuffer();
-};
-
-
-/**
- * Serializes the given message to binary data (in protobuf wire
- * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.EditBoxerResponse} message
- * @param {!jspb.BinaryWriter} writer
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.boxerservice_package.EditBoxerResponse.serializeBinaryToWriter = function(message, writer) {
-  var f = undefined;
-  f = message.getCode();
-  if (f !== 0) {
-    writer.writeInt32(
-      1,
-      f
-    );
-  }
-  f = message.getMessage();
-  if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
-  }
-  f = message.getBoxer();
-  if (f != null) {
-    writer.writeMessage(
-      3,
-      f,
-      proto.boxerservice_package.Boxer.serializeBinaryToWriter
-    );
-  }
-};
-
-
-/**
- * optional int32 code = 1;
- * @return {number}
- */
-proto.boxerservice_package.EditBoxerResponse.prototype.getCode = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
-};
-
-
-/** @param {number} value */
-proto.boxerservice_package.EditBoxerResponse.prototype.setCode = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
-};
-
-
-/**
- * optional string message = 2;
- * @return {string}
- */
-proto.boxerservice_package.EditBoxerResponse.prototype.getMessage = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
-};
-
-
-/** @param {string} value */
-proto.boxerservice_package.EditBoxerResponse.prototype.setMessage = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
-};
-
-
-/**
- * optional Boxer boxer = 3;
- * @return {?proto.boxerservice_package.Boxer}
- */
-proto.boxerservice_package.EditBoxerResponse.prototype.getBoxer = function() {
-  return /** @type{?proto.boxerservice_package.Boxer} */ (
-    jspb.Message.getWrapperField(this, proto.boxerservice_package.Boxer, 3));
-};
-
-
-/** @param {?proto.boxerservice_package.Boxer|undefined} value */
-proto.boxerservice_package.EditBoxerResponse.prototype.setBoxer = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
-};
-
-
-proto.boxerservice_package.EditBoxerResponse.prototype.clearBoxer = function() {
-  this.setBoxer(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {!boolean}
- */
-proto.boxerservice_package.EditBoxerResponse.prototype.hasBoxer = function() {
-  return jspb.Message.getField(this, 3) != null;
-};
-
-
-
-/**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
- */
-proto.boxerservice_package.AddBoxerRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
-};
-goog.inherits(proto.boxerservice_package.AddBoxerRequest, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.AddBoxerRequest.displayName = 'proto.boxerservice_package.AddBoxerRequest';
-}
-
-
-if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto suitable for use in Soy templates.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.boxerservice_package.AddBoxerRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.AddBoxerRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.AddBoxerRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.boxerservice_package.AddBoxerRequest.toObject = function(includeInstance, msg) {
+proto.ubc_package.AddBoxerRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     fullname: jspb.Message.getFieldWithDefault(msg, 1, ""),
     birthdate: jspb.Message.getFieldWithDefault(msg, 2, 0),
     height: jspb.Message.getFieldWithDefault(msg, 3, 0),
-    weight: +jspb.Message.getFieldWithDefault(msg, 4, 0.0),
+    weight: jspb.Message.getFloatingPointFieldWithDefault(msg, 4, 0.0),
     token: jspb.Message.getFieldWithDefault(msg, 5, "")
   };
 
@@ -2725,23 +3674,23 @@ proto.boxerservice_package.AddBoxerRequest.toObject = function(includeInstance, 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.AddBoxerRequest}
+ * @return {!proto.ubc_package.AddBoxerRequest}
  */
-proto.boxerservice_package.AddBoxerRequest.deserializeBinary = function(bytes) {
+proto.ubc_package.AddBoxerRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.AddBoxerRequest;
-  return proto.boxerservice_package.AddBoxerRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.AddBoxerRequest;
+  return proto.ubc_package.AddBoxerRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.AddBoxerRequest} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.AddBoxerRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.AddBoxerRequest}
+ * @return {!proto.ubc_package.AddBoxerRequest}
  */
-proto.boxerservice_package.AddBoxerRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.AddBoxerRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2781,9 +3730,9 @@ proto.boxerservice_package.AddBoxerRequest.deserializeBinaryFromReader = functio
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.AddBoxerRequest.prototype.serializeBinary = function() {
+proto.ubc_package.AddBoxerRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.AddBoxerRequest.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.AddBoxerRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2791,11 +3740,11 @@ proto.boxerservice_package.AddBoxerRequest.prototype.serializeBinary = function(
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.AddBoxerRequest} message
+ * @param {!proto.ubc_package.AddBoxerRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.AddBoxerRequest.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.AddBoxerRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getFullname();
   if (f.length > 0) {
@@ -2839,14 +3788,17 @@ proto.boxerservice_package.AddBoxerRequest.serializeBinaryToWriter = function(me
  * optional string fullName = 1;
  * @return {string}
  */
-proto.boxerservice_package.AddBoxerRequest.prototype.getFullname = function() {
+proto.ubc_package.AddBoxerRequest.prototype.getFullname = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.AddBoxerRequest.prototype.setFullname = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.AddBoxerRequest} returns this
+ */
+proto.ubc_package.AddBoxerRequest.prototype.setFullname = function(value) {
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -2854,14 +3806,17 @@ proto.boxerservice_package.AddBoxerRequest.prototype.setFullname = function(valu
  * optional int64 birthDate = 2;
  * @return {number}
  */
-proto.boxerservice_package.AddBoxerRequest.prototype.getBirthdate = function() {
+proto.ubc_package.AddBoxerRequest.prototype.getBirthdate = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.AddBoxerRequest.prototype.setBirthdate = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.AddBoxerRequest} returns this
+ */
+proto.ubc_package.AddBoxerRequest.prototype.setBirthdate = function(value) {
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -2869,14 +3824,17 @@ proto.boxerservice_package.AddBoxerRequest.prototype.setBirthdate = function(val
  * optional int32 height = 3;
  * @return {number}
  */
-proto.boxerservice_package.AddBoxerRequest.prototype.getHeight = function() {
+proto.ubc_package.AddBoxerRequest.prototype.getHeight = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.AddBoxerRequest.prototype.setHeight = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.AddBoxerRequest} returns this
+ */
+proto.ubc_package.AddBoxerRequest.prototype.setHeight = function(value) {
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -2884,14 +3842,17 @@ proto.boxerservice_package.AddBoxerRequest.prototype.setHeight = function(value)
  * optional double weight = 4;
  * @return {number}
  */
-proto.boxerservice_package.AddBoxerRequest.prototype.getWeight = function() {
-  return /** @type {number} */ (+jspb.Message.getFieldWithDefault(this, 4, 0.0));
+proto.ubc_package.AddBoxerRequest.prototype.getWeight = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 4, 0.0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.AddBoxerRequest.prototype.setWeight = function(value) {
-  jspb.Message.setProto3FloatField(this, 4, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.AddBoxerRequest} returns this
+ */
+proto.ubc_package.AddBoxerRequest.prototype.setWeight = function(value) {
+  return jspb.Message.setProto3FloatField(this, 4, value);
 };
 
 
@@ -2899,67 +3860,55 @@ proto.boxerservice_package.AddBoxerRequest.prototype.setWeight = function(value)
  * optional string token = 5;
  * @return {string}
  */
-proto.boxerservice_package.AddBoxerRequest.prototype.getToken = function() {
+proto.ubc_package.AddBoxerRequest.prototype.getToken = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.AddBoxerRequest.prototype.setToken = function(value) {
-  jspb.Message.setProto3StringField(this, 5, value);
-};
-
-
-
 /**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
+ * @param {string} value
+ * @return {!proto.ubc_package.AddBoxerRequest} returns this
  */
-proto.boxerservice_package.AddBoxerResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+proto.ubc_package.AddBoxerRequest.prototype.setToken = function(value) {
+  return jspb.Message.setProto3StringField(this, 5, value);
 };
-goog.inherits(proto.boxerservice_package.AddBoxerResponse, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.AddBoxerResponse.displayName = 'proto.boxerservice_package.AddBoxerResponse';
-}
+
+
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.AddBoxerResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.AddBoxerResponse.toObject(opt_includeInstance, this);
+proto.ubc_package.AddBoxerResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.AddBoxerResponse.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.AddBoxerResponse} msg The msg instance to transform.
+ * @param {!proto.ubc_package.AddBoxerResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.AddBoxerResponse.toObject = function(includeInstance, msg) {
+proto.ubc_package.AddBoxerResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     code: jspb.Message.getFieldWithDefault(msg, 1, 0),
     message: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    boxer: (f = msg.getBoxer()) && proto.boxerservice_package.Boxer.toObject(includeInstance, f)
+    boxer: (f = msg.getBoxer()) && proto.ubc_package.Boxer.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -2973,23 +3922,23 @@ proto.boxerservice_package.AddBoxerResponse.toObject = function(includeInstance,
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.AddBoxerResponse}
+ * @return {!proto.ubc_package.AddBoxerResponse}
  */
-proto.boxerservice_package.AddBoxerResponse.deserializeBinary = function(bytes) {
+proto.ubc_package.AddBoxerResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.AddBoxerResponse;
-  return proto.boxerservice_package.AddBoxerResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.AddBoxerResponse;
+  return proto.ubc_package.AddBoxerResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.AddBoxerResponse} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.AddBoxerResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.AddBoxerResponse}
+ * @return {!proto.ubc_package.AddBoxerResponse}
  */
-proto.boxerservice_package.AddBoxerResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.AddBoxerResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3005,8 +3954,8 @@ proto.boxerservice_package.AddBoxerResponse.deserializeBinaryFromReader = functi
       msg.setMessage(value);
       break;
     case 3:
-      var value = new proto.boxerservice_package.Boxer;
-      reader.readMessage(value,proto.boxerservice_package.Boxer.deserializeBinaryFromReader);
+      var value = new proto.ubc_package.Boxer;
+      reader.readMessage(value,proto.ubc_package.Boxer.deserializeBinaryFromReader);
       msg.setBoxer(value);
       break;
     default:
@@ -3022,9 +3971,9 @@ proto.boxerservice_package.AddBoxerResponse.deserializeBinaryFromReader = functi
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.AddBoxerResponse.prototype.serializeBinary = function() {
+proto.ubc_package.AddBoxerResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.AddBoxerResponse.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.AddBoxerResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3032,11 +3981,11 @@ proto.boxerservice_package.AddBoxerResponse.prototype.serializeBinary = function
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.AddBoxerResponse} message
+ * @param {!proto.ubc_package.AddBoxerResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.AddBoxerResponse.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.AddBoxerResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCode();
   if (f !== 0) {
@@ -3057,7 +4006,7 @@ proto.boxerservice_package.AddBoxerResponse.serializeBinaryToWriter = function(m
     writer.writeMessage(
       3,
       f,
-      proto.boxerservice_package.Boxer.serializeBinaryToWriter
+      proto.ubc_package.Boxer.serializeBinaryToWriter
     );
   }
 };
@@ -3067,14 +4016,17 @@ proto.boxerservice_package.AddBoxerResponse.serializeBinaryToWriter = function(m
  * optional int32 code = 1;
  * @return {number}
  */
-proto.boxerservice_package.AddBoxerResponse.prototype.getCode = function() {
+proto.ubc_package.AddBoxerResponse.prototype.getCode = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.AddBoxerResponse.prototype.setCode = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.AddBoxerResponse} returns this
+ */
+proto.ubc_package.AddBoxerResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3082,93 +4034,651 @@ proto.boxerservice_package.AddBoxerResponse.prototype.setCode = function(value) 
  * optional string message = 2;
  * @return {string}
  */
-proto.boxerservice_package.AddBoxerResponse.prototype.getMessage = function() {
+proto.ubc_package.AddBoxerResponse.prototype.getMessage = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.AddBoxerResponse.prototype.setMessage = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.AddBoxerResponse} returns this
+ */
+proto.ubc_package.AddBoxerResponse.prototype.setMessage = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
 /**
  * optional Boxer boxer = 3;
- * @return {?proto.boxerservice_package.Boxer}
+ * @return {?proto.ubc_package.Boxer}
  */
-proto.boxerservice_package.AddBoxerResponse.prototype.getBoxer = function() {
-  return /** @type{?proto.boxerservice_package.Boxer} */ (
-    jspb.Message.getWrapperField(this, proto.boxerservice_package.Boxer, 3));
+proto.ubc_package.AddBoxerResponse.prototype.getBoxer = function() {
+  return /** @type{?proto.ubc_package.Boxer} */ (
+    jspb.Message.getWrapperField(this, proto.ubc_package.Boxer, 3));
 };
 
 
-/** @param {?proto.boxerservice_package.Boxer|undefined} value */
-proto.boxerservice_package.AddBoxerResponse.prototype.setBoxer = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+/**
+ * @param {?proto.ubc_package.Boxer|undefined} value
+ * @return {!proto.ubc_package.AddBoxerResponse} returns this
+*/
+proto.ubc_package.AddBoxerResponse.prototype.setBoxer = function(value) {
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
-proto.boxerservice_package.AddBoxerResponse.prototype.clearBoxer = function() {
-  this.setBoxer(undefined);
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.ubc_package.AddBoxerResponse} returns this
+ */
+proto.ubc_package.AddBoxerResponse.prototype.clearBoxer = function() {
+  return this.setBoxer(undefined);
 };
 
 
 /**
  * Returns whether this field is set.
- * @return {!boolean}
+ * @return {boolean}
  */
-proto.boxerservice_package.AddBoxerResponse.prototype.hasBoxer = function() {
+proto.ubc_package.AddBoxerResponse.prototype.hasBoxer = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
 
 
-/**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
- */
-proto.boxerservice_package.RemoveBoxerRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
-};
-goog.inherits(proto.boxerservice_package.RemoveBoxerRequest, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.RemoveBoxerRequest.displayName = 'proto.boxerservice_package.RemoveBoxerRequest';
-}
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.RemoveBoxerRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.RemoveBoxerRequest.toObject(opt_includeInstance, this);
+proto.ubc_package.EditBoxerRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.EditBoxerRequest.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.RemoveBoxerRequest} msg The msg instance to transform.
+ * @param {!proto.ubc_package.EditBoxerRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.RemoveBoxerRequest.toObject = function(includeInstance, msg) {
+proto.ubc_package.EditBoxerRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    fullname: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    birthdate: jspb.Message.getFieldWithDefault(msg, 3, 0),
+    height: jspb.Message.getFieldWithDefault(msg, 4, 0),
+    weight: jspb.Message.getFloatingPointFieldWithDefault(msg, 5, 0.0),
+    token: jspb.Message.getFieldWithDefault(msg, 6, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.EditBoxerRequest}
+ */
+proto.ubc_package.EditBoxerRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.EditBoxerRequest;
+  return proto.ubc_package.EditBoxerRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.EditBoxerRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.EditBoxerRequest}
+ */
+proto.ubc_package.EditBoxerRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setId(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setFullname(value);
+      break;
+    case 3:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setBirthdate(value);
+      break;
+    case 4:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setHeight(value);
+      break;
+    case 5:
+      var value = /** @type {number} */ (reader.readDouble());
+      msg.setWeight(value);
+      break;
+    case 6:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setToken(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.EditBoxerRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.EditBoxerRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.EditBoxerRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.EditBoxerRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getId();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+  f = /** @type {string} */ (jspb.Message.getField(message, 2));
+  if (f != null) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+  f = /** @type {number} */ (jspb.Message.getField(message, 3));
+  if (f != null) {
+    writer.writeInt64(
+      3,
+      f
+    );
+  }
+  f = /** @type {number} */ (jspb.Message.getField(message, 4));
+  if (f != null) {
+    writer.writeInt32(
+      4,
+      f
+    );
+  }
+  f = /** @type {number} */ (jspb.Message.getField(message, 5));
+  if (f != null) {
+    writer.writeDouble(
+      5,
+      f
+    );
+  }
+  f = message.getToken();
+  if (f.length > 0) {
+    writer.writeString(
+      6,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional int32 id = 1;
+ * @return {number}
+ */
+proto.ubc_package.EditBoxerRequest.prototype.getId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.EditBoxerRequest} returns this
+ */
+proto.ubc_package.EditBoxerRequest.prototype.setId = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional string fullName = 2;
+ * @return {string}
+ */
+proto.ubc_package.EditBoxerRequest.prototype.getFullname = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.EditBoxerRequest} returns this
+ */
+proto.ubc_package.EditBoxerRequest.prototype.setFullname = function(value) {
+  return jspb.Message.setField(this, 2, value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.ubc_package.EditBoxerRequest} returns this
+ */
+proto.ubc_package.EditBoxerRequest.prototype.clearFullname = function() {
+  return jspb.Message.setField(this, 2, undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.ubc_package.EditBoxerRequest.prototype.hasFullname = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional int64 birthDate = 3;
+ * @return {number}
+ */
+proto.ubc_package.EditBoxerRequest.prototype.getBirthdate = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.EditBoxerRequest} returns this
+ */
+proto.ubc_package.EditBoxerRequest.prototype.setBirthdate = function(value) {
+  return jspb.Message.setField(this, 3, value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.ubc_package.EditBoxerRequest} returns this
+ */
+proto.ubc_package.EditBoxerRequest.prototype.clearBirthdate = function() {
+  return jspb.Message.setField(this, 3, undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.ubc_package.EditBoxerRequest.prototype.hasBirthdate = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional int32 height = 4;
+ * @return {number}
+ */
+proto.ubc_package.EditBoxerRequest.prototype.getHeight = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.EditBoxerRequest} returns this
+ */
+proto.ubc_package.EditBoxerRequest.prototype.setHeight = function(value) {
+  return jspb.Message.setField(this, 4, value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.ubc_package.EditBoxerRequest} returns this
+ */
+proto.ubc_package.EditBoxerRequest.prototype.clearHeight = function() {
+  return jspb.Message.setField(this, 4, undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.ubc_package.EditBoxerRequest.prototype.hasHeight = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional double weight = 5;
+ * @return {number}
+ */
+proto.ubc_package.EditBoxerRequest.prototype.getWeight = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 5, 0.0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.EditBoxerRequest} returns this
+ */
+proto.ubc_package.EditBoxerRequest.prototype.setWeight = function(value) {
+  return jspb.Message.setField(this, 5, value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.ubc_package.EditBoxerRequest} returns this
+ */
+proto.ubc_package.EditBoxerRequest.prototype.clearWeight = function() {
+  return jspb.Message.setField(this, 5, undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.ubc_package.EditBoxerRequest.prototype.hasWeight = function() {
+  return jspb.Message.getField(this, 5) != null;
+};
+
+
+/**
+ * optional string token = 6;
+ * @return {string}
+ */
+proto.ubc_package.EditBoxerRequest.prototype.getToken = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 6, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.EditBoxerRequest} returns this
+ */
+proto.ubc_package.EditBoxerRequest.prototype.setToken = function(value) {
+  return jspb.Message.setProto3StringField(this, 6, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.EditBoxerResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.EditBoxerResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.EditBoxerResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.EditBoxerResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    code: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    message: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    boxer: (f = msg.getBoxer()) && proto.ubc_package.Boxer.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.EditBoxerResponse}
+ */
+proto.ubc_package.EditBoxerResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.EditBoxerResponse;
+  return proto.ubc_package.EditBoxerResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.EditBoxerResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.EditBoxerResponse}
+ */
+proto.ubc_package.EditBoxerResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setCode(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setMessage(value);
+      break;
+    case 3:
+      var value = new proto.ubc_package.Boxer;
+      reader.readMessage(value,proto.ubc_package.Boxer.deserializeBinaryFromReader);
+      msg.setBoxer(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.EditBoxerResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.EditBoxerResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.EditBoxerResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.EditBoxerResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCode();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+  f = message.getMessage();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+  f = message.getBoxer();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      proto.ubc_package.Boxer.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional int32 code = 1;
+ * @return {number}
+ */
+proto.ubc_package.EditBoxerResponse.prototype.getCode = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.EditBoxerResponse} returns this
+ */
+proto.ubc_package.EditBoxerResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional string message = 2;
+ * @return {string}
+ */
+proto.ubc_package.EditBoxerResponse.prototype.getMessage = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.EditBoxerResponse} returns this
+ */
+proto.ubc_package.EditBoxerResponse.prototype.setMessage = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional Boxer boxer = 3;
+ * @return {?proto.ubc_package.Boxer}
+ */
+proto.ubc_package.EditBoxerResponse.prototype.getBoxer = function() {
+  return /** @type{?proto.ubc_package.Boxer} */ (
+    jspb.Message.getWrapperField(this, proto.ubc_package.Boxer, 3));
+};
+
+
+/**
+ * @param {?proto.ubc_package.Boxer|undefined} value
+ * @return {!proto.ubc_package.EditBoxerResponse} returns this
+*/
+proto.ubc_package.EditBoxerResponse.prototype.setBoxer = function(value) {
+  return jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.ubc_package.EditBoxerResponse} returns this
+ */
+proto.ubc_package.EditBoxerResponse.prototype.clearBoxer = function() {
+  return this.setBoxer(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.ubc_package.EditBoxerResponse.prototype.hasBoxer = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.RemoveBoxerRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.RemoveBoxerRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.RemoveBoxerRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.RemoveBoxerRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: jspb.Message.getFieldWithDefault(msg, 1, 0),
     token: jspb.Message.getFieldWithDefault(msg, 2, "")
@@ -3185,23 +4695,23 @@ proto.boxerservice_package.RemoveBoxerRequest.toObject = function(includeInstanc
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.RemoveBoxerRequest}
+ * @return {!proto.ubc_package.RemoveBoxerRequest}
  */
-proto.boxerservice_package.RemoveBoxerRequest.deserializeBinary = function(bytes) {
+proto.ubc_package.RemoveBoxerRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.RemoveBoxerRequest;
-  return proto.boxerservice_package.RemoveBoxerRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.RemoveBoxerRequest;
+  return proto.ubc_package.RemoveBoxerRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.RemoveBoxerRequest} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.RemoveBoxerRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.RemoveBoxerRequest}
+ * @return {!proto.ubc_package.RemoveBoxerRequest}
  */
-proto.boxerservice_package.RemoveBoxerRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.RemoveBoxerRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3229,9 +4739,9 @@ proto.boxerservice_package.RemoveBoxerRequest.deserializeBinaryFromReader = func
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.RemoveBoxerRequest.prototype.serializeBinary = function() {
+proto.ubc_package.RemoveBoxerRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.RemoveBoxerRequest.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.RemoveBoxerRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3239,11 +4749,11 @@ proto.boxerservice_package.RemoveBoxerRequest.prototype.serializeBinary = functi
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.RemoveBoxerRequest} message
+ * @param {!proto.ubc_package.RemoveBoxerRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.RemoveBoxerRequest.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.RemoveBoxerRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
@@ -3266,14 +4776,17 @@ proto.boxerservice_package.RemoveBoxerRequest.serializeBinaryToWriter = function
  * optional int32 id = 1;
  * @return {number}
  */
-proto.boxerservice_package.RemoveBoxerRequest.prototype.getId = function() {
+proto.ubc_package.RemoveBoxerRequest.prototype.getId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.RemoveBoxerRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.RemoveBoxerRequest} returns this
+ */
+proto.ubc_package.RemoveBoxerRequest.prototype.setId = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3281,67 +4794,55 @@ proto.boxerservice_package.RemoveBoxerRequest.prototype.setId = function(value) 
  * optional string token = 2;
  * @return {string}
  */
-proto.boxerservice_package.RemoveBoxerRequest.prototype.getToken = function() {
+proto.ubc_package.RemoveBoxerRequest.prototype.getToken = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.RemoveBoxerRequest.prototype.setToken = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
-};
-
-
-
 /**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
+ * @param {string} value
+ * @return {!proto.ubc_package.RemoveBoxerRequest} returns this
  */
-proto.boxerservice_package.RemoveBoxerResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+proto.ubc_package.RemoveBoxerRequest.prototype.setToken = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
-goog.inherits(proto.boxerservice_package.RemoveBoxerResponse, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.RemoveBoxerResponse.displayName = 'proto.boxerservice_package.RemoveBoxerResponse';
-}
+
+
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.RemoveBoxerResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.RemoveBoxerResponse.toObject(opt_includeInstance, this);
+proto.ubc_package.RemoveBoxerResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.RemoveBoxerResponse.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.RemoveBoxerResponse} msg The msg instance to transform.
+ * @param {!proto.ubc_package.RemoveBoxerResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.RemoveBoxerResponse.toObject = function(includeInstance, msg) {
+proto.ubc_package.RemoveBoxerResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     code: jspb.Message.getFieldWithDefault(msg, 1, 0),
     message: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    boxer: (f = msg.getBoxer()) && proto.boxerservice_package.Boxer.toObject(includeInstance, f)
+    boxer: (f = msg.getBoxer()) && proto.ubc_package.Boxer.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -3355,23 +4856,23 @@ proto.boxerservice_package.RemoveBoxerResponse.toObject = function(includeInstan
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.RemoveBoxerResponse}
+ * @return {!proto.ubc_package.RemoveBoxerResponse}
  */
-proto.boxerservice_package.RemoveBoxerResponse.deserializeBinary = function(bytes) {
+proto.ubc_package.RemoveBoxerResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.RemoveBoxerResponse;
-  return proto.boxerservice_package.RemoveBoxerResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.RemoveBoxerResponse;
+  return proto.ubc_package.RemoveBoxerResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.RemoveBoxerResponse} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.RemoveBoxerResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.RemoveBoxerResponse}
+ * @return {!proto.ubc_package.RemoveBoxerResponse}
  */
-proto.boxerservice_package.RemoveBoxerResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.RemoveBoxerResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3387,8 +4888,8 @@ proto.boxerservice_package.RemoveBoxerResponse.deserializeBinaryFromReader = fun
       msg.setMessage(value);
       break;
     case 3:
-      var value = new proto.boxerservice_package.Boxer;
-      reader.readMessage(value,proto.boxerservice_package.Boxer.deserializeBinaryFromReader);
+      var value = new proto.ubc_package.Boxer;
+      reader.readMessage(value,proto.ubc_package.Boxer.deserializeBinaryFromReader);
       msg.setBoxer(value);
       break;
     default:
@@ -3404,9 +4905,9 @@ proto.boxerservice_package.RemoveBoxerResponse.deserializeBinaryFromReader = fun
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.RemoveBoxerResponse.prototype.serializeBinary = function() {
+proto.ubc_package.RemoveBoxerResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.RemoveBoxerResponse.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.RemoveBoxerResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3414,11 +4915,11 @@ proto.boxerservice_package.RemoveBoxerResponse.prototype.serializeBinary = funct
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.RemoveBoxerResponse} message
+ * @param {!proto.ubc_package.RemoveBoxerResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.RemoveBoxerResponse.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.RemoveBoxerResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCode();
   if (f !== 0) {
@@ -3439,7 +4940,7 @@ proto.boxerservice_package.RemoveBoxerResponse.serializeBinaryToWriter = functio
     writer.writeMessage(
       3,
       f,
-      proto.boxerservice_package.Boxer.serializeBinaryToWriter
+      proto.ubc_package.Boxer.serializeBinaryToWriter
     );
   }
 };
@@ -3449,14 +4950,17 @@ proto.boxerservice_package.RemoveBoxerResponse.serializeBinaryToWriter = functio
  * optional int32 code = 1;
  * @return {number}
  */
-proto.boxerservice_package.RemoveBoxerResponse.prototype.getCode = function() {
+proto.ubc_package.RemoveBoxerResponse.prototype.getCode = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.RemoveBoxerResponse.prototype.setCode = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.RemoveBoxerResponse} returns this
+ */
+proto.ubc_package.RemoveBoxerResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3464,327 +4968,100 @@ proto.boxerservice_package.RemoveBoxerResponse.prototype.setCode = function(valu
  * optional string message = 2;
  * @return {string}
  */
-proto.boxerservice_package.RemoveBoxerResponse.prototype.getMessage = function() {
+proto.ubc_package.RemoveBoxerResponse.prototype.getMessage = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.RemoveBoxerResponse.prototype.setMessage = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.RemoveBoxerResponse} returns this
+ */
+proto.ubc_package.RemoveBoxerResponse.prototype.setMessage = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
 /**
  * optional Boxer boxer = 3;
- * @return {?proto.boxerservice_package.Boxer}
+ * @return {?proto.ubc_package.Boxer}
  */
-proto.boxerservice_package.RemoveBoxerResponse.prototype.getBoxer = function() {
-  return /** @type{?proto.boxerservice_package.Boxer} */ (
-    jspb.Message.getWrapperField(this, proto.boxerservice_package.Boxer, 3));
+proto.ubc_package.RemoveBoxerResponse.prototype.getBoxer = function() {
+  return /** @type{?proto.ubc_package.Boxer} */ (
+    jspb.Message.getWrapperField(this, proto.ubc_package.Boxer, 3));
 };
 
 
-/** @param {?proto.boxerservice_package.Boxer|undefined} value */
-proto.boxerservice_package.RemoveBoxerResponse.prototype.setBoxer = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+/**
+ * @param {?proto.ubc_package.Boxer|undefined} value
+ * @return {!proto.ubc_package.RemoveBoxerResponse} returns this
+*/
+proto.ubc_package.RemoveBoxerResponse.prototype.setBoxer = function(value) {
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
-proto.boxerservice_package.RemoveBoxerResponse.prototype.clearBoxer = function() {
-  this.setBoxer(undefined);
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.ubc_package.RemoveBoxerResponse} returns this
+ */
+proto.ubc_package.RemoveBoxerResponse.prototype.clearBoxer = function() {
+  return this.setBoxer(undefined);
 };
 
 
 /**
  * Returns whether this field is set.
- * @return {!boolean}
+ * @return {boolean}
  */
-proto.boxerservice_package.RemoveBoxerResponse.prototype.hasBoxer = function() {
+proto.ubc_package.RemoveBoxerResponse.prototype.hasBoxer = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
 
 
 /**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
- */
-proto.boxerservice_package.GetAllStandingsResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, proto.boxerservice_package.GetAllStandingsResponse.repeatedFields_, null);
-};
-goog.inherits(proto.boxerservice_package.GetAllStandingsResponse, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.GetAllStandingsResponse.displayName = 'proto.boxerservice_package.GetAllStandingsResponse';
-}
-/**
  * List of repeated fields within this message type.
  * @private {!Array<number>}
  * @const
  */
-proto.boxerservice_package.GetAllStandingsResponse.repeatedFields_ = [3];
+proto.ubc_package.GetAllMatchesResponse.repeatedFields_ = [3];
 
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.GetAllStandingsResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.GetAllStandingsResponse.toObject(opt_includeInstance, this);
+proto.ubc_package.GetAllMatchesResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.GetAllMatchesResponse.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.GetAllStandingsResponse} msg The msg instance to transform.
+ * @param {!proto.ubc_package.GetAllMatchesResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.GetAllStandingsResponse.toObject = function(includeInstance, msg) {
-  var f, obj = {
-    code: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    message: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    standingsList: jspb.Message.toObjectList(msg.getStandingsList(),
-    proto.boxerservice_package.Standing.toObject, includeInstance)
-  };
-
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
-
-
-/**
- * Deserializes binary data (in protobuf wire format).
- * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.GetAllStandingsResponse}
- */
-proto.boxerservice_package.GetAllStandingsResponse.deserializeBinary = function(bytes) {
-  var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.GetAllStandingsResponse;
-  return proto.boxerservice_package.GetAllStandingsResponse.deserializeBinaryFromReader(msg, reader);
-};
-
-
-/**
- * Deserializes binary data (in protobuf wire format) from the
- * given reader into the given message object.
- * @param {!proto.boxerservice_package.GetAllStandingsResponse} msg The message object to deserialize into.
- * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.GetAllStandingsResponse}
- */
-proto.boxerservice_package.GetAllStandingsResponse.deserializeBinaryFromReader = function(msg, reader) {
-  while (reader.nextField()) {
-    if (reader.isEndGroup()) {
-      break;
-    }
-    var field = reader.getFieldNumber();
-    switch (field) {
-    case 1:
-      var value = /** @type {number} */ (reader.readInt32());
-      msg.setCode(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setMessage(value);
-      break;
-    case 3:
-      var value = new proto.boxerservice_package.Standing;
-      reader.readMessage(value,proto.boxerservice_package.Standing.deserializeBinaryFromReader);
-      msg.addStandings(value);
-      break;
-    default:
-      reader.skipField();
-      break;
-    }
-  }
-  return msg;
-};
-
-
-/**
- * Serializes the message to binary data (in protobuf wire format).
- * @return {!Uint8Array}
- */
-proto.boxerservice_package.GetAllStandingsResponse.prototype.serializeBinary = function() {
-  var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.GetAllStandingsResponse.serializeBinaryToWriter(this, writer);
-  return writer.getResultBuffer();
-};
-
-
-/**
- * Serializes the given message to binary data (in protobuf wire
- * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.GetAllStandingsResponse} message
- * @param {!jspb.BinaryWriter} writer
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.boxerservice_package.GetAllStandingsResponse.serializeBinaryToWriter = function(message, writer) {
-  var f = undefined;
-  f = message.getCode();
-  if (f !== 0) {
-    writer.writeInt32(
-      1,
-      f
-    );
-  }
-  f = message.getMessage();
-  if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
-  }
-  f = message.getStandingsList();
-  if (f.length > 0) {
-    writer.writeRepeatedMessage(
-      3,
-      f,
-      proto.boxerservice_package.Standing.serializeBinaryToWriter
-    );
-  }
-};
-
-
-/**
- * optional int32 code = 1;
- * @return {number}
- */
-proto.boxerservice_package.GetAllStandingsResponse.prototype.getCode = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
-};
-
-
-/** @param {number} value */
-proto.boxerservice_package.GetAllStandingsResponse.prototype.setCode = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
-};
-
-
-/**
- * optional string message = 2;
- * @return {string}
- */
-proto.boxerservice_package.GetAllStandingsResponse.prototype.getMessage = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
-};
-
-
-/** @param {string} value */
-proto.boxerservice_package.GetAllStandingsResponse.prototype.setMessage = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
-};
-
-
-/**
- * repeated Standing standings = 3;
- * @return {!Array<!proto.boxerservice_package.Standing>}
- */
-proto.boxerservice_package.GetAllStandingsResponse.prototype.getStandingsList = function() {
-  return /** @type{!Array<!proto.boxerservice_package.Standing>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.boxerservice_package.Standing, 3));
-};
-
-
-/** @param {!Array<!proto.boxerservice_package.Standing>} value */
-proto.boxerservice_package.GetAllStandingsResponse.prototype.setStandingsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
-};
-
-
-/**
- * @param {!proto.boxerservice_package.Standing=} opt_value
- * @param {number=} opt_index
- * @return {!proto.boxerservice_package.Standing}
- */
-proto.boxerservice_package.GetAllStandingsResponse.prototype.addStandings = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.boxerservice_package.Standing, opt_index);
-};
-
-
-proto.boxerservice_package.GetAllStandingsResponse.prototype.clearStandingsList = function() {
-  this.setStandingsList([]);
-};
-
-
-
-/**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
- */
-proto.boxerservice_package.GetAllMatchesResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, proto.boxerservice_package.GetAllMatchesResponse.repeatedFields_, null);
-};
-goog.inherits(proto.boxerservice_package.GetAllMatchesResponse, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.GetAllMatchesResponse.displayName = 'proto.boxerservice_package.GetAllMatchesResponse';
-}
-/**
- * List of repeated fields within this message type.
- * @private {!Array<number>}
- * @const
- */
-proto.boxerservice_package.GetAllMatchesResponse.repeatedFields_ = [3];
-
-
-
-if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto suitable for use in Soy templates.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.boxerservice_package.GetAllMatchesResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.GetAllMatchesResponse.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.GetAllMatchesResponse} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.boxerservice_package.GetAllMatchesResponse.toObject = function(includeInstance, msg) {
+proto.ubc_package.GetAllMatchesResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     code: jspb.Message.getFieldWithDefault(msg, 1, 0),
     message: jspb.Message.getFieldWithDefault(msg, 2, ""),
     matchesList: jspb.Message.toObjectList(msg.getMatchesList(),
-    proto.boxerservice_package.Match.toObject, includeInstance)
+    proto.ubc_package.Match.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -3798,23 +5075,23 @@ proto.boxerservice_package.GetAllMatchesResponse.toObject = function(includeInst
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.GetAllMatchesResponse}
+ * @return {!proto.ubc_package.GetAllMatchesResponse}
  */
-proto.boxerservice_package.GetAllMatchesResponse.deserializeBinary = function(bytes) {
+proto.ubc_package.GetAllMatchesResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.GetAllMatchesResponse;
-  return proto.boxerservice_package.GetAllMatchesResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.GetAllMatchesResponse;
+  return proto.ubc_package.GetAllMatchesResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.GetAllMatchesResponse} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.GetAllMatchesResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.GetAllMatchesResponse}
+ * @return {!proto.ubc_package.GetAllMatchesResponse}
  */
-proto.boxerservice_package.GetAllMatchesResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.GetAllMatchesResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3830,8 +5107,8 @@ proto.boxerservice_package.GetAllMatchesResponse.deserializeBinaryFromReader = f
       msg.setMessage(value);
       break;
     case 3:
-      var value = new proto.boxerservice_package.Match;
-      reader.readMessage(value,proto.boxerservice_package.Match.deserializeBinaryFromReader);
+      var value = new proto.ubc_package.Match;
+      reader.readMessage(value,proto.ubc_package.Match.deserializeBinaryFromReader);
       msg.addMatches(value);
       break;
     default:
@@ -3847,9 +5124,9 @@ proto.boxerservice_package.GetAllMatchesResponse.deserializeBinaryFromReader = f
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.GetAllMatchesResponse.prototype.serializeBinary = function() {
+proto.ubc_package.GetAllMatchesResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.GetAllMatchesResponse.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.GetAllMatchesResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3857,11 +5134,11 @@ proto.boxerservice_package.GetAllMatchesResponse.prototype.serializeBinary = fun
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.GetAllMatchesResponse} message
+ * @param {!proto.ubc_package.GetAllMatchesResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.GetAllMatchesResponse.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.GetAllMatchesResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCode();
   if (f !== 0) {
@@ -3882,7 +5159,7 @@ proto.boxerservice_package.GetAllMatchesResponse.serializeBinaryToWriter = funct
     writer.writeRepeatedMessage(
       3,
       f,
-      proto.boxerservice_package.Match.serializeBinaryToWriter
+      proto.ubc_package.Match.serializeBinaryToWriter
     );
   }
 };
@@ -3892,14 +5169,17 @@ proto.boxerservice_package.GetAllMatchesResponse.serializeBinaryToWriter = funct
  * optional int32 code = 1;
  * @return {number}
  */
-proto.boxerservice_package.GetAllMatchesResponse.prototype.getCode = function() {
+proto.ubc_package.GetAllMatchesResponse.prototype.getCode = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.GetAllMatchesResponse.prototype.setCode = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.GetAllMatchesResponse} returns this
+ */
+proto.ubc_package.GetAllMatchesResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3907,99 +5187,1055 @@ proto.boxerservice_package.GetAllMatchesResponse.prototype.setCode = function(va
  * optional string message = 2;
  * @return {string}
  */
-proto.boxerservice_package.GetAllMatchesResponse.prototype.getMessage = function() {
+proto.ubc_package.GetAllMatchesResponse.prototype.getMessage = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.GetAllMatchesResponse.prototype.setMessage = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.GetAllMatchesResponse} returns this
+ */
+proto.ubc_package.GetAllMatchesResponse.prototype.setMessage = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
 /**
  * repeated Match matches = 3;
- * @return {!Array<!proto.boxerservice_package.Match>}
+ * @return {!Array<!proto.ubc_package.Match>}
  */
-proto.boxerservice_package.GetAllMatchesResponse.prototype.getMatchesList = function() {
-  return /** @type{!Array<!proto.boxerservice_package.Match>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.boxerservice_package.Match, 3));
-};
-
-
-/** @param {!Array<!proto.boxerservice_package.Match>} value */
-proto.boxerservice_package.GetAllMatchesResponse.prototype.setMatchesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+proto.ubc_package.GetAllMatchesResponse.prototype.getMatchesList = function() {
+  return /** @type{!Array<!proto.ubc_package.Match>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.ubc_package.Match, 3));
 };
 
 
 /**
- * @param {!proto.boxerservice_package.Match=} opt_value
+ * @param {!Array<!proto.ubc_package.Match>} value
+ * @return {!proto.ubc_package.GetAllMatchesResponse} returns this
+*/
+proto.ubc_package.GetAllMatchesResponse.prototype.setMatchesList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
+};
+
+
+/**
+ * @param {!proto.ubc_package.Match=} opt_value
  * @param {number=} opt_index
- * @return {!proto.boxerservice_package.Match}
+ * @return {!proto.ubc_package.Match}
  */
-proto.boxerservice_package.GetAllMatchesResponse.prototype.addMatches = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.boxerservice_package.Match, opt_index);
+proto.ubc_package.GetAllMatchesResponse.prototype.addMatches = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.ubc_package.Match, opt_index);
 };
-
-
-proto.boxerservice_package.GetAllMatchesResponse.prototype.clearMatchesList = function() {
-  this.setMatchesList([]);
-};
-
 
 
 /**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
+ * Clears the list making it empty but non-null.
+ * @return {!proto.ubc_package.GetAllMatchesResponse} returns this
  */
-proto.boxerservice_package.AddMatchRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+proto.ubc_package.GetAllMatchesResponse.prototype.clearMatchesList = function() {
+  return this.setMatchesList([]);
 };
-goog.inherits(proto.boxerservice_package.AddMatchRequest, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.AddMatchRequest.displayName = 'proto.boxerservice_package.AddMatchRequest';
-}
+
+
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.AddMatchRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.AddMatchRequest.toObject(opt_includeInstance, this);
+proto.ubc_package.GetMatchesOfBoxerRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.GetMatchesOfBoxerRequest.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.AddMatchRequest} msg The msg instance to transform.
+ * @param {!proto.ubc_package.GetMatchesOfBoxerRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.AddMatchRequest.toObject = function(includeInstance, msg) {
+proto.ubc_package.GetMatchesOfBoxerRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    boxerid: jspb.Message.getFieldWithDefault(msg, 1, 0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.GetMatchesOfBoxerRequest}
+ */
+proto.ubc_package.GetMatchesOfBoxerRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.GetMatchesOfBoxerRequest;
+  return proto.ubc_package.GetMatchesOfBoxerRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.GetMatchesOfBoxerRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.GetMatchesOfBoxerRequest}
+ */
+proto.ubc_package.GetMatchesOfBoxerRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setBoxerid(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.GetMatchesOfBoxerRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.GetMatchesOfBoxerRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.GetMatchesOfBoxerRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.GetMatchesOfBoxerRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getBoxerid();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional int32 boxerId = 1;
+ * @return {number}
+ */
+proto.ubc_package.GetMatchesOfBoxerRequest.prototype.getBoxerid = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.GetMatchesOfBoxerRequest} returns this
+ */
+proto.ubc_package.GetMatchesOfBoxerRequest.prototype.setBoxerid = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse.repeatedFields_ = [4];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.GetMatchesOfBoxerResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.GetMatchesOfBoxerResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    code: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    message: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    boxer: (f = msg.getBoxer()) && proto.ubc_package.Boxer.toObject(includeInstance, f),
+    matchesList: jspb.Message.toObjectList(msg.getMatchesList(),
+    proto.ubc_package.Match.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.GetMatchesOfBoxerResponse}
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.GetMatchesOfBoxerResponse;
+  return proto.ubc_package.GetMatchesOfBoxerResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.GetMatchesOfBoxerResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.GetMatchesOfBoxerResponse}
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setCode(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setMessage(value);
+      break;
+    case 3:
+      var value = new proto.ubc_package.Boxer;
+      reader.readMessage(value,proto.ubc_package.Boxer.deserializeBinaryFromReader);
+      msg.setBoxer(value);
+      break;
+    case 4:
+      var value = new proto.ubc_package.Match;
+      reader.readMessage(value,proto.ubc_package.Match.deserializeBinaryFromReader);
+      msg.addMatches(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.GetMatchesOfBoxerResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.GetMatchesOfBoxerResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCode();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+  f = message.getMessage();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+  f = message.getBoxer();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      proto.ubc_package.Boxer.serializeBinaryToWriter
+    );
+  }
+  f = message.getMatchesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      4,
+      f,
+      proto.ubc_package.Match.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional int32 code = 1;
+ * @return {number}
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse.prototype.getCode = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.GetMatchesOfBoxerResponse} returns this
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional string message = 2;
+ * @return {string}
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse.prototype.getMessage = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.GetMatchesOfBoxerResponse} returns this
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse.prototype.setMessage = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional Boxer boxer = 3;
+ * @return {?proto.ubc_package.Boxer}
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse.prototype.getBoxer = function() {
+  return /** @type{?proto.ubc_package.Boxer} */ (
+    jspb.Message.getWrapperField(this, proto.ubc_package.Boxer, 3));
+};
+
+
+/**
+ * @param {?proto.ubc_package.Boxer|undefined} value
+ * @return {!proto.ubc_package.GetMatchesOfBoxerResponse} returns this
+*/
+proto.ubc_package.GetMatchesOfBoxerResponse.prototype.setBoxer = function(value) {
+  return jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.ubc_package.GetMatchesOfBoxerResponse} returns this
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse.prototype.clearBoxer = function() {
+  return this.setBoxer(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse.prototype.hasBoxer = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * repeated Match matches = 4;
+ * @return {!Array<!proto.ubc_package.Match>}
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse.prototype.getMatchesList = function() {
+  return /** @type{!Array<!proto.ubc_package.Match>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.ubc_package.Match, 4));
+};
+
+
+/**
+ * @param {!Array<!proto.ubc_package.Match>} value
+ * @return {!proto.ubc_package.GetMatchesOfBoxerResponse} returns this
+*/
+proto.ubc_package.GetMatchesOfBoxerResponse.prototype.setMatchesList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 4, value);
+};
+
+
+/**
+ * @param {!proto.ubc_package.Match=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.ubc_package.Match}
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse.prototype.addMatches = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 4, opt_value, proto.ubc_package.Match, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.ubc_package.GetMatchesOfBoxerResponse} returns this
+ */
+proto.ubc_package.GetMatchesOfBoxerResponse.prototype.clearMatchesList = function() {
+  return this.setMatchesList([]);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.UpdateMatchRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.UpdateMatchRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.UpdateMatchRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    homeboxerid: jspb.Message.getFieldWithDefault(msg, 2, 0),
+    awayboxerid: jspb.Message.getFieldWithDefault(msg, 3, 0),
+    matchtime: jspb.Message.getFieldWithDefault(msg, 4, 0),
+    isfinished: jspb.Message.getBooleanFieldWithDefault(msg, 5, false),
+    winnerboxerid: jspb.Message.getFieldWithDefault(msg, 6, 0),
+    token: jspb.Message.getFieldWithDefault(msg, 7, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.UpdateMatchRequest}
+ */
+proto.ubc_package.UpdateMatchRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.UpdateMatchRequest;
+  return proto.ubc_package.UpdateMatchRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.UpdateMatchRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.UpdateMatchRequest}
+ */
+proto.ubc_package.UpdateMatchRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setId(value);
+      break;
+    case 2:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setHomeboxerid(value);
+      break;
+    case 3:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setAwayboxerid(value);
+      break;
+    case 4:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setMatchtime(value);
+      break;
+    case 5:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setIsfinished(value);
+      break;
+    case 6:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setWinnerboxerid(value);
+      break;
+    case 7:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setToken(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.UpdateMatchRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.UpdateMatchRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.UpdateMatchRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getId();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+  f = /** @type {number} */ (jspb.Message.getField(message, 2));
+  if (f != null) {
+    writer.writeInt32(
+      2,
+      f
+    );
+  }
+  f = /** @type {number} */ (jspb.Message.getField(message, 3));
+  if (f != null) {
+    writer.writeInt32(
+      3,
+      f
+    );
+  }
+  f = /** @type {number} */ (jspb.Message.getField(message, 4));
+  if (f != null) {
+    writer.writeInt64(
+      4,
+      f
+    );
+  }
+  f = /** @type {boolean} */ (jspb.Message.getField(message, 5));
+  if (f != null) {
+    writer.writeBool(
+      5,
+      f
+    );
+  }
+  f = /** @type {number} */ (jspb.Message.getField(message, 6));
+  if (f != null) {
+    writer.writeInt32(
+      6,
+      f
+    );
+  }
+  f = message.getToken();
+  if (f.length > 0) {
+    writer.writeString(
+      7,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional int32 id = 1;
+ * @return {number}
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.getId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.UpdateMatchRequest} returns this
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.setId = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional int32 homeBoxerId = 2;
+ * @return {number}
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.getHomeboxerid = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.UpdateMatchRequest} returns this
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.setHomeboxerid = function(value) {
+  return jspb.Message.setField(this, 2, value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.ubc_package.UpdateMatchRequest} returns this
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.clearHomeboxerid = function() {
+  return jspb.Message.setField(this, 2, undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.hasHomeboxerid = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional int32 awayBoxerId = 3;
+ * @return {number}
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.getAwayboxerid = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.UpdateMatchRequest} returns this
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.setAwayboxerid = function(value) {
+  return jspb.Message.setField(this, 3, value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.ubc_package.UpdateMatchRequest} returns this
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.clearAwayboxerid = function() {
+  return jspb.Message.setField(this, 3, undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.hasAwayboxerid = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional int64 matchTime = 4;
+ * @return {number}
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.getMatchtime = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.UpdateMatchRequest} returns this
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.setMatchtime = function(value) {
+  return jspb.Message.setField(this, 4, value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.ubc_package.UpdateMatchRequest} returns this
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.clearMatchtime = function() {
+  return jspb.Message.setField(this, 4, undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.hasMatchtime = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional bool isFinished = 5;
+ * @return {boolean}
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.getIsfinished = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 5, false));
+};
+
+
+/**
+ * @param {boolean} value
+ * @return {!proto.ubc_package.UpdateMatchRequest} returns this
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.setIsfinished = function(value) {
+  return jspb.Message.setField(this, 5, value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.ubc_package.UpdateMatchRequest} returns this
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.clearIsfinished = function() {
+  return jspb.Message.setField(this, 5, undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.hasIsfinished = function() {
+  return jspb.Message.getField(this, 5) != null;
+};
+
+
+/**
+ * optional int32 winnerBoxerId = 6;
+ * @return {number}
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.getWinnerboxerid = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.UpdateMatchRequest} returns this
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.setWinnerboxerid = function(value) {
+  return jspb.Message.setField(this, 6, value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.ubc_package.UpdateMatchRequest} returns this
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.clearWinnerboxerid = function() {
+  return jspb.Message.setField(this, 6, undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.hasWinnerboxerid = function() {
+  return jspb.Message.getField(this, 6) != null;
+};
+
+
+/**
+ * optional string token = 7;
+ * @return {string}
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.getToken = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 7, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.UpdateMatchRequest} returns this
+ */
+proto.ubc_package.UpdateMatchRequest.prototype.setToken = function(value) {
+  return jspb.Message.setProto3StringField(this, 7, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.UpdateMatchResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.UpdateMatchResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.UpdateMatchResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.UpdateMatchResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    code: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    message: jspb.Message.getFieldWithDefault(msg, 2, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.UpdateMatchResponse}
+ */
+proto.ubc_package.UpdateMatchResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.UpdateMatchResponse;
+  return proto.ubc_package.UpdateMatchResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.UpdateMatchResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.UpdateMatchResponse}
+ */
+proto.ubc_package.UpdateMatchResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setCode(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setMessage(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.UpdateMatchResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.UpdateMatchResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.UpdateMatchResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.UpdateMatchResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCode();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+  f = message.getMessage();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional int32 code = 1;
+ * @return {number}
+ */
+proto.ubc_package.UpdateMatchResponse.prototype.getCode = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.UpdateMatchResponse} returns this
+ */
+proto.ubc_package.UpdateMatchResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional string message = 2;
+ * @return {string}
+ */
+proto.ubc_package.UpdateMatchResponse.prototype.getMessage = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.UpdateMatchResponse} returns this
+ */
+proto.ubc_package.UpdateMatchResponse.prototype.setMessage = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.AddMatchRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.AddMatchRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.AddMatchRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.AddMatchRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     homeboxerid: jspb.Message.getFieldWithDefault(msg, 1, 0),
     awayboxerid: jspb.Message.getFieldWithDefault(msg, 2, 0),
     matchtime: jspb.Message.getFieldWithDefault(msg, 3, 0),
-    isfinished: jspb.Message.getFieldWithDefault(msg, 4, false),
+    isfinished: jspb.Message.getBooleanFieldWithDefault(msg, 4, false),
     winnerboxerid: jspb.Message.getFieldWithDefault(msg, 5, 0),
     token: jspb.Message.getFieldWithDefault(msg, 6, "")
   };
@@ -4015,23 +6251,23 @@ proto.boxerservice_package.AddMatchRequest.toObject = function(includeInstance, 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.AddMatchRequest}
+ * @return {!proto.ubc_package.AddMatchRequest}
  */
-proto.boxerservice_package.AddMatchRequest.deserializeBinary = function(bytes) {
+proto.ubc_package.AddMatchRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.AddMatchRequest;
-  return proto.boxerservice_package.AddMatchRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.AddMatchRequest;
+  return proto.ubc_package.AddMatchRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.AddMatchRequest} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.AddMatchRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.AddMatchRequest}
+ * @return {!proto.ubc_package.AddMatchRequest}
  */
-proto.boxerservice_package.AddMatchRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.AddMatchRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4075,9 +6311,9 @@ proto.boxerservice_package.AddMatchRequest.deserializeBinaryFromReader = functio
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.AddMatchRequest.prototype.serializeBinary = function() {
+proto.ubc_package.AddMatchRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.AddMatchRequest.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.AddMatchRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4085,11 +6321,11 @@ proto.boxerservice_package.AddMatchRequest.prototype.serializeBinary = function(
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.AddMatchRequest} message
+ * @param {!proto.ubc_package.AddMatchRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.AddMatchRequest.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.AddMatchRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getHomeboxerid();
   if (f !== 0) {
@@ -4119,8 +6355,8 @@ proto.boxerservice_package.AddMatchRequest.serializeBinaryToWriter = function(me
       f
     );
   }
-  f = message.getWinnerboxerid();
-  if (f !== 0) {
+  f = /** @type {number} */ (jspb.Message.getField(message, 5));
+  if (f != null) {
     writer.writeInt32(
       5,
       f
@@ -4140,14 +6376,17 @@ proto.boxerservice_package.AddMatchRequest.serializeBinaryToWriter = function(me
  * optional int32 homeBoxerId = 1;
  * @return {number}
  */
-proto.boxerservice_package.AddMatchRequest.prototype.getHomeboxerid = function() {
+proto.ubc_package.AddMatchRequest.prototype.getHomeboxerid = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.AddMatchRequest.prototype.setHomeboxerid = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.AddMatchRequest} returns this
+ */
+proto.ubc_package.AddMatchRequest.prototype.setHomeboxerid = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4155,14 +6394,17 @@ proto.boxerservice_package.AddMatchRequest.prototype.setHomeboxerid = function(v
  * optional int32 awayBoxerId = 2;
  * @return {number}
  */
-proto.boxerservice_package.AddMatchRequest.prototype.getAwayboxerid = function() {
+proto.ubc_package.AddMatchRequest.prototype.getAwayboxerid = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.AddMatchRequest.prototype.setAwayboxerid = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.AddMatchRequest} returns this
+ */
+proto.ubc_package.AddMatchRequest.prototype.setAwayboxerid = function(value) {
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -4170,31 +6412,35 @@ proto.boxerservice_package.AddMatchRequest.prototype.setAwayboxerid = function(v
  * optional int64 matchTime = 3;
  * @return {number}
  */
-proto.boxerservice_package.AddMatchRequest.prototype.getMatchtime = function() {
+proto.ubc_package.AddMatchRequest.prototype.getMatchtime = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.AddMatchRequest.prototype.setMatchtime = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.AddMatchRequest} returns this
+ */
+proto.ubc_package.AddMatchRequest.prototype.setMatchtime = function(value) {
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
 /**
  * optional bool isFinished = 4;
- * Note that Boolean fields may be set to 0/1 when serialized from a Java server.
- * You should avoid comparisons like {@code val === true/false} in those cases.
  * @return {boolean}
  */
-proto.boxerservice_package.AddMatchRequest.prototype.getIsfinished = function() {
-  return /** @type {boolean} */ (jspb.Message.getFieldWithDefault(this, 4, false));
+proto.ubc_package.AddMatchRequest.prototype.getIsfinished = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 4, false));
 };
 
 
-/** @param {boolean} value */
-proto.boxerservice_package.AddMatchRequest.prototype.setIsfinished = function(value) {
-  jspb.Message.setProto3BooleanField(this, 4, value);
+/**
+ * @param {boolean} value
+ * @return {!proto.ubc_package.AddMatchRequest} returns this
+ */
+proto.ubc_package.AddMatchRequest.prototype.setIsfinished = function(value) {
+  return jspb.Message.setProto3BooleanField(this, 4, value);
 };
 
 
@@ -4202,14 +6448,35 @@ proto.boxerservice_package.AddMatchRequest.prototype.setIsfinished = function(va
  * optional int32 winnerBoxerId = 5;
  * @return {number}
  */
-proto.boxerservice_package.AddMatchRequest.prototype.getWinnerboxerid = function() {
+proto.ubc_package.AddMatchRequest.prototype.getWinnerboxerid = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.AddMatchRequest.prototype.setWinnerboxerid = function(value) {
-  jspb.Message.setProto3IntField(this, 5, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.AddMatchRequest} returns this
+ */
+proto.ubc_package.AddMatchRequest.prototype.setWinnerboxerid = function(value) {
+  return jspb.Message.setField(this, 5, value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.ubc_package.AddMatchRequest} returns this
+ */
+proto.ubc_package.AddMatchRequest.prototype.clearWinnerboxerid = function() {
+  return jspb.Message.setField(this, 5, undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.ubc_package.AddMatchRequest.prototype.hasWinnerboxerid = function() {
+  return jspb.Message.getField(this, 5) != null;
 };
 
 
@@ -4217,67 +6484,54 @@ proto.boxerservice_package.AddMatchRequest.prototype.setWinnerboxerid = function
  * optional string token = 6;
  * @return {string}
  */
-proto.boxerservice_package.AddMatchRequest.prototype.getToken = function() {
+proto.ubc_package.AddMatchRequest.prototype.getToken = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 6, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.AddMatchRequest.prototype.setToken = function(value) {
-  jspb.Message.setProto3StringField(this, 6, value);
-};
-
-
-
 /**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
+ * @param {string} value
+ * @return {!proto.ubc_package.AddMatchRequest} returns this
  */
-proto.boxerservice_package.AddMatchResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+proto.ubc_package.AddMatchRequest.prototype.setToken = function(value) {
+  return jspb.Message.setProto3StringField(this, 6, value);
 };
-goog.inherits(proto.boxerservice_package.AddMatchResponse, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.AddMatchResponse.displayName = 'proto.boxerservice_package.AddMatchResponse';
-}
+
+
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.AddMatchResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.AddMatchResponse.toObject(opt_includeInstance, this);
+proto.ubc_package.AddMatchResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.AddMatchResponse.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.AddMatchResponse} msg The msg instance to transform.
+ * @param {!proto.ubc_package.AddMatchResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.AddMatchResponse.toObject = function(includeInstance, msg) {
+proto.ubc_package.AddMatchResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     code: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    message: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    match: (f = msg.getMatch()) && proto.boxerservice_package.Match.toObject(includeInstance, f)
+    message: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
   if (includeInstance) {
@@ -4291,23 +6545,23 @@ proto.boxerservice_package.AddMatchResponse.toObject = function(includeInstance,
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.AddMatchResponse}
+ * @return {!proto.ubc_package.AddMatchResponse}
  */
-proto.boxerservice_package.AddMatchResponse.deserializeBinary = function(bytes) {
+proto.ubc_package.AddMatchResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.AddMatchResponse;
-  return proto.boxerservice_package.AddMatchResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.AddMatchResponse;
+  return proto.ubc_package.AddMatchResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.AddMatchResponse} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.AddMatchResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.AddMatchResponse}
+ * @return {!proto.ubc_package.AddMatchResponse}
  */
-proto.boxerservice_package.AddMatchResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.AddMatchResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4322,11 +6576,6 @@ proto.boxerservice_package.AddMatchResponse.deserializeBinaryFromReader = functi
       var value = /** @type {string} */ (reader.readString());
       msg.setMessage(value);
       break;
-    case 3:
-      var value = new proto.boxerservice_package.Match;
-      reader.readMessage(value,proto.boxerservice_package.Match.deserializeBinaryFromReader);
-      msg.setMatch(value);
-      break;
     default:
       reader.skipField();
       break;
@@ -4340,9 +6589,9 @@ proto.boxerservice_package.AddMatchResponse.deserializeBinaryFromReader = functi
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.AddMatchResponse.prototype.serializeBinary = function() {
+proto.ubc_package.AddMatchResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.AddMatchResponse.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.AddMatchResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4350,11 +6599,11 @@ proto.boxerservice_package.AddMatchResponse.prototype.serializeBinary = function
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.AddMatchResponse} message
+ * @param {!proto.ubc_package.AddMatchResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.AddMatchResponse.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.AddMatchResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCode();
   if (f !== 0) {
@@ -4370,14 +6619,6 @@ proto.boxerservice_package.AddMatchResponse.serializeBinaryToWriter = function(m
       f
     );
   }
-  f = message.getMatch();
-  if (f != null) {
-    writer.writeMessage(
-      3,
-      f,
-      proto.boxerservice_package.Match.serializeBinaryToWriter
-    );
-  }
 };
 
 
@@ -4385,14 +6626,17 @@ proto.boxerservice_package.AddMatchResponse.serializeBinaryToWriter = function(m
  * optional int32 code = 1;
  * @return {number}
  */
-proto.boxerservice_package.AddMatchResponse.prototype.getCode = function() {
+proto.ubc_package.AddMatchResponse.prototype.getCode = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.AddMatchResponse.prototype.setCode = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.AddMatchResponse} returns this
+ */
+proto.ubc_package.AddMatchResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4400,93 +6644,51 @@ proto.boxerservice_package.AddMatchResponse.prototype.setCode = function(value) 
  * optional string message = 2;
  * @return {string}
  */
-proto.boxerservice_package.AddMatchResponse.prototype.getMessage = function() {
+proto.ubc_package.AddMatchResponse.prototype.getMessage = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.AddMatchResponse.prototype.setMessage = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
-};
-
-
 /**
- * optional Match match = 3;
- * @return {?proto.boxerservice_package.Match}
+ * @param {string} value
+ * @return {!proto.ubc_package.AddMatchResponse} returns this
  */
-proto.boxerservice_package.AddMatchResponse.prototype.getMatch = function() {
-  return /** @type{?proto.boxerservice_package.Match} */ (
-    jspb.Message.getWrapperField(this, proto.boxerservice_package.Match, 3));
-};
-
-
-/** @param {?proto.boxerservice_package.Match|undefined} value */
-proto.boxerservice_package.AddMatchResponse.prototype.setMatch = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
-};
-
-
-proto.boxerservice_package.AddMatchResponse.prototype.clearMatch = function() {
-  this.setMatch(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {!boolean}
- */
-proto.boxerservice_package.AddMatchResponse.prototype.hasMatch = function() {
-  return jspb.Message.getField(this, 3) != null;
+proto.ubc_package.AddMatchResponse.prototype.setMessage = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
 
-/**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
- */
-proto.boxerservice_package.RemoveMatchRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
-};
-goog.inherits(proto.boxerservice_package.RemoveMatchRequest, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.RemoveMatchRequest.displayName = 'proto.boxerservice_package.RemoveMatchRequest';
-}
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.RemoveMatchRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.RemoveMatchRequest.toObject(opt_includeInstance, this);
+proto.ubc_package.RemoveMatchRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.RemoveMatchRequest.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.RemoveMatchRequest} msg The msg instance to transform.
+ * @param {!proto.ubc_package.RemoveMatchRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.RemoveMatchRequest.toObject = function(includeInstance, msg) {
+proto.ubc_package.RemoveMatchRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: jspb.Message.getFieldWithDefault(msg, 1, 0),
     token: jspb.Message.getFieldWithDefault(msg, 2, "")
@@ -4503,23 +6705,23 @@ proto.boxerservice_package.RemoveMatchRequest.toObject = function(includeInstanc
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.RemoveMatchRequest}
+ * @return {!proto.ubc_package.RemoveMatchRequest}
  */
-proto.boxerservice_package.RemoveMatchRequest.deserializeBinary = function(bytes) {
+proto.ubc_package.RemoveMatchRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.RemoveMatchRequest;
-  return proto.boxerservice_package.RemoveMatchRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.RemoveMatchRequest;
+  return proto.ubc_package.RemoveMatchRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.RemoveMatchRequest} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.RemoveMatchRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.RemoveMatchRequest}
+ * @return {!proto.ubc_package.RemoveMatchRequest}
  */
-proto.boxerservice_package.RemoveMatchRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.RemoveMatchRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4547,9 +6749,9 @@ proto.boxerservice_package.RemoveMatchRequest.deserializeBinaryFromReader = func
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.RemoveMatchRequest.prototype.serializeBinary = function() {
+proto.ubc_package.RemoveMatchRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.RemoveMatchRequest.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.RemoveMatchRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4557,11 +6759,11 @@ proto.boxerservice_package.RemoveMatchRequest.prototype.serializeBinary = functi
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.RemoveMatchRequest} message
+ * @param {!proto.ubc_package.RemoveMatchRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.RemoveMatchRequest.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.RemoveMatchRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
@@ -4584,14 +6786,17 @@ proto.boxerservice_package.RemoveMatchRequest.serializeBinaryToWriter = function
  * optional int32 id = 1;
  * @return {number}
  */
-proto.boxerservice_package.RemoveMatchRequest.prototype.getId = function() {
+proto.ubc_package.RemoveMatchRequest.prototype.getId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.RemoveMatchRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.RemoveMatchRequest} returns this
+ */
+proto.ubc_package.RemoveMatchRequest.prototype.setId = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4599,67 +6804,54 @@ proto.boxerservice_package.RemoveMatchRequest.prototype.setId = function(value) 
  * optional string token = 2;
  * @return {string}
  */
-proto.boxerservice_package.RemoveMatchRequest.prototype.getToken = function() {
+proto.ubc_package.RemoveMatchRequest.prototype.getToken = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.RemoveMatchRequest.prototype.setToken = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
-};
-
-
-
 /**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
+ * @param {string} value
+ * @return {!proto.ubc_package.RemoveMatchRequest} returns this
  */
-proto.boxerservice_package.RemoveMatchResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+proto.ubc_package.RemoveMatchRequest.prototype.setToken = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
-goog.inherits(proto.boxerservice_package.RemoveMatchResponse, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.RemoveMatchResponse.displayName = 'proto.boxerservice_package.RemoveMatchResponse';
-}
+
+
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.RemoveMatchResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.RemoveMatchResponse.toObject(opt_includeInstance, this);
+proto.ubc_package.RemoveMatchResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.RemoveMatchResponse.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.RemoveMatchResponse} msg The msg instance to transform.
+ * @param {!proto.ubc_package.RemoveMatchResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.RemoveMatchResponse.toObject = function(includeInstance, msg) {
+proto.ubc_package.RemoveMatchResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     code: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    message: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    match: (f = msg.getMatch()) && proto.boxerservice_package.Match.toObject(includeInstance, f)
+    message: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
   if (includeInstance) {
@@ -4673,23 +6865,23 @@ proto.boxerservice_package.RemoveMatchResponse.toObject = function(includeInstan
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.RemoveMatchResponse}
+ * @return {!proto.ubc_package.RemoveMatchResponse}
  */
-proto.boxerservice_package.RemoveMatchResponse.deserializeBinary = function(bytes) {
+proto.ubc_package.RemoveMatchResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.RemoveMatchResponse;
-  return proto.boxerservice_package.RemoveMatchResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.RemoveMatchResponse;
+  return proto.ubc_package.RemoveMatchResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.RemoveMatchResponse} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.RemoveMatchResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.RemoveMatchResponse}
+ * @return {!proto.ubc_package.RemoveMatchResponse}
  */
-proto.boxerservice_package.RemoveMatchResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.RemoveMatchResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4704,11 +6896,6 @@ proto.boxerservice_package.RemoveMatchResponse.deserializeBinaryFromReader = fun
       var value = /** @type {string} */ (reader.readString());
       msg.setMessage(value);
       break;
-    case 3:
-      var value = new proto.boxerservice_package.Match;
-      reader.readMessage(value,proto.boxerservice_package.Match.deserializeBinaryFromReader);
-      msg.setMatch(value);
-      break;
     default:
       reader.skipField();
       break;
@@ -4722,9 +6909,9 @@ proto.boxerservice_package.RemoveMatchResponse.deserializeBinaryFromReader = fun
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.RemoveMatchResponse.prototype.serializeBinary = function() {
+proto.ubc_package.RemoveMatchResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.RemoveMatchResponse.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.RemoveMatchResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4732,11 +6919,11 @@ proto.boxerservice_package.RemoveMatchResponse.prototype.serializeBinary = funct
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.RemoveMatchResponse} message
+ * @param {!proto.ubc_package.RemoveMatchResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.RemoveMatchResponse.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.RemoveMatchResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCode();
   if (f !== 0) {
@@ -4752,14 +6939,6 @@ proto.boxerservice_package.RemoveMatchResponse.serializeBinaryToWriter = functio
       f
     );
   }
-  f = message.getMatch();
-  if (f != null) {
-    writer.writeMessage(
-      3,
-      f,
-      proto.boxerservice_package.Match.serializeBinaryToWriter
-    );
-  }
 };
 
 
@@ -4767,14 +6946,17 @@ proto.boxerservice_package.RemoveMatchResponse.serializeBinaryToWriter = functio
  * optional int32 code = 1;
  * @return {number}
  */
-proto.boxerservice_package.RemoveMatchResponse.prototype.getCode = function() {
+proto.ubc_package.RemoveMatchResponse.prototype.getCode = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.RemoveMatchResponse.prototype.setCode = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.RemoveMatchResponse} returns this
+ */
+proto.ubc_package.RemoveMatchResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4782,101 +6964,54 @@ proto.boxerservice_package.RemoveMatchResponse.prototype.setCode = function(valu
  * optional string message = 2;
  * @return {string}
  */
-proto.boxerservice_package.RemoveMatchResponse.prototype.getMessage = function() {
+proto.ubc_package.RemoveMatchResponse.prototype.getMessage = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.RemoveMatchResponse.prototype.setMessage = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
-};
-
-
 /**
- * optional Match match = 3;
- * @return {?proto.boxerservice_package.Match}
+ * @param {string} value
+ * @return {!proto.ubc_package.RemoveMatchResponse} returns this
  */
-proto.boxerservice_package.RemoveMatchResponse.prototype.getMatch = function() {
-  return /** @type{?proto.boxerservice_package.Match} */ (
-    jspb.Message.getWrapperField(this, proto.boxerservice_package.Match, 3));
-};
-
-
-/** @param {?proto.boxerservice_package.Match|undefined} value */
-proto.boxerservice_package.RemoveMatchResponse.prototype.setMatch = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
-};
-
-
-proto.boxerservice_package.RemoveMatchResponse.prototype.clearMatch = function() {
-  this.setMatch(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {!boolean}
- */
-proto.boxerservice_package.RemoveMatchResponse.prototype.hasMatch = function() {
-  return jspb.Message.getField(this, 3) != null;
+proto.ubc_package.RemoveMatchResponse.prototype.setMessage = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
 
-/**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
- */
-proto.boxerservice_package.UpdateMatchRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
-};
-goog.inherits(proto.boxerservice_package.UpdateMatchRequest, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.UpdateMatchRequest.displayName = 'proto.boxerservice_package.UpdateMatchRequest';
-}
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.UpdateMatchRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.UpdateMatchRequest.toObject(opt_includeInstance, this);
+proto.ubc_package.RemoveMatchesOfBoxerRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.RemoveMatchesOfBoxerRequest.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.UpdateMatchRequest} msg The msg instance to transform.
+ * @param {!proto.ubc_package.RemoveMatchesOfBoxerRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.UpdateMatchRequest.toObject = function(includeInstance, msg) {
+proto.ubc_package.RemoveMatchesOfBoxerRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    homeboxer: (f = msg.getHomeboxer()) && proto.boxerservice_package.Boxer.toObject(includeInstance, f),
-    awayboxer: (f = msg.getAwayboxer()) && proto.boxerservice_package.Boxer.toObject(includeInstance, f),
-    matchtime: jspb.Message.getFieldWithDefault(msg, 4, 0),
-    isfinished: jspb.Message.getFieldWithDefault(msg, 5, false),
-    winnerboxerid: jspb.Message.getFieldWithDefault(msg, 6, 0),
-    token: jspb.Message.getFieldWithDefault(msg, 7, "")
+    boxerid: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    token: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
   if (includeInstance) {
@@ -4890,23 +7025,23 @@ proto.boxerservice_package.UpdateMatchRequest.toObject = function(includeInstanc
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.UpdateMatchRequest}
+ * @return {!proto.ubc_package.RemoveMatchesOfBoxerRequest}
  */
-proto.boxerservice_package.UpdateMatchRequest.deserializeBinary = function(bytes) {
+proto.ubc_package.RemoveMatchesOfBoxerRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.UpdateMatchRequest;
-  return proto.boxerservice_package.UpdateMatchRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.RemoveMatchesOfBoxerRequest;
+  return proto.ubc_package.RemoveMatchesOfBoxerRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.UpdateMatchRequest} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.RemoveMatchesOfBoxerRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.UpdateMatchRequest}
+ * @return {!proto.ubc_package.RemoveMatchesOfBoxerRequest}
  */
-proto.boxerservice_package.UpdateMatchRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.RemoveMatchesOfBoxerRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4915,31 +7050,9 @@ proto.boxerservice_package.UpdateMatchRequest.deserializeBinaryFromReader = func
     switch (field) {
     case 1:
       var value = /** @type {number} */ (reader.readInt32());
-      msg.setId(value);
+      msg.setBoxerid(value);
       break;
     case 2:
-      var value = new proto.boxerservice_package.Boxer;
-      reader.readMessage(value,proto.boxerservice_package.Boxer.deserializeBinaryFromReader);
-      msg.setHomeboxer(value);
-      break;
-    case 3:
-      var value = new proto.boxerservice_package.Boxer;
-      reader.readMessage(value,proto.boxerservice_package.Boxer.deserializeBinaryFromReader);
-      msg.setAwayboxer(value);
-      break;
-    case 4:
-      var value = /** @type {number} */ (reader.readInt64());
-      msg.setMatchtime(value);
-      break;
-    case 5:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setIsfinished(value);
-      break;
-    case 6:
-      var value = /** @type {number} */ (reader.readInt32());
-      msg.setWinnerboxerid(value);
-      break;
-    case 7:
       var value = /** @type {string} */ (reader.readString());
       msg.setToken(value);
       break;
@@ -4956,9 +7069,9 @@ proto.boxerservice_package.UpdateMatchRequest.deserializeBinaryFromReader = func
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.UpdateMatchRequest.prototype.serializeBinary = function() {
+proto.ubc_package.RemoveMatchesOfBoxerRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.UpdateMatchRequest.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.RemoveMatchesOfBoxerRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4966,60 +7079,23 @@ proto.boxerservice_package.UpdateMatchRequest.prototype.serializeBinary = functi
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.UpdateMatchRequest} message
+ * @param {!proto.ubc_package.RemoveMatchesOfBoxerRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.UpdateMatchRequest.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.RemoveMatchesOfBoxerRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
-  f = message.getId();
+  f = message.getBoxerid();
   if (f !== 0) {
     writer.writeInt32(
       1,
       f
     );
   }
-  f = message.getHomeboxer();
-  if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.boxerservice_package.Boxer.serializeBinaryToWriter
-    );
-  }
-  f = message.getAwayboxer();
-  if (f != null) {
-    writer.writeMessage(
-      3,
-      f,
-      proto.boxerservice_package.Boxer.serializeBinaryToWriter
-    );
-  }
-  f = message.getMatchtime();
-  if (f !== 0) {
-    writer.writeInt64(
-      4,
-      f
-    );
-  }
-  f = message.getIsfinished();
-  if (f) {
-    writer.writeBool(
-      5,
-      f
-    );
-  }
-  f = message.getWinnerboxerid();
-  if (f !== 0) {
-    writer.writeInt32(
-      6,
-      f
-    );
-  }
   f = message.getToken();
   if (f.length > 0) {
     writer.writeString(
-      7,
+      2,
       f
     );
   }
@@ -5027,192 +7103,75 @@ proto.boxerservice_package.UpdateMatchRequest.serializeBinaryToWriter = function
 
 
 /**
- * optional int32 id = 1;
+ * optional int32 boxerId = 1;
  * @return {number}
  */
-proto.boxerservice_package.UpdateMatchRequest.prototype.getId = function() {
+proto.ubc_package.RemoveMatchesOfBoxerRequest.prototype.getBoxerid = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.UpdateMatchRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
-};
-
-
 /**
- * optional Boxer homeBoxer = 2;
- * @return {?proto.boxerservice_package.Boxer}
+ * @param {number} value
+ * @return {!proto.ubc_package.RemoveMatchesOfBoxerRequest} returns this
  */
-proto.boxerservice_package.UpdateMatchRequest.prototype.getHomeboxer = function() {
-  return /** @type{?proto.boxerservice_package.Boxer} */ (
-    jspb.Message.getWrapperField(this, proto.boxerservice_package.Boxer, 2));
-};
-
-
-/** @param {?proto.boxerservice_package.Boxer|undefined} value */
-proto.boxerservice_package.UpdateMatchRequest.prototype.setHomeboxer = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
-};
-
-
-proto.boxerservice_package.UpdateMatchRequest.prototype.clearHomeboxer = function() {
-  this.setHomeboxer(undefined);
+proto.ubc_package.RemoveMatchesOfBoxerRequest.prototype.setBoxerid = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
 /**
- * Returns whether this field is set.
- * @return {!boolean}
- */
-proto.boxerservice_package.UpdateMatchRequest.prototype.hasHomeboxer = function() {
-  return jspb.Message.getField(this, 2) != null;
-};
-
-
-/**
- * optional Boxer awayBoxer = 3;
- * @return {?proto.boxerservice_package.Boxer}
- */
-proto.boxerservice_package.UpdateMatchRequest.prototype.getAwayboxer = function() {
-  return /** @type{?proto.boxerservice_package.Boxer} */ (
-    jspb.Message.getWrapperField(this, proto.boxerservice_package.Boxer, 3));
-};
-
-
-/** @param {?proto.boxerservice_package.Boxer|undefined} value */
-proto.boxerservice_package.UpdateMatchRequest.prototype.setAwayboxer = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
-};
-
-
-proto.boxerservice_package.UpdateMatchRequest.prototype.clearAwayboxer = function() {
-  this.setAwayboxer(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {!boolean}
- */
-proto.boxerservice_package.UpdateMatchRequest.prototype.hasAwayboxer = function() {
-  return jspb.Message.getField(this, 3) != null;
-};
-
-
-/**
- * optional int64 matchTime = 4;
- * @return {number}
- */
-proto.boxerservice_package.UpdateMatchRequest.prototype.getMatchtime = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
-};
-
-
-/** @param {number} value */
-proto.boxerservice_package.UpdateMatchRequest.prototype.setMatchtime = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
-};
-
-
-/**
- * optional bool isFinished = 5;
- * Note that Boolean fields may be set to 0/1 when serialized from a Java server.
- * You should avoid comparisons like {@code val === true/false} in those cases.
- * @return {boolean}
- */
-proto.boxerservice_package.UpdateMatchRequest.prototype.getIsfinished = function() {
-  return /** @type {boolean} */ (jspb.Message.getFieldWithDefault(this, 5, false));
-};
-
-
-/** @param {boolean} value */
-proto.boxerservice_package.UpdateMatchRequest.prototype.setIsfinished = function(value) {
-  jspb.Message.setProto3BooleanField(this, 5, value);
-};
-
-
-/**
- * optional int32 winnerBoxerId = 6;
- * @return {number}
- */
-proto.boxerservice_package.UpdateMatchRequest.prototype.getWinnerboxerid = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
-};
-
-
-/** @param {number} value */
-proto.boxerservice_package.UpdateMatchRequest.prototype.setWinnerboxerid = function(value) {
-  jspb.Message.setProto3IntField(this, 6, value);
-};
-
-
-/**
- * optional string token = 7;
+ * optional string token = 2;
  * @return {string}
  */
-proto.boxerservice_package.UpdateMatchRequest.prototype.getToken = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 7, ""));
+proto.ubc_package.RemoveMatchesOfBoxerRequest.prototype.getToken = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
-
-
-/** @param {string} value */
-proto.boxerservice_package.UpdateMatchRequest.prototype.setToken = function(value) {
-  jspb.Message.setProto3StringField(this, 7, value);
-};
-
 
 
 /**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
+ * @param {string} value
+ * @return {!proto.ubc_package.RemoveMatchesOfBoxerRequest} returns this
  */
-proto.boxerservice_package.UpdateMatchResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+proto.ubc_package.RemoveMatchesOfBoxerRequest.prototype.setToken = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
-goog.inherits(proto.boxerservice_package.UpdateMatchResponse, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.boxerservice_package.UpdateMatchResponse.displayName = 'proto.boxerservice_package.UpdateMatchResponse';
-}
+
+
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto suitable for use in Soy templates.
+ * Creates an object representation of this proto.
  * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
  * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
  * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.boxerservice_package.UpdateMatchResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.boxerservice_package.UpdateMatchResponse.toObject(opt_includeInstance, this);
+proto.ubc_package.RemoveMatchesOfBoxerResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.RemoveMatchesOfBoxerResponse.toObject(opt_includeInstance, this);
 };
 
 
 /**
  * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.boxerservice_package.UpdateMatchResponse} msg The msg instance to transform.
+ * @param {!proto.ubc_package.RemoveMatchesOfBoxerResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.UpdateMatchResponse.toObject = function(includeInstance, msg) {
+proto.ubc_package.RemoveMatchesOfBoxerResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     code: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    message: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    match: (f = msg.getMatch()) && proto.boxerservice_package.Match.toObject(includeInstance, f)
+    message: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
   if (includeInstance) {
@@ -5226,23 +7185,23 @@ proto.boxerservice_package.UpdateMatchResponse.toObject = function(includeInstan
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.boxerservice_package.UpdateMatchResponse}
+ * @return {!proto.ubc_package.RemoveMatchesOfBoxerResponse}
  */
-proto.boxerservice_package.UpdateMatchResponse.deserializeBinary = function(bytes) {
+proto.ubc_package.RemoveMatchesOfBoxerResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.boxerservice_package.UpdateMatchResponse;
-  return proto.boxerservice_package.UpdateMatchResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.ubc_package.RemoveMatchesOfBoxerResponse;
+  return proto.ubc_package.RemoveMatchesOfBoxerResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.boxerservice_package.UpdateMatchResponse} msg The message object to deserialize into.
+ * @param {!proto.ubc_package.RemoveMatchesOfBoxerResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.boxerservice_package.UpdateMatchResponse}
+ * @return {!proto.ubc_package.RemoveMatchesOfBoxerResponse}
  */
-proto.boxerservice_package.UpdateMatchResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.ubc_package.RemoveMatchesOfBoxerResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5257,11 +7216,6 @@ proto.boxerservice_package.UpdateMatchResponse.deserializeBinaryFromReader = fun
       var value = /** @type {string} */ (reader.readString());
       msg.setMessage(value);
       break;
-    case 3:
-      var value = new proto.boxerservice_package.Match;
-      reader.readMessage(value,proto.boxerservice_package.Match.deserializeBinaryFromReader);
-      msg.setMatch(value);
-      break;
     default:
       reader.skipField();
       break;
@@ -5275,9 +7229,9 @@ proto.boxerservice_package.UpdateMatchResponse.deserializeBinaryFromReader = fun
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.boxerservice_package.UpdateMatchResponse.prototype.serializeBinary = function() {
+proto.ubc_package.RemoveMatchesOfBoxerResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.boxerservice_package.UpdateMatchResponse.serializeBinaryToWriter(this, writer);
+  proto.ubc_package.RemoveMatchesOfBoxerResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5285,11 +7239,11 @@ proto.boxerservice_package.UpdateMatchResponse.prototype.serializeBinary = funct
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.boxerservice_package.UpdateMatchResponse} message
+ * @param {!proto.ubc_package.RemoveMatchesOfBoxerResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.boxerservice_package.UpdateMatchResponse.serializeBinaryToWriter = function(message, writer) {
+proto.ubc_package.RemoveMatchesOfBoxerResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCode();
   if (f !== 0) {
@@ -5305,12 +7259,186 @@ proto.boxerservice_package.UpdateMatchResponse.serializeBinaryToWriter = functio
       f
     );
   }
-  f = message.getMatch();
-  if (f != null) {
-    writer.writeMessage(
+};
+
+
+/**
+ * optional int32 code = 1;
+ * @return {number}
+ */
+proto.ubc_package.RemoveMatchesOfBoxerResponse.prototype.getCode = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.RemoveMatchesOfBoxerResponse} returns this
+ */
+proto.ubc_package.RemoveMatchesOfBoxerResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional string message = 2;
+ * @return {string}
+ */
+proto.ubc_package.RemoveMatchesOfBoxerResponse.prototype.getMessage = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.RemoveMatchesOfBoxerResponse} returns this
+ */
+proto.ubc_package.RemoveMatchesOfBoxerResponse.prototype.setMessage = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.ubc_package.GetAllStandingsResponse.repeatedFields_ = [3];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.GetAllStandingsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.GetAllStandingsResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.GetAllStandingsResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.GetAllStandingsResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    code: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    message: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    standingsList: jspb.Message.toObjectList(msg.getStandingsList(),
+    proto.ubc_package.Standing.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.GetAllStandingsResponse}
+ */
+proto.ubc_package.GetAllStandingsResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.GetAllStandingsResponse;
+  return proto.ubc_package.GetAllStandingsResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.GetAllStandingsResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.GetAllStandingsResponse}
+ */
+proto.ubc_package.GetAllStandingsResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setCode(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setMessage(value);
+      break;
+    case 3:
+      var value = new proto.ubc_package.Standing;
+      reader.readMessage(value,proto.ubc_package.Standing.deserializeBinaryFromReader);
+      msg.addStandings(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.GetAllStandingsResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.GetAllStandingsResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.GetAllStandingsResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.GetAllStandingsResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCode();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+  f = message.getMessage();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+  f = message.getStandingsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
       3,
       f,
-      proto.boxerservice_package.Match.serializeBinaryToWriter
+      proto.ubc_package.Standing.serializeBinaryToWriter
     );
   }
 };
@@ -5320,14 +7448,17 @@ proto.boxerservice_package.UpdateMatchResponse.serializeBinaryToWriter = functio
  * optional int32 code = 1;
  * @return {number}
  */
-proto.boxerservice_package.UpdateMatchResponse.prototype.getCode = function() {
+proto.ubc_package.GetAllStandingsResponse.prototype.getCode = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {number} value */
-proto.boxerservice_package.UpdateMatchResponse.prototype.setCode = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.GetAllStandingsResponse} returns this
+ */
+proto.ubc_package.GetAllStandingsResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -5335,45 +7466,2349 @@ proto.boxerservice_package.UpdateMatchResponse.prototype.setCode = function(valu
  * optional string message = 2;
  * @return {string}
  */
-proto.boxerservice_package.UpdateMatchResponse.prototype.getMessage = function() {
+proto.ubc_package.GetAllStandingsResponse.prototype.getMessage = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
-/** @param {string} value */
-proto.boxerservice_package.UpdateMatchResponse.prototype.setMessage = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.GetAllStandingsResponse} returns this
+ */
+proto.ubc_package.GetAllStandingsResponse.prototype.setMessage = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
 /**
- * optional Match match = 3;
- * @return {?proto.boxerservice_package.Match}
+ * repeated Standing standings = 3;
+ * @return {!Array<!proto.ubc_package.Standing>}
  */
-proto.boxerservice_package.UpdateMatchResponse.prototype.getMatch = function() {
-  return /** @type{?proto.boxerservice_package.Match} */ (
-    jspb.Message.getWrapperField(this, proto.boxerservice_package.Match, 3));
+proto.ubc_package.GetAllStandingsResponse.prototype.getStandingsList = function() {
+  return /** @type{!Array<!proto.ubc_package.Standing>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.ubc_package.Standing, 3));
 };
 
 
-/** @param {?proto.boxerservice_package.Match|undefined} value */
-proto.boxerservice_package.UpdateMatchResponse.prototype.setMatch = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+/**
+ * @param {!Array<!proto.ubc_package.Standing>} value
+ * @return {!proto.ubc_package.GetAllStandingsResponse} returns this
+*/
+proto.ubc_package.GetAllStandingsResponse.prototype.setStandingsList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
-proto.boxerservice_package.UpdateMatchResponse.prototype.clearMatch = function() {
-  this.setMatch(undefined);
+/**
+ * @param {!proto.ubc_package.Standing=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.ubc_package.Standing}
+ */
+proto.ubc_package.GetAllStandingsResponse.prototype.addStandings = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.ubc_package.Standing, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.ubc_package.GetAllStandingsResponse} returns this
+ */
+proto.ubc_package.GetAllStandingsResponse.prototype.clearStandingsList = function() {
+  return this.setStandingsList([]);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.GetStandingAndMatchesOfBoxerRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.GetStandingAndMatchesOfBoxerRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    boxerid: jspb.Message.getFieldWithDefault(msg, 1, 0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.GetStandingAndMatchesOfBoxerRequest}
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.GetStandingAndMatchesOfBoxerRequest;
+  return proto.ubc_package.GetStandingAndMatchesOfBoxerRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.GetStandingAndMatchesOfBoxerRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.GetStandingAndMatchesOfBoxerRequest}
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setBoxerid(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.GetStandingAndMatchesOfBoxerRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.GetStandingAndMatchesOfBoxerRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getBoxerid();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional int32 boxerId = 1;
+ * @return {number}
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerRequest.prototype.getBoxerid = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.GetStandingAndMatchesOfBoxerRequest} returns this
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerRequest.prototype.setBoxerid = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.GetStandingAndMatchesOfBoxerResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    code: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    message: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    standingandmatches: (f = msg.getStandingandmatches()) && proto.ubc_package.StandingAndMatches.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.GetStandingAndMatchesOfBoxerResponse}
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.GetStandingAndMatchesOfBoxerResponse;
+  return proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.GetStandingAndMatchesOfBoxerResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.GetStandingAndMatchesOfBoxerResponse}
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setCode(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setMessage(value);
+      break;
+    case 3:
+      var value = new proto.ubc_package.StandingAndMatches;
+      reader.readMessage(value,proto.ubc_package.StandingAndMatches.deserializeBinaryFromReader);
+      msg.setStandingandmatches(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.GetStandingAndMatchesOfBoxerResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCode();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+  f = message.getMessage();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+  f = message.getStandingandmatches();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      proto.ubc_package.StandingAndMatches.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional int32 code = 1;
+ * @return {number}
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.prototype.getCode = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.GetStandingAndMatchesOfBoxerResponse} returns this
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional string message = 2;
+ * @return {string}
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.prototype.getMessage = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.GetStandingAndMatchesOfBoxerResponse} returns this
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.prototype.setMessage = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional StandingAndMatches standingAndMatches = 3;
+ * @return {?proto.ubc_package.StandingAndMatches}
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.prototype.getStandingandmatches = function() {
+  return /** @type{?proto.ubc_package.StandingAndMatches} */ (
+    jspb.Message.getWrapperField(this, proto.ubc_package.StandingAndMatches, 3));
+};
+
+
+/**
+ * @param {?proto.ubc_package.StandingAndMatches|undefined} value
+ * @return {!proto.ubc_package.GetStandingAndMatchesOfBoxerResponse} returns this
+*/
+proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.prototype.setStandingandmatches = function(value) {
+  return jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.ubc_package.GetStandingAndMatchesOfBoxerResponse} returns this
+ */
+proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.prototype.clearStandingandmatches = function() {
+  return this.setStandingandmatches(undefined);
 };
 
 
 /**
  * Returns whether this field is set.
- * @return {!boolean}
+ * @return {boolean}
  */
-proto.boxerservice_package.UpdateMatchResponse.prototype.hasMatch = function() {
+proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.prototype.hasStandingandmatches = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
 
-goog.object.extend(exports, proto.boxerservice_package);
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.ubc_package.SetupAddBoxersRequest.repeatedFields_ = [1];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.SetupAddBoxersRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.SetupAddBoxersRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.SetupAddBoxersRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddBoxersRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    boxersList: jspb.Message.toObjectList(msg.getBoxersList(),
+    proto.ubc_package.Boxer.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.SetupAddBoxersRequest}
+ */
+proto.ubc_package.SetupAddBoxersRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.SetupAddBoxersRequest;
+  return proto.ubc_package.SetupAddBoxersRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.SetupAddBoxersRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.SetupAddBoxersRequest}
+ */
+proto.ubc_package.SetupAddBoxersRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.ubc_package.Boxer;
+      reader.readMessage(value,proto.ubc_package.Boxer.deserializeBinaryFromReader);
+      msg.addBoxers(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.SetupAddBoxersRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.SetupAddBoxersRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.SetupAddBoxersRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddBoxersRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getBoxersList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      1,
+      f,
+      proto.ubc_package.Boxer.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * repeated Boxer boxers = 1;
+ * @return {!Array<!proto.ubc_package.Boxer>}
+ */
+proto.ubc_package.SetupAddBoxersRequest.prototype.getBoxersList = function() {
+  return /** @type{!Array<!proto.ubc_package.Boxer>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.ubc_package.Boxer, 1));
+};
+
+
+/**
+ * @param {!Array<!proto.ubc_package.Boxer>} value
+ * @return {!proto.ubc_package.SetupAddBoxersRequest} returns this
+*/
+proto.ubc_package.SetupAddBoxersRequest.prototype.setBoxersList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
+};
+
+
+/**
+ * @param {!proto.ubc_package.Boxer=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.ubc_package.Boxer}
+ */
+proto.ubc_package.SetupAddBoxersRequest.prototype.addBoxers = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.ubc_package.Boxer, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.ubc_package.SetupAddBoxersRequest} returns this
+ */
+proto.ubc_package.SetupAddBoxersRequest.prototype.clearBoxersList = function() {
+  return this.setBoxersList([]);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.SetupAddBoxersResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.SetupAddBoxersResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.SetupAddBoxersResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddBoxersResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    code: jspb.Message.getFieldWithDefault(msg, 1, 0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.SetupAddBoxersResponse}
+ */
+proto.ubc_package.SetupAddBoxersResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.SetupAddBoxersResponse;
+  return proto.ubc_package.SetupAddBoxersResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.SetupAddBoxersResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.SetupAddBoxersResponse}
+ */
+proto.ubc_package.SetupAddBoxersResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setCode(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.SetupAddBoxersResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.SetupAddBoxersResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.SetupAddBoxersResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddBoxersResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCode();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional int32 code = 1;
+ * @return {number}
+ */
+proto.ubc_package.SetupAddBoxersResponse.prototype.getCode = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.SetupAddBoxersResponse} returns this
+ */
+proto.ubc_package.SetupAddBoxersResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.SetupAddAdminResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.SetupAddAdminResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.SetupAddAdminResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddAdminResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    code: jspb.Message.getFieldWithDefault(msg, 1, 0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.SetupAddAdminResponse}
+ */
+proto.ubc_package.SetupAddAdminResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.SetupAddAdminResponse;
+  return proto.ubc_package.SetupAddAdminResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.SetupAddAdminResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.SetupAddAdminResponse}
+ */
+proto.ubc_package.SetupAddAdminResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setCode(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.SetupAddAdminResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.SetupAddAdminResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.SetupAddAdminResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddAdminResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCode();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional int32 code = 1;
+ * @return {number}
+ */
+proto.ubc_package.SetupAddAdminResponse.prototype.getCode = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.SetupAddAdminResponse} returns this
+ */
+proto.ubc_package.SetupAddAdminResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.SetupCleanUpResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.SetupCleanUpResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.SetupCleanUpResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupCleanUpResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    code: jspb.Message.getFieldWithDefault(msg, 1, 0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.SetupCleanUpResponse}
+ */
+proto.ubc_package.SetupCleanUpResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.SetupCleanUpResponse;
+  return proto.ubc_package.SetupCleanUpResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.SetupCleanUpResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.SetupCleanUpResponse}
+ */
+proto.ubc_package.SetupCleanUpResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setCode(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.SetupCleanUpResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.SetupCleanUpResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.SetupCleanUpResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupCleanUpResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCode();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional int32 code = 1;
+ * @return {number}
+ */
+proto.ubc_package.SetupCleanUpResponse.prototype.getCode = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.SetupCleanUpResponse} returns this
+ */
+proto.ubc_package.SetupCleanUpResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.SetupAddBoxerRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.SetupAddBoxerRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.SetupAddBoxerRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddBoxerRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    boxer: (f = msg.getBoxer()) && proto.ubc_package.Boxer.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.SetupAddBoxerRequest}
+ */
+proto.ubc_package.SetupAddBoxerRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.SetupAddBoxerRequest;
+  return proto.ubc_package.SetupAddBoxerRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.SetupAddBoxerRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.SetupAddBoxerRequest}
+ */
+proto.ubc_package.SetupAddBoxerRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.ubc_package.Boxer;
+      reader.readMessage(value,proto.ubc_package.Boxer.deserializeBinaryFromReader);
+      msg.setBoxer(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.SetupAddBoxerRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.SetupAddBoxerRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.SetupAddBoxerRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddBoxerRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getBoxer();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.ubc_package.Boxer.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional Boxer boxer = 1;
+ * @return {?proto.ubc_package.Boxer}
+ */
+proto.ubc_package.SetupAddBoxerRequest.prototype.getBoxer = function() {
+  return /** @type{?proto.ubc_package.Boxer} */ (
+    jspb.Message.getWrapperField(this, proto.ubc_package.Boxer, 1));
+};
+
+
+/**
+ * @param {?proto.ubc_package.Boxer|undefined} value
+ * @return {!proto.ubc_package.SetupAddBoxerRequest} returns this
+*/
+proto.ubc_package.SetupAddBoxerRequest.prototype.setBoxer = function(value) {
+  return jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.ubc_package.SetupAddBoxerRequest} returns this
+ */
+proto.ubc_package.SetupAddBoxerRequest.prototype.clearBoxer = function() {
+  return this.setBoxer(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.ubc_package.SetupAddBoxerRequest.prototype.hasBoxer = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.SetupAddBoxerResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.SetupAddBoxerResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.SetupAddBoxerResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddBoxerResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    code: jspb.Message.getFieldWithDefault(msg, 1, 0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.SetupAddBoxerResponse}
+ */
+proto.ubc_package.SetupAddBoxerResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.SetupAddBoxerResponse;
+  return proto.ubc_package.SetupAddBoxerResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.SetupAddBoxerResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.SetupAddBoxerResponse}
+ */
+proto.ubc_package.SetupAddBoxerResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setCode(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.SetupAddBoxerResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.SetupAddBoxerResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.SetupAddBoxerResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddBoxerResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCode();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional int32 code = 1;
+ * @return {number}
+ */
+proto.ubc_package.SetupAddBoxerResponse.prototype.getCode = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.SetupAddBoxerResponse} returns this
+ */
+proto.ubc_package.SetupAddBoxerResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.SetupClearBoxersResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.SetupClearBoxersResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.SetupClearBoxersResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupClearBoxersResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    code: jspb.Message.getFieldWithDefault(msg, 1, 0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.SetupClearBoxersResponse}
+ */
+proto.ubc_package.SetupClearBoxersResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.SetupClearBoxersResponse;
+  return proto.ubc_package.SetupClearBoxersResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.SetupClearBoxersResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.SetupClearBoxersResponse}
+ */
+proto.ubc_package.SetupClearBoxersResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setCode(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.SetupClearBoxersResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.SetupClearBoxersResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.SetupClearBoxersResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupClearBoxersResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCode();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional int32 code = 1;
+ * @return {number}
+ */
+proto.ubc_package.SetupClearBoxersResponse.prototype.getCode = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.SetupClearBoxersResponse} returns this
+ */
+proto.ubc_package.SetupClearBoxersResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.SetupAddStandingAndMatchesRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.SetupAddStandingAndMatchesRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.SetupAddStandingAndMatchesRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddStandingAndMatchesRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    standingandmatches: (f = msg.getStandingandmatches()) && proto.ubc_package.StandingAndMatches.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.SetupAddStandingAndMatchesRequest}
+ */
+proto.ubc_package.SetupAddStandingAndMatchesRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.SetupAddStandingAndMatchesRequest;
+  return proto.ubc_package.SetupAddStandingAndMatchesRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.SetupAddStandingAndMatchesRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.SetupAddStandingAndMatchesRequest}
+ */
+proto.ubc_package.SetupAddStandingAndMatchesRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.ubc_package.StandingAndMatches;
+      reader.readMessage(value,proto.ubc_package.StandingAndMatches.deserializeBinaryFromReader);
+      msg.setStandingandmatches(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.SetupAddStandingAndMatchesRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.SetupAddStandingAndMatchesRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.SetupAddStandingAndMatchesRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddStandingAndMatchesRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getStandingandmatches();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.ubc_package.StandingAndMatches.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional StandingAndMatches standingAndMatches = 1;
+ * @return {?proto.ubc_package.StandingAndMatches}
+ */
+proto.ubc_package.SetupAddStandingAndMatchesRequest.prototype.getStandingandmatches = function() {
+  return /** @type{?proto.ubc_package.StandingAndMatches} */ (
+    jspb.Message.getWrapperField(this, proto.ubc_package.StandingAndMatches, 1));
+};
+
+
+/**
+ * @param {?proto.ubc_package.StandingAndMatches|undefined} value
+ * @return {!proto.ubc_package.SetupAddStandingAndMatchesRequest} returns this
+*/
+proto.ubc_package.SetupAddStandingAndMatchesRequest.prototype.setStandingandmatches = function(value) {
+  return jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.ubc_package.SetupAddStandingAndMatchesRequest} returns this
+ */
+proto.ubc_package.SetupAddStandingAndMatchesRequest.prototype.clearStandingandmatches = function() {
+  return this.setStandingandmatches(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.ubc_package.SetupAddStandingAndMatchesRequest.prototype.hasStandingandmatches = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.SetupAddStandingAndMatchesResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.SetupAddStandingAndMatchesResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.SetupAddStandingAndMatchesResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddStandingAndMatchesResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    code: jspb.Message.getFieldWithDefault(msg, 1, 0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.SetupAddStandingAndMatchesResponse}
+ */
+proto.ubc_package.SetupAddStandingAndMatchesResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.SetupAddStandingAndMatchesResponse;
+  return proto.ubc_package.SetupAddStandingAndMatchesResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.SetupAddStandingAndMatchesResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.SetupAddStandingAndMatchesResponse}
+ */
+proto.ubc_package.SetupAddStandingAndMatchesResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setCode(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.SetupAddStandingAndMatchesResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.SetupAddStandingAndMatchesResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.SetupAddStandingAndMatchesResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddStandingAndMatchesResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCode();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional int32 code = 1;
+ * @return {number}
+ */
+proto.ubc_package.SetupAddStandingAndMatchesResponse.prototype.getCode = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.SetupAddStandingAndMatchesResponse} returns this
+ */
+proto.ubc_package.SetupAddStandingAndMatchesResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.SetupAddTokenRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.SetupAddTokenRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.SetupAddTokenRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddTokenRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    token: jspb.Message.getFieldWithDefault(msg, 1, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.SetupAddTokenRequest}
+ */
+proto.ubc_package.SetupAddTokenRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.SetupAddTokenRequest;
+  return proto.ubc_package.SetupAddTokenRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.SetupAddTokenRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.SetupAddTokenRequest}
+ */
+proto.ubc_package.SetupAddTokenRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setToken(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.SetupAddTokenRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.SetupAddTokenRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.SetupAddTokenRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddTokenRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getToken();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string token = 1;
+ * @return {string}
+ */
+proto.ubc_package.SetupAddTokenRequest.prototype.getToken = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.SetupAddTokenRequest} returns this
+ */
+proto.ubc_package.SetupAddTokenRequest.prototype.setToken = function(value) {
+  return jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.SetupAddTokenResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.SetupAddTokenResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.SetupAddTokenResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddTokenResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    code: jspb.Message.getFieldWithDefault(msg, 1, 0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.SetupAddTokenResponse}
+ */
+proto.ubc_package.SetupAddTokenResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.SetupAddTokenResponse;
+  return proto.ubc_package.SetupAddTokenResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.SetupAddTokenResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.SetupAddTokenResponse}
+ */
+proto.ubc_package.SetupAddTokenResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setCode(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.SetupAddTokenResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.SetupAddTokenResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.SetupAddTokenResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddTokenResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCode();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional int32 code = 1;
+ * @return {number}
+ */
+proto.ubc_package.SetupAddTokenResponse.prototype.getCode = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.SetupAddTokenResponse} returns this
+ */
+proto.ubc_package.SetupAddTokenResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.ubc_package.SetupAddMatchesRequest.repeatedFields_ = [1];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.SetupAddMatchesRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.SetupAddMatchesRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.SetupAddMatchesRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddMatchesRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    matchesList: jspb.Message.toObjectList(msg.getMatchesList(),
+    proto.ubc_package.Match.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.SetupAddMatchesRequest}
+ */
+proto.ubc_package.SetupAddMatchesRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.SetupAddMatchesRequest;
+  return proto.ubc_package.SetupAddMatchesRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.SetupAddMatchesRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.SetupAddMatchesRequest}
+ */
+proto.ubc_package.SetupAddMatchesRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.ubc_package.Match;
+      reader.readMessage(value,proto.ubc_package.Match.deserializeBinaryFromReader);
+      msg.addMatches(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.SetupAddMatchesRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.SetupAddMatchesRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.SetupAddMatchesRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddMatchesRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getMatchesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      1,
+      f,
+      proto.ubc_package.Match.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * repeated Match matches = 1;
+ * @return {!Array<!proto.ubc_package.Match>}
+ */
+proto.ubc_package.SetupAddMatchesRequest.prototype.getMatchesList = function() {
+  return /** @type{!Array<!proto.ubc_package.Match>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.ubc_package.Match, 1));
+};
+
+
+/**
+ * @param {!Array<!proto.ubc_package.Match>} value
+ * @return {!proto.ubc_package.SetupAddMatchesRequest} returns this
+*/
+proto.ubc_package.SetupAddMatchesRequest.prototype.setMatchesList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
+};
+
+
+/**
+ * @param {!proto.ubc_package.Match=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.ubc_package.Match}
+ */
+proto.ubc_package.SetupAddMatchesRequest.prototype.addMatches = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.ubc_package.Match, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.ubc_package.SetupAddMatchesRequest} returns this
+ */
+proto.ubc_package.SetupAddMatchesRequest.prototype.clearMatchesList = function() {
+  return this.setMatchesList([]);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.SetupAddMatchesResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.SetupAddMatchesResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.SetupAddMatchesResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddMatchesResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    code: jspb.Message.getFieldWithDefault(msg, 1, 0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.SetupAddMatchesResponse}
+ */
+proto.ubc_package.SetupAddMatchesResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.SetupAddMatchesResponse;
+  return proto.ubc_package.SetupAddMatchesResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.SetupAddMatchesResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.SetupAddMatchesResponse}
+ */
+proto.ubc_package.SetupAddMatchesResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setCode(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.SetupAddMatchesResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.SetupAddMatchesResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.SetupAddMatchesResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddMatchesResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCode();
+  if (f !== 0) {
+    writer.writeInt32(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional int32 code = 1;
+ * @return {number}
+ */
+proto.ubc_package.SetupAddMatchesResponse.prototype.getCode = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.ubc_package.SetupAddMatchesResponse} returns this
+ */
+proto.ubc_package.SetupAddMatchesResponse.prototype.setCode = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.ubc_package.SetupAddAdminRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.ubc_package.SetupAddAdminRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.ubc_package.SetupAddAdminRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddAdminRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    username: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    passwordHash: jspb.Message.getFieldWithDefault(msg, 2, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.ubc_package.SetupAddAdminRequest}
+ */
+proto.ubc_package.SetupAddAdminRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.ubc_package.SetupAddAdminRequest;
+  return proto.ubc_package.SetupAddAdminRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.ubc_package.SetupAddAdminRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.ubc_package.SetupAddAdminRequest}
+ */
+proto.ubc_package.SetupAddAdminRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setUsername(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setPasswordHash(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.ubc_package.SetupAddAdminRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.ubc_package.SetupAddAdminRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.ubc_package.SetupAddAdminRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.ubc_package.SetupAddAdminRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getUsername();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getPasswordHash();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string username = 1;
+ * @return {string}
+ */
+proto.ubc_package.SetupAddAdminRequest.prototype.getUsername = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.SetupAddAdminRequest} returns this
+ */
+proto.ubc_package.SetupAddAdminRequest.prototype.setUsername = function(value) {
+  return jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional string password_hash = 2;
+ * @return {string}
+ */
+proto.ubc_package.SetupAddAdminRequest.prototype.getPasswordHash = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.ubc_package.SetupAddAdminRequest} returns this
+ */
+proto.ubc_package.SetupAddAdminRequest.prototype.setPasswordHash = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+goog.object.extend(exports, proto.ubc_package);

@@ -117,6 +117,7 @@ function BoxerDetails({requestClient}) {
 		]);
 
     const resp = await requestClient.GetBoxerWithStandingAndMatches(id);
+    console.log('resp: ', resp);
     resp.boxer && setBoxerProps({
       id: resp.boxer?.id,
       name: resp.boxer?.fullName,
@@ -126,7 +127,7 @@ function BoxerDetails({requestClient}) {
     });
     resp.standingAndMatches?.standing && setStanding(resp.standingAndMatches.standing);
     resp.standingAndMatches?.matches && setMatches(resp.standingAndMatches.matches);
-  }, [id, classes]);
+  }, [requestClient, id, classes.boxerButton]);
   React.useEffect(() => {
     init();
   }, [init]);

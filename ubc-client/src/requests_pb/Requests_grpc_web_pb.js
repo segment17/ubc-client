@@ -1,6 +1,5 @@
-/* eslint-disable */
 /**
- * @fileoverview gRPC-Web generated client stub for boxerservice_package
+ * @fileoverview gRPC-Web generated client stub for ubc_package
  * @enhanceable
  * @public
  */
@@ -17,7 +16,7 @@ const grpc = {};
 grpc.web = require('grpc-web');
 
 const proto = {};
-proto.boxerservice_package = require('./Requests_pb.js');
+proto.ubc_package = require('./Requests_pb.js');
 
 /**
  * @param {string} hostname
@@ -27,7 +26,7 @@ proto.boxerservice_package = require('./Requests_pb.js');
  * @struct
  * @final
  */
-proto.boxerservice_package.BoxerServiceClient =
+proto.ubc_package.AuthServiceClient =
     function(hostname, credentials, options) {
   if (!options) options = {};
   options['format'] = 'text';
@@ -53,7 +52,7 @@ proto.boxerservice_package.BoxerServiceClient =
  * @struct
  * @final
  */
-proto.boxerservice_package.BoxerServicePromiseClient =
+proto.ubc_package.AuthServicePromiseClient =
     function(hostname, credentials, options) {
   if (!options) options = {};
   options['format'] = 'text';
@@ -74,58 +73,590 @@ proto.boxerservice_package.BoxerServicePromiseClient =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest,
- *   !proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse>}
+ *   !proto.ubc_package.LoginRequest,
+ *   !proto.ubc_package.LoginResponse>}
  */
-const methodDescriptor_BoxerService_GetBoxerWithStandingAndMatches = new grpc.web.MethodDescriptor(
-  '/boxerservice_package.BoxerService/GetBoxerWithStandingAndMatches',
+const methodDescriptor_AuthService_Login = new grpc.web.MethodDescriptor(
+  '/ubc_package.AuthService/Login',
   grpc.web.MethodType.UNARY,
-  proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest,
-  proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse,
+  proto.ubc_package.LoginRequest,
+  proto.ubc_package.LoginResponse,
   /**
-   * @param {!proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest} request
+   * @param {!proto.ubc_package.LoginRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.deserializeBinary
+  proto.ubc_package.LoginResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest,
- *   !proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse>}
+ *   !proto.ubc_package.LoginRequest,
+ *   !proto.ubc_package.LoginResponse>}
  */
-const methodInfo_BoxerService_GetBoxerWithStandingAndMatches = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse,
+const methodInfo_AuthService_Login = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.LoginResponse,
   /**
-   * @param {!proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest} request
+   * @param {!proto.ubc_package.LoginRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse.deserializeBinary
+  proto.ubc_package.LoginResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest} request The
+ * @param {!proto.ubc_package.LoginRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse)}
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.LoginResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.LoginResponse>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.boxerservice_package.BoxerServiceClient.prototype.getBoxerWithStandingAndMatches =
+proto.ubc_package.AuthServiceClient.prototype.login =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/boxerservice_package.BoxerService/GetBoxerWithStandingAndMatches',
+      '/ubc_package.AuthService/Login',
+      request,
+      metadata || {},
+      methodDescriptor_AuthService_Login,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.LoginRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.LoginResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.AuthServicePromiseClient.prototype.login =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.AuthService/Login',
+      request,
+      metadata || {},
+      methodDescriptor_AuthService_Login);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.ValidateRequest,
+ *   !proto.ubc_package.ValidateResponse>}
+ */
+const methodDescriptor_AuthService_Validate = new grpc.web.MethodDescriptor(
+  '/ubc_package.AuthService/Validate',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.ValidateRequest,
+  proto.ubc_package.ValidateResponse,
+  /**
+   * @param {!proto.ubc_package.ValidateRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.ValidateResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.ValidateRequest,
+ *   !proto.ubc_package.ValidateResponse>}
+ */
+const methodInfo_AuthService_Validate = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.ValidateResponse,
+  /**
+   * @param {!proto.ubc_package.ValidateRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.ValidateResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.ValidateRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.ValidateResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.ValidateResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.AuthServiceClient.prototype.validate =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.AuthService/Validate',
+      request,
+      metadata || {},
+      methodDescriptor_AuthService_Validate,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.ValidateRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.ValidateResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.AuthServicePromiseClient.prototype.validate =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.AuthService/Validate',
+      request,
+      metadata || {},
+      methodDescriptor_AuthService_Validate);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.Empty,
+ *   !proto.ubc_package.Empty>}
+ */
+const methodDescriptor_AuthService_Mock = new grpc.web.MethodDescriptor(
+  '/ubc_package.AuthService/Mock',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.Empty,
+  proto.ubc_package.Empty,
+  /**
+   * @param {!proto.ubc_package.Empty} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.Empty.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.Empty,
+ *   !proto.ubc_package.Empty>}
+ */
+const methodInfo_AuthService_Mock = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.Empty,
+  /**
+   * @param {!proto.ubc_package.Empty} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.Empty.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.Empty} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.Empty)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.Empty>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.AuthServiceClient.prototype.mock =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.AuthService/Mock',
+      request,
+      metadata || {},
+      methodDescriptor_AuthService_Mock,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.Empty} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.Empty>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.AuthServicePromiseClient.prototype.mock =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.AuthService/Mock',
+      request,
+      metadata || {},
+      methodDescriptor_AuthService_Mock);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.Empty,
+ *   !proto.ubc_package.Empty>}
+ */
+const methodDescriptor_AuthService_EnterIntegratedTestingEnvironment = new grpc.web.MethodDescriptor(
+  '/ubc_package.AuthService/EnterIntegratedTestingEnvironment',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.Empty,
+  proto.ubc_package.Empty,
+  /**
+   * @param {!proto.ubc_package.Empty} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.Empty.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.Empty,
+ *   !proto.ubc_package.Empty>}
+ */
+const methodInfo_AuthService_EnterIntegratedTestingEnvironment = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.Empty,
+  /**
+   * @param {!proto.ubc_package.Empty} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.Empty.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.Empty} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.Empty)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.Empty>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.AuthServiceClient.prototype.enterIntegratedTestingEnvironment =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.AuthService/EnterIntegratedTestingEnvironment',
+      request,
+      metadata || {},
+      methodDescriptor_AuthService_EnterIntegratedTestingEnvironment,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.Empty} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.Empty>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.AuthServicePromiseClient.prototype.enterIntegratedTestingEnvironment =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.AuthService/EnterIntegratedTestingEnvironment',
+      request,
+      metadata || {},
+      methodDescriptor_AuthService_EnterIntegratedTestingEnvironment);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.SetupAddAdminRequest,
+ *   !proto.ubc_package.Empty>}
+ */
+const methodDescriptor_AuthService_SetupAddAdmin = new grpc.web.MethodDescriptor(
+  '/ubc_package.AuthService/SetupAddAdmin',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.SetupAddAdminRequest,
+  proto.ubc_package.Empty,
+  /**
+   * @param {!proto.ubc_package.SetupAddAdminRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.Empty.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.SetupAddAdminRequest,
+ *   !proto.ubc_package.Empty>}
+ */
+const methodInfo_AuthService_SetupAddAdmin = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.Empty,
+  /**
+   * @param {!proto.ubc_package.SetupAddAdminRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.Empty.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddAdminRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.Empty)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.Empty>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.AuthServiceClient.prototype.setupAddAdmin =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.AuthService/SetupAddAdmin',
+      request,
+      metadata || {},
+      methodDescriptor_AuthService_SetupAddAdmin,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddAdminRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.Empty>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.AuthServicePromiseClient.prototype.setupAddAdmin =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.AuthService/SetupAddAdmin',
+      request,
+      metadata || {},
+      methodDescriptor_AuthService_SetupAddAdmin);
+};
+
+
+/**
+ * @param {string} hostname
+ * @param {?Object} credentials
+ * @param {?Object} options
+ * @constructor
+ * @struct
+ * @final
+ */
+proto.ubc_package.BoxerServiceClient =
+    function(hostname, credentials, options) {
+  if (!options) options = {};
+  options['format'] = 'text';
+
+  /**
+   * @private @const {!grpc.web.GrpcWebClientBase} The client
+   */
+  this.client_ = new grpc.web.GrpcWebClientBase(options);
+
+  /**
+   * @private @const {string} The hostname
+   */
+  this.hostname_ = hostname;
+
+};
+
+
+/**
+ * @param {string} hostname
+ * @param {?Object} credentials
+ * @param {?Object} options
+ * @constructor
+ * @struct
+ * @final
+ */
+proto.ubc_package.BoxerServicePromiseClient =
+    function(hostname, credentials, options) {
+  if (!options) options = {};
+  options['format'] = 'text';
+
+  /**
+   * @private @const {!grpc.web.GrpcWebClientBase} The client
+   */
+  this.client_ = new grpc.web.GrpcWebClientBase(options);
+
+  /**
+   * @private @const {string} The hostname
+   */
+  this.hostname_ = hostname;
+
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.GetBoxerRequest,
+ *   !proto.ubc_package.GetBoxerResponse>}
+ */
+const methodDescriptor_BoxerService_GetBoxer = new grpc.web.MethodDescriptor(
+  '/ubc_package.BoxerService/GetBoxer',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.GetBoxerRequest,
+  proto.ubc_package.GetBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.GetBoxerRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.GetBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.GetBoxerRequest,
+ *   !proto.ubc_package.GetBoxerResponse>}
+ */
+const methodInfo_BoxerService_GetBoxer = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.GetBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.GetBoxerRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.GetBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.GetBoxerRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.GetBoxerResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.GetBoxerResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.BoxerServiceClient.prototype.getBoxer =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.BoxerService/GetBoxer',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_GetBoxer,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.GetBoxerRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.GetBoxerResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.BoxerServicePromiseClient.prototype.getBoxer =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.BoxerService/GetBoxer',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_GetBoxer);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.GetBoxerWithStandingAndMatchesRequest,
+ *   !proto.ubc_package.GetBoxerWithStandingAndMatchesResponse>}
+ */
+const methodDescriptor_BoxerService_GetBoxerWithStandingAndMatches = new grpc.web.MethodDescriptor(
+  '/ubc_package.BoxerService/GetBoxerWithStandingAndMatches',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.GetBoxerWithStandingAndMatchesRequest,
+  proto.ubc_package.GetBoxerWithStandingAndMatchesResponse,
+  /**
+   * @param {!proto.ubc_package.GetBoxerWithStandingAndMatchesRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.GetBoxerWithStandingAndMatchesRequest,
+ *   !proto.ubc_package.GetBoxerWithStandingAndMatchesResponse>}
+ */
+const methodInfo_BoxerService_GetBoxerWithStandingAndMatches = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.GetBoxerWithStandingAndMatchesResponse,
+  /**
+   * @param {!proto.ubc_package.GetBoxerWithStandingAndMatchesRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.GetBoxerWithStandingAndMatchesResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.GetBoxerWithStandingAndMatchesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.GetBoxerWithStandingAndMatchesResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.GetBoxerWithStandingAndMatchesResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.BoxerServiceClient.prototype.getBoxerWithStandingAndMatches =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.BoxerService/GetBoxerWithStandingAndMatches',
       request,
       metadata || {},
       methodDescriptor_BoxerService_GetBoxerWithStandingAndMatches,
@@ -134,17 +665,17 @@ proto.boxerservice_package.BoxerServiceClient.prototype.getBoxerWithStandingAndM
 
 
 /**
- * @param {!proto.boxerservice_package.GetBoxerWithStandingAndMatchesRequest} request The
+ * @param {!proto.ubc_package.GetBoxerWithStandingAndMatchesRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.boxerservice_package.GetBoxerWithStandingAndMatchesResponse>}
+ * @return {!Promise<!proto.ubc_package.GetBoxerWithStandingAndMatchesResponse>}
  *     Promise that resolves to the response
  */
-proto.boxerservice_package.BoxerServicePromiseClient.prototype.getBoxerWithStandingAndMatches =
+proto.ubc_package.BoxerServicePromiseClient.prototype.getBoxerWithStandingAndMatches =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/boxerservice_package.BoxerService/GetBoxerWithStandingAndMatches',
+      '/ubc_package.BoxerService/GetBoxerWithStandingAndMatches',
       request,
       metadata || {},
       methodDescriptor_BoxerService_GetBoxerWithStandingAndMatches);
@@ -152,6 +683,886 @@ proto.boxerservice_package.BoxerServicePromiseClient.prototype.getBoxerWithStand
 
 
 /**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.AddBoxerRequest,
+ *   !proto.ubc_package.AddBoxerResponse>}
+ */
+const methodDescriptor_BoxerService_AddBoxer = new grpc.web.MethodDescriptor(
+  '/ubc_package.BoxerService/AddBoxer',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.AddBoxerRequest,
+  proto.ubc_package.AddBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.AddBoxerRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.AddBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.AddBoxerRequest,
+ *   !proto.ubc_package.AddBoxerResponse>}
+ */
+const methodInfo_BoxerService_AddBoxer = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.AddBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.AddBoxerRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.AddBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.AddBoxerRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.AddBoxerResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.AddBoxerResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.BoxerServiceClient.prototype.addBoxer =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.BoxerService/AddBoxer',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_AddBoxer,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.AddBoxerRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.AddBoxerResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.BoxerServicePromiseClient.prototype.addBoxer =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.BoxerService/AddBoxer',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_AddBoxer);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.EditBoxerRequest,
+ *   !proto.ubc_package.EditBoxerResponse>}
+ */
+const methodDescriptor_BoxerService_EditBoxer = new grpc.web.MethodDescriptor(
+  '/ubc_package.BoxerService/EditBoxer',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.EditBoxerRequest,
+  proto.ubc_package.EditBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.EditBoxerRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.EditBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.EditBoxerRequest,
+ *   !proto.ubc_package.EditBoxerResponse>}
+ */
+const methodInfo_BoxerService_EditBoxer = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.EditBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.EditBoxerRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.EditBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.EditBoxerRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.EditBoxerResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.EditBoxerResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.BoxerServiceClient.prototype.editBoxer =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.BoxerService/EditBoxer',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_EditBoxer,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.EditBoxerRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.EditBoxerResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.BoxerServicePromiseClient.prototype.editBoxer =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.BoxerService/EditBoxer',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_EditBoxer);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.RemoveBoxerRequest,
+ *   !proto.ubc_package.RemoveBoxerResponse>}
+ */
+const methodDescriptor_BoxerService_RemoveBoxer = new grpc.web.MethodDescriptor(
+  '/ubc_package.BoxerService/RemoveBoxer',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.RemoveBoxerRequest,
+  proto.ubc_package.RemoveBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.RemoveBoxerRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.RemoveBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.RemoveBoxerRequest,
+ *   !proto.ubc_package.RemoveBoxerResponse>}
+ */
+const methodInfo_BoxerService_RemoveBoxer = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.RemoveBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.RemoveBoxerRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.RemoveBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.RemoveBoxerRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.RemoveBoxerResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.RemoveBoxerResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.BoxerServiceClient.prototype.removeBoxer =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.BoxerService/RemoveBoxer',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_RemoveBoxer,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.RemoveBoxerRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.RemoveBoxerResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.BoxerServicePromiseClient.prototype.removeBoxer =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.BoxerService/RemoveBoxer',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_RemoveBoxer);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.Null,
+ *   !proto.ubc_package.Null>}
+ */
+const methodDescriptor_BoxerService_Mock = new grpc.web.MethodDescriptor(
+  '/ubc_package.BoxerService/Mock',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.Null,
+  proto.ubc_package.Null,
+  /**
+   * @param {!proto.ubc_package.Null} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.Null.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.Null,
+ *   !proto.ubc_package.Null>}
+ */
+const methodInfo_BoxerService_Mock = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.Null,
+  /**
+   * @param {!proto.ubc_package.Null} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.Null.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.Null} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.Null)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.Null>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.BoxerServiceClient.prototype.mock =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.BoxerService/Mock',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_Mock,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.Null} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.Null>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.BoxerServicePromiseClient.prototype.mock =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.BoxerService/Mock',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_Mock);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.Null,
+ *   !proto.ubc_package.Null>}
+ */
+const methodDescriptor_BoxerService_EnterIntegratedTestingEnvironment = new grpc.web.MethodDescriptor(
+  '/ubc_package.BoxerService/EnterIntegratedTestingEnvironment',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.Null,
+  proto.ubc_package.Null,
+  /**
+   * @param {!proto.ubc_package.Null} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.Null.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.Null,
+ *   !proto.ubc_package.Null>}
+ */
+const methodInfo_BoxerService_EnterIntegratedTestingEnvironment = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.Null,
+  /**
+   * @param {!proto.ubc_package.Null} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.Null.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.Null} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.Null)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.Null>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.BoxerServiceClient.prototype.enterIntegratedTestingEnvironment =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.BoxerService/EnterIntegratedTestingEnvironment',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_EnterIntegratedTestingEnvironment,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.Null} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.Null>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.BoxerServicePromiseClient.prototype.enterIntegratedTestingEnvironment =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.BoxerService/EnterIntegratedTestingEnvironment',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_EnterIntegratedTestingEnvironment);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.SetupAddBoxerRequest,
+ *   !proto.ubc_package.SetupAddBoxerResponse>}
+ */
+const methodDescriptor_BoxerService_SetupAddBoxer = new grpc.web.MethodDescriptor(
+  '/ubc_package.BoxerService/SetupAddBoxer',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.SetupAddBoxerRequest,
+  proto.ubc_package.SetupAddBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.SetupAddBoxerRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupAddBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.SetupAddBoxerRequest,
+ *   !proto.ubc_package.SetupAddBoxerResponse>}
+ */
+const methodInfo_BoxerService_SetupAddBoxer = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.SetupAddBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.SetupAddBoxerRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupAddBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddBoxerRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.SetupAddBoxerResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.SetupAddBoxerResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.BoxerServiceClient.prototype.setupAddBoxer =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.BoxerService/SetupAddBoxer',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_SetupAddBoxer,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddBoxerRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.SetupAddBoxerResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.BoxerServicePromiseClient.prototype.setupAddBoxer =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.BoxerService/SetupAddBoxer',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_SetupAddBoxer);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.SetupAddBoxerRequest,
+ *   !proto.ubc_package.SetupAddBoxerResponse>}
+ */
+const methodDescriptor_BoxerService_SetupAddLatestBoxer = new grpc.web.MethodDescriptor(
+  '/ubc_package.BoxerService/SetupAddLatestBoxer',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.SetupAddBoxerRequest,
+  proto.ubc_package.SetupAddBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.SetupAddBoxerRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupAddBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.SetupAddBoxerRequest,
+ *   !proto.ubc_package.SetupAddBoxerResponse>}
+ */
+const methodInfo_BoxerService_SetupAddLatestBoxer = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.SetupAddBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.SetupAddBoxerRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupAddBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddBoxerRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.SetupAddBoxerResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.SetupAddBoxerResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.BoxerServiceClient.prototype.setupAddLatestBoxer =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.BoxerService/SetupAddLatestBoxer',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_SetupAddLatestBoxer,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddBoxerRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.SetupAddBoxerResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.BoxerServicePromiseClient.prototype.setupAddLatestBoxer =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.BoxerService/SetupAddLatestBoxer',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_SetupAddLatestBoxer);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.Null,
+ *   !proto.ubc_package.SetupClearBoxersResponse>}
+ */
+const methodDescriptor_BoxerService_SetupClearBoxers = new grpc.web.MethodDescriptor(
+  '/ubc_package.BoxerService/SetupClearBoxers',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.Null,
+  proto.ubc_package.SetupClearBoxersResponse,
+  /**
+   * @param {!proto.ubc_package.Null} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupClearBoxersResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.Null,
+ *   !proto.ubc_package.SetupClearBoxersResponse>}
+ */
+const methodInfo_BoxerService_SetupClearBoxers = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.SetupClearBoxersResponse,
+  /**
+   * @param {!proto.ubc_package.Null} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupClearBoxersResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.Null} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.SetupClearBoxersResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.SetupClearBoxersResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.BoxerServiceClient.prototype.setupClearBoxers =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.BoxerService/SetupClearBoxers',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_SetupClearBoxers,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.Null} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.SetupClearBoxersResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.BoxerServicePromiseClient.prototype.setupClearBoxers =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.BoxerService/SetupClearBoxers',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_SetupClearBoxers);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.SetupAddStandingAndMatchesRequest,
+ *   !proto.ubc_package.SetupAddBoxerResponse>}
+ */
+const methodDescriptor_BoxerService_SetupAddStandingAndMatches = new grpc.web.MethodDescriptor(
+  '/ubc_package.BoxerService/SetupAddStandingAndMatches',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.SetupAddStandingAndMatchesRequest,
+  proto.ubc_package.SetupAddBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.SetupAddStandingAndMatchesRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupAddBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.SetupAddStandingAndMatchesRequest,
+ *   !proto.ubc_package.SetupAddBoxerResponse>}
+ */
+const methodInfo_BoxerService_SetupAddStandingAndMatches = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.SetupAddBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.SetupAddStandingAndMatchesRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupAddBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddStandingAndMatchesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.SetupAddBoxerResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.SetupAddBoxerResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.BoxerServiceClient.prototype.setupAddStandingAndMatches =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.BoxerService/SetupAddStandingAndMatches',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_SetupAddStandingAndMatches,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddStandingAndMatchesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.SetupAddBoxerResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.BoxerServicePromiseClient.prototype.setupAddStandingAndMatches =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.BoxerService/SetupAddStandingAndMatches',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_SetupAddStandingAndMatches);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.SetupAddTokenRequest,
+ *   !proto.ubc_package.SetupAddTokenResponse>}
+ */
+const methodDescriptor_BoxerService_SetupAddToken = new grpc.web.MethodDescriptor(
+  '/ubc_package.BoxerService/SetupAddToken',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.SetupAddTokenRequest,
+  proto.ubc_package.SetupAddTokenResponse,
+  /**
+   * @param {!proto.ubc_package.SetupAddTokenRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupAddTokenResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.SetupAddTokenRequest,
+ *   !proto.ubc_package.SetupAddTokenResponse>}
+ */
+const methodInfo_BoxerService_SetupAddToken = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.SetupAddTokenResponse,
+  /**
+   * @param {!proto.ubc_package.SetupAddTokenRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupAddTokenResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddTokenRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.SetupAddTokenResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.SetupAddTokenResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.BoxerServiceClient.prototype.setupAddToken =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.BoxerService/SetupAddToken',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_SetupAddToken,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddTokenRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.SetupAddTokenResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.BoxerServicePromiseClient.prototype.setupAddToken =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.BoxerService/SetupAddToken',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_SetupAddToken);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.SetupAddMatchesRequest,
+ *   !proto.ubc_package.SetupAddMatchesResponse>}
+ */
+const methodDescriptor_BoxerService_SetupAddMatches = new grpc.web.MethodDescriptor(
+  '/ubc_package.BoxerService/SetupAddMatches',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.SetupAddMatchesRequest,
+  proto.ubc_package.SetupAddMatchesResponse,
+  /**
+   * @param {!proto.ubc_package.SetupAddMatchesRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupAddMatchesResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.SetupAddMatchesRequest,
+ *   !proto.ubc_package.SetupAddMatchesResponse>}
+ */
+const methodInfo_BoxerService_SetupAddMatches = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.SetupAddMatchesResponse,
+  /**
+   * @param {!proto.ubc_package.SetupAddMatchesRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupAddMatchesResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddMatchesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.SetupAddMatchesResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.SetupAddMatchesResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.BoxerServiceClient.prototype.setupAddMatches =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.BoxerService/SetupAddMatches',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_SetupAddMatches,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddMatchesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.SetupAddMatchesResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.BoxerServicePromiseClient.prototype.setupAddMatches =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.BoxerService/SetupAddMatches',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_SetupAddMatches);
+};
+
+
+/**
  * @param {string} hostname
  * @param {?Object} credentials
  * @param {?Object} options
@@ -159,7 +1570,7 @@ proto.boxerservice_package.BoxerServicePromiseClient.prototype.getBoxerWithStand
  * @struct
  * @final
  */
-proto.boxerservice_package.FrontendServiceClient =
+proto.ubc_package.MatchServiceClient =
     function(hostname, credentials, options) {
   if (!options) options = {};
   options['format'] = 'text';
@@ -185,7 +1596,7 @@ proto.boxerservice_package.FrontendServiceClient =
  * @struct
  * @final
  */
-proto.boxerservice_package.FrontendServicePromiseClient =
+proto.ubc_package.MatchServicePromiseClient =
     function(hostname, credentials, options) {
   if (!options) options = {};
   options['format'] = 'text';
@@ -206,802 +1617,1494 @@ proto.boxerservice_package.FrontendServicePromiseClient =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.boxerservice_package.LoginRequest,
- *   !proto.boxerservice_package.LoginResponse>}
+ *   !proto.ubc_package.AddMatchRequest,
+ *   !proto.ubc_package.AddMatchResponse>}
  */
-const methodDescriptor_FrontendService_Login = new grpc.web.MethodDescriptor(
-  '/boxerservice_package.FrontendService/Login',
+const methodDescriptor_MatchService_AddMatch = new grpc.web.MethodDescriptor(
+  '/ubc_package.MatchService/AddMatch',
   grpc.web.MethodType.UNARY,
-  proto.boxerservice_package.LoginRequest,
-  proto.boxerservice_package.LoginResponse,
+  proto.ubc_package.AddMatchRequest,
+  proto.ubc_package.AddMatchResponse,
   /**
-   * @param {!proto.boxerservice_package.LoginRequest} request
+   * @param {!proto.ubc_package.AddMatchRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.LoginResponse.deserializeBinary
+  proto.ubc_package.AddMatchResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.boxerservice_package.LoginRequest,
- *   !proto.boxerservice_package.LoginResponse>}
+ *   !proto.ubc_package.AddMatchRequest,
+ *   !proto.ubc_package.AddMatchResponse>}
  */
-const methodInfo_FrontendService_Login = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.boxerservice_package.LoginResponse,
+const methodInfo_MatchService_AddMatch = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.AddMatchResponse,
   /**
-   * @param {!proto.boxerservice_package.LoginRequest} request
+   * @param {!proto.ubc_package.AddMatchRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.LoginResponse.deserializeBinary
+  proto.ubc_package.AddMatchResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.boxerservice_package.LoginRequest} request The
+ * @param {!proto.ubc_package.AddMatchRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.boxerservice_package.LoginResponse)}
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.AddMatchResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.boxerservice_package.LoginResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.AddMatchResponse>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.boxerservice_package.FrontendServiceClient.prototype.login =
+proto.ubc_package.MatchServiceClient.prototype.addMatch =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/Login',
+      '/ubc_package.MatchService/AddMatch',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_Login,
+      methodDescriptor_MatchService_AddMatch,
       callback);
 };
 
 
 /**
- * @param {!proto.boxerservice_package.LoginRequest} request The
+ * @param {!proto.ubc_package.AddMatchRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.boxerservice_package.LoginResponse>}
+ * @return {!Promise<!proto.ubc_package.AddMatchResponse>}
  *     Promise that resolves to the response
  */
-proto.boxerservice_package.FrontendServicePromiseClient.prototype.login =
+proto.ubc_package.MatchServicePromiseClient.prototype.addMatch =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/Login',
+      '/ubc_package.MatchService/AddMatch',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_Login);
+      methodDescriptor_MatchService_AddMatch);
 };
 
 
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.boxerservice_package.Null,
- *   !proto.boxerservice_package.GetAllBoxersResponse>}
+ *   !proto.ubc_package.RemoveMatchRequest,
+ *   !proto.ubc_package.RemoveMatchResponse>}
  */
-const methodDescriptor_FrontendService_GetAllBoxers = new grpc.web.MethodDescriptor(
-  '/boxerservice_package.FrontendService/GetAllBoxers',
+const methodDescriptor_MatchService_RemoveMatch = new grpc.web.MethodDescriptor(
+  '/ubc_package.MatchService/RemoveMatch',
   grpc.web.MethodType.UNARY,
-  proto.boxerservice_package.Null,
-  proto.boxerservice_package.GetAllBoxersResponse,
+  proto.ubc_package.RemoveMatchRequest,
+  proto.ubc_package.RemoveMatchResponse,
   /**
-   * @param {!proto.boxerservice_package.Null} request
+   * @param {!proto.ubc_package.RemoveMatchRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.GetAllBoxersResponse.deserializeBinary
+  proto.ubc_package.RemoveMatchResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.boxerservice_package.Null,
- *   !proto.boxerservice_package.GetAllBoxersResponse>}
+ *   !proto.ubc_package.RemoveMatchRequest,
+ *   !proto.ubc_package.RemoveMatchResponse>}
  */
-const methodInfo_FrontendService_GetAllBoxers = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.boxerservice_package.GetAllBoxersResponse,
+const methodInfo_MatchService_RemoveMatch = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.RemoveMatchResponse,
   /**
-   * @param {!proto.boxerservice_package.Null} request
+   * @param {!proto.ubc_package.RemoveMatchRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.GetAllBoxersResponse.deserializeBinary
+  proto.ubc_package.RemoveMatchResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.boxerservice_package.Null} request The
+ * @param {!proto.ubc_package.RemoveMatchRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.boxerservice_package.GetAllBoxersResponse)}
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.RemoveMatchResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.boxerservice_package.GetAllBoxersResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.RemoveMatchResponse>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.boxerservice_package.FrontendServiceClient.prototype.getAllBoxers =
+proto.ubc_package.MatchServiceClient.prototype.removeMatch =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/GetAllBoxers',
+      '/ubc_package.MatchService/RemoveMatch',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_GetAllBoxers,
+      methodDescriptor_MatchService_RemoveMatch,
       callback);
 };
 
 
 /**
- * @param {!proto.boxerservice_package.Null} request The
+ * @param {!proto.ubc_package.RemoveMatchRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.boxerservice_package.GetAllBoxersResponse>}
+ * @return {!Promise<!proto.ubc_package.RemoveMatchResponse>}
  *     Promise that resolves to the response
  */
-proto.boxerservice_package.FrontendServicePromiseClient.prototype.getAllBoxers =
+proto.ubc_package.MatchServicePromiseClient.prototype.removeMatch =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/GetAllBoxers',
+      '/ubc_package.MatchService/RemoveMatch',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_GetAllBoxers);
+      methodDescriptor_MatchService_RemoveMatch);
 };
 
 
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.boxerservice_package.AddBoxerRequest,
- *   !proto.boxerservice_package.AddBoxerResponse>}
+ *   !proto.ubc_package.UpdateMatchRequest,
+ *   !proto.ubc_package.UpdateMatchResponse>}
  */
-const methodDescriptor_FrontendService_AddBoxer = new grpc.web.MethodDescriptor(
-  '/boxerservice_package.FrontendService/AddBoxer',
+const methodDescriptor_MatchService_UpdateMatch = new grpc.web.MethodDescriptor(
+  '/ubc_package.MatchService/UpdateMatch',
   grpc.web.MethodType.UNARY,
-  proto.boxerservice_package.AddBoxerRequest,
-  proto.boxerservice_package.AddBoxerResponse,
+  proto.ubc_package.UpdateMatchRequest,
+  proto.ubc_package.UpdateMatchResponse,
   /**
-   * @param {!proto.boxerservice_package.AddBoxerRequest} request
+   * @param {!proto.ubc_package.UpdateMatchRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.AddBoxerResponse.deserializeBinary
+  proto.ubc_package.UpdateMatchResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.boxerservice_package.AddBoxerRequest,
- *   !proto.boxerservice_package.AddBoxerResponse>}
+ *   !proto.ubc_package.UpdateMatchRequest,
+ *   !proto.ubc_package.UpdateMatchResponse>}
  */
-const methodInfo_FrontendService_AddBoxer = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.boxerservice_package.AddBoxerResponse,
+const methodInfo_MatchService_UpdateMatch = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.UpdateMatchResponse,
   /**
-   * @param {!proto.boxerservice_package.AddBoxerRequest} request
+   * @param {!proto.ubc_package.UpdateMatchRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.AddBoxerResponse.deserializeBinary
+  proto.ubc_package.UpdateMatchResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.boxerservice_package.AddBoxerRequest} request The
+ * @param {!proto.ubc_package.UpdateMatchRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.boxerservice_package.AddBoxerResponse)}
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.UpdateMatchResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.boxerservice_package.AddBoxerResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.UpdateMatchResponse>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.boxerservice_package.FrontendServiceClient.prototype.addBoxer =
+proto.ubc_package.MatchServiceClient.prototype.updateMatch =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/AddBoxer',
+      '/ubc_package.MatchService/UpdateMatch',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_AddBoxer,
+      methodDescriptor_MatchService_UpdateMatch,
       callback);
 };
 
 
 /**
- * @param {!proto.boxerservice_package.AddBoxerRequest} request The
+ * @param {!proto.ubc_package.UpdateMatchRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.boxerservice_package.AddBoxerResponse>}
+ * @return {!Promise<!proto.ubc_package.UpdateMatchResponse>}
  *     Promise that resolves to the response
  */
-proto.boxerservice_package.FrontendServicePromiseClient.prototype.addBoxer =
+proto.ubc_package.MatchServicePromiseClient.prototype.updateMatch =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/AddBoxer',
+      '/ubc_package.MatchService/UpdateMatch',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_AddBoxer);
+      methodDescriptor_MatchService_UpdateMatch);
 };
 
 
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.boxerservice_package.RemoveBoxerRequest,
- *   !proto.boxerservice_package.RemoveBoxerResponse>}
+ *   !proto.ubc_package.RemoveMatchesOfBoxerRequest,
+ *   !proto.ubc_package.RemoveMatchesOfBoxerResponse>}
  */
-const methodDescriptor_FrontendService_RemoveBoxer = new grpc.web.MethodDescriptor(
-  '/boxerservice_package.FrontendService/RemoveBoxer',
+const methodDescriptor_MatchService_RemoveMatchesOfBoxer = new grpc.web.MethodDescriptor(
+  '/ubc_package.MatchService/RemoveMatchesOfBoxer',
   grpc.web.MethodType.UNARY,
-  proto.boxerservice_package.RemoveBoxerRequest,
-  proto.boxerservice_package.RemoveBoxerResponse,
+  proto.ubc_package.RemoveMatchesOfBoxerRequest,
+  proto.ubc_package.RemoveMatchesOfBoxerResponse,
   /**
-   * @param {!proto.boxerservice_package.RemoveBoxerRequest} request
+   * @param {!proto.ubc_package.RemoveMatchesOfBoxerRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.RemoveBoxerResponse.deserializeBinary
+  proto.ubc_package.RemoveMatchesOfBoxerResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.boxerservice_package.RemoveBoxerRequest,
- *   !proto.boxerservice_package.RemoveBoxerResponse>}
+ *   !proto.ubc_package.RemoveMatchesOfBoxerRequest,
+ *   !proto.ubc_package.RemoveMatchesOfBoxerResponse>}
  */
-const methodInfo_FrontendService_RemoveBoxer = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.boxerservice_package.RemoveBoxerResponse,
+const methodInfo_MatchService_RemoveMatchesOfBoxer = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.RemoveMatchesOfBoxerResponse,
   /**
-   * @param {!proto.boxerservice_package.RemoveBoxerRequest} request
+   * @param {!proto.ubc_package.RemoveMatchesOfBoxerRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.RemoveBoxerResponse.deserializeBinary
+  proto.ubc_package.RemoveMatchesOfBoxerResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.boxerservice_package.RemoveBoxerRequest} request The
+ * @param {!proto.ubc_package.RemoveMatchesOfBoxerRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.boxerservice_package.RemoveBoxerResponse)}
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.RemoveMatchesOfBoxerResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.boxerservice_package.RemoveBoxerResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.RemoveMatchesOfBoxerResponse>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.boxerservice_package.FrontendServiceClient.prototype.removeBoxer =
+proto.ubc_package.MatchServiceClient.prototype.removeMatchesOfBoxer =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/RemoveBoxer',
+      '/ubc_package.MatchService/RemoveMatchesOfBoxer',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_RemoveBoxer,
+      methodDescriptor_MatchService_RemoveMatchesOfBoxer,
       callback);
 };
 
 
 /**
- * @param {!proto.boxerservice_package.RemoveBoxerRequest} request The
+ * @param {!proto.ubc_package.RemoveMatchesOfBoxerRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.boxerservice_package.RemoveBoxerResponse>}
+ * @return {!Promise<!proto.ubc_package.RemoveMatchesOfBoxerResponse>}
  *     Promise that resolves to the response
  */
-proto.boxerservice_package.FrontendServicePromiseClient.prototype.removeBoxer =
+proto.ubc_package.MatchServicePromiseClient.prototype.removeMatchesOfBoxer =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/RemoveBoxer',
+      '/ubc_package.MatchService/RemoveMatchesOfBoxer',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_RemoveBoxer);
+      methodDescriptor_MatchService_RemoveMatchesOfBoxer);
 };
 
 
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.boxerservice_package.EditBoxerRequest,
- *   !proto.boxerservice_package.EditBoxerResponse>}
+ *   !proto.ubc_package.Empty,
+ *   !proto.ubc_package.GetAllMatchesResponse>}
  */
-const methodDescriptor_FrontendService_EditBoxer = new grpc.web.MethodDescriptor(
-  '/boxerservice_package.FrontendService/EditBoxer',
+const methodDescriptor_MatchService_GetAllMatches = new grpc.web.MethodDescriptor(
+  '/ubc_package.MatchService/GetAllMatches',
   grpc.web.MethodType.UNARY,
-  proto.boxerservice_package.EditBoxerRequest,
-  proto.boxerservice_package.EditBoxerResponse,
+  proto.ubc_package.Empty,
+  proto.ubc_package.GetAllMatchesResponse,
   /**
-   * @param {!proto.boxerservice_package.EditBoxerRequest} request
+   * @param {!proto.ubc_package.Empty} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.EditBoxerResponse.deserializeBinary
+  proto.ubc_package.GetAllMatchesResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.boxerservice_package.EditBoxerRequest,
- *   !proto.boxerservice_package.EditBoxerResponse>}
+ *   !proto.ubc_package.Empty,
+ *   !proto.ubc_package.GetAllMatchesResponse>}
  */
-const methodInfo_FrontendService_EditBoxer = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.boxerservice_package.EditBoxerResponse,
+const methodInfo_MatchService_GetAllMatches = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.GetAllMatchesResponse,
   /**
-   * @param {!proto.boxerservice_package.EditBoxerRequest} request
+   * @param {!proto.ubc_package.Empty} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.EditBoxerResponse.deserializeBinary
+  proto.ubc_package.GetAllMatchesResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.boxerservice_package.EditBoxerRequest} request The
+ * @param {!proto.ubc_package.Empty} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.boxerservice_package.EditBoxerResponse)}
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.GetAllMatchesResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.boxerservice_package.EditBoxerResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.GetAllMatchesResponse>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.boxerservice_package.FrontendServiceClient.prototype.editBoxer =
+proto.ubc_package.MatchServiceClient.prototype.getAllMatches =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/EditBoxer',
+      '/ubc_package.MatchService/GetAllMatches',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_EditBoxer,
+      methodDescriptor_MatchService_GetAllMatches,
       callback);
 };
 
 
 /**
- * @param {!proto.boxerservice_package.EditBoxerRequest} request The
+ * @param {!proto.ubc_package.Empty} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.boxerservice_package.EditBoxerResponse>}
+ * @return {!Promise<!proto.ubc_package.GetAllMatchesResponse>}
  *     Promise that resolves to the response
  */
-proto.boxerservice_package.FrontendServicePromiseClient.prototype.editBoxer =
+proto.ubc_package.MatchServicePromiseClient.prototype.getAllMatches =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/EditBoxer',
+      '/ubc_package.MatchService/GetAllMatches',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_EditBoxer);
+      methodDescriptor_MatchService_GetAllMatches);
 };
 
 
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.boxerservice_package.Null,
- *   !proto.boxerservice_package.GetAllMatchesResponse>}
+ *   !proto.ubc_package.GetMatchesOfBoxerRequest,
+ *   !proto.ubc_package.GetMatchesOfBoxerResponse>}
  */
-const methodDescriptor_FrontendService_GetAllMatches = new grpc.web.MethodDescriptor(
-  '/boxerservice_package.FrontendService/GetAllMatches',
+const methodDescriptor_MatchService_GetMatchesOfBoxer = new grpc.web.MethodDescriptor(
+  '/ubc_package.MatchService/GetMatchesOfBoxer',
   grpc.web.MethodType.UNARY,
-  proto.boxerservice_package.Null,
-  proto.boxerservice_package.GetAllMatchesResponse,
+  proto.ubc_package.GetMatchesOfBoxerRequest,
+  proto.ubc_package.GetMatchesOfBoxerResponse,
   /**
-   * @param {!proto.boxerservice_package.Null} request
+   * @param {!proto.ubc_package.GetMatchesOfBoxerRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.GetAllMatchesResponse.deserializeBinary
+  proto.ubc_package.GetMatchesOfBoxerResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.boxerservice_package.Null,
- *   !proto.boxerservice_package.GetAllMatchesResponse>}
+ *   !proto.ubc_package.GetMatchesOfBoxerRequest,
+ *   !proto.ubc_package.GetMatchesOfBoxerResponse>}
  */
-const methodInfo_FrontendService_GetAllMatches = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.boxerservice_package.GetAllMatchesResponse,
+const methodInfo_MatchService_GetMatchesOfBoxer = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.GetMatchesOfBoxerResponse,
   /**
-   * @param {!proto.boxerservice_package.Null} request
+   * @param {!proto.ubc_package.GetMatchesOfBoxerRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.GetAllMatchesResponse.deserializeBinary
+  proto.ubc_package.GetMatchesOfBoxerResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.boxerservice_package.Null} request The
+ * @param {!proto.ubc_package.GetMatchesOfBoxerRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.boxerservice_package.GetAllMatchesResponse)}
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.GetMatchesOfBoxerResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.boxerservice_package.GetAllMatchesResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.GetMatchesOfBoxerResponse>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.boxerservice_package.FrontendServiceClient.prototype.getAllMatches =
+proto.ubc_package.MatchServiceClient.prototype.getMatchesOfBoxer =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/GetAllMatches',
+      '/ubc_package.MatchService/GetMatchesOfBoxer',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_GetAllMatches,
+      methodDescriptor_MatchService_GetMatchesOfBoxer,
       callback);
 };
 
 
 /**
- * @param {!proto.boxerservice_package.Null} request The
+ * @param {!proto.ubc_package.GetMatchesOfBoxerRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.boxerservice_package.GetAllMatchesResponse>}
+ * @return {!Promise<!proto.ubc_package.GetMatchesOfBoxerResponse>}
  *     Promise that resolves to the response
  */
-proto.boxerservice_package.FrontendServicePromiseClient.prototype.getAllMatches =
+proto.ubc_package.MatchServicePromiseClient.prototype.getMatchesOfBoxer =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/GetAllMatches',
+      '/ubc_package.MatchService/GetMatchesOfBoxer',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_GetAllMatches);
+      methodDescriptor_MatchService_GetMatchesOfBoxer);
 };
 
 
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.boxerservice_package.AddMatchRequest,
- *   !proto.boxerservice_package.AddMatchResponse>}
+ *   !proto.ubc_package.SetupAddBoxersRequest,
+ *   !proto.ubc_package.SetupAddBoxersResponse>}
  */
-const methodDescriptor_FrontendService_AddMatch = new grpc.web.MethodDescriptor(
-  '/boxerservice_package.FrontendService/AddMatch',
+const methodDescriptor_MatchService_SetupAddBoxers = new grpc.web.MethodDescriptor(
+  '/ubc_package.MatchService/SetupAddBoxers',
   grpc.web.MethodType.UNARY,
-  proto.boxerservice_package.AddMatchRequest,
-  proto.boxerservice_package.AddMatchResponse,
+  proto.ubc_package.SetupAddBoxersRequest,
+  proto.ubc_package.SetupAddBoxersResponse,
   /**
-   * @param {!proto.boxerservice_package.AddMatchRequest} request
+   * @param {!proto.ubc_package.SetupAddBoxersRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.AddMatchResponse.deserializeBinary
+  proto.ubc_package.SetupAddBoxersResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.boxerservice_package.AddMatchRequest,
- *   !proto.boxerservice_package.AddMatchResponse>}
+ *   !proto.ubc_package.SetupAddBoxersRequest,
+ *   !proto.ubc_package.SetupAddBoxersResponse>}
  */
-const methodInfo_FrontendService_AddMatch = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.boxerservice_package.AddMatchResponse,
+const methodInfo_MatchService_SetupAddBoxers = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.SetupAddBoxersResponse,
   /**
-   * @param {!proto.boxerservice_package.AddMatchRequest} request
+   * @param {!proto.ubc_package.SetupAddBoxersRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.AddMatchResponse.deserializeBinary
+  proto.ubc_package.SetupAddBoxersResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.boxerservice_package.AddMatchRequest} request The
+ * @param {!proto.ubc_package.SetupAddBoxersRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.boxerservice_package.AddMatchResponse)}
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.SetupAddBoxersResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.boxerservice_package.AddMatchResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.SetupAddBoxersResponse>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.boxerservice_package.FrontendServiceClient.prototype.addMatch =
+proto.ubc_package.MatchServiceClient.prototype.setupAddBoxers =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/AddMatch',
+      '/ubc_package.MatchService/SetupAddBoxers',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_AddMatch,
+      methodDescriptor_MatchService_SetupAddBoxers,
       callback);
 };
 
 
 /**
- * @param {!proto.boxerservice_package.AddMatchRequest} request The
+ * @param {!proto.ubc_package.SetupAddBoxersRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.boxerservice_package.AddMatchResponse>}
+ * @return {!Promise<!proto.ubc_package.SetupAddBoxersResponse>}
  *     Promise that resolves to the response
  */
-proto.boxerservice_package.FrontendServicePromiseClient.prototype.addMatch =
+proto.ubc_package.MatchServicePromiseClient.prototype.setupAddBoxers =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/AddMatch',
+      '/ubc_package.MatchService/SetupAddBoxers',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_AddMatch);
+      methodDescriptor_MatchService_SetupAddBoxers);
 };
 
 
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.boxerservice_package.RemoveMatchRequest,
- *   !proto.boxerservice_package.RemoveMatchResponse>}
+ *   !proto.ubc_package.SetupAddMatchesRequest,
+ *   !proto.ubc_package.SetupAddMatchesResponse>}
  */
-const methodDescriptor_FrontendService_RemoveMatch = new grpc.web.MethodDescriptor(
-  '/boxerservice_package.FrontendService/RemoveMatch',
+const methodDescriptor_MatchService_SetupAddMatches = new grpc.web.MethodDescriptor(
+  '/ubc_package.MatchService/SetupAddMatches',
   grpc.web.MethodType.UNARY,
-  proto.boxerservice_package.RemoveMatchRequest,
-  proto.boxerservice_package.RemoveMatchResponse,
+  proto.ubc_package.SetupAddMatchesRequest,
+  proto.ubc_package.SetupAddMatchesResponse,
   /**
-   * @param {!proto.boxerservice_package.RemoveMatchRequest} request
+   * @param {!proto.ubc_package.SetupAddMatchesRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.RemoveMatchResponse.deserializeBinary
+  proto.ubc_package.SetupAddMatchesResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.boxerservice_package.RemoveMatchRequest,
- *   !proto.boxerservice_package.RemoveMatchResponse>}
+ *   !proto.ubc_package.SetupAddMatchesRequest,
+ *   !proto.ubc_package.SetupAddMatchesResponse>}
  */
-const methodInfo_FrontendService_RemoveMatch = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.boxerservice_package.RemoveMatchResponse,
+const methodInfo_MatchService_SetupAddMatches = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.SetupAddMatchesResponse,
   /**
-   * @param {!proto.boxerservice_package.RemoveMatchRequest} request
+   * @param {!proto.ubc_package.SetupAddMatchesRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.RemoveMatchResponse.deserializeBinary
+  proto.ubc_package.SetupAddMatchesResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.boxerservice_package.RemoveMatchRequest} request The
+ * @param {!proto.ubc_package.SetupAddMatchesRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.boxerservice_package.RemoveMatchResponse)}
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.SetupAddMatchesResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.boxerservice_package.RemoveMatchResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.SetupAddMatchesResponse>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.boxerservice_package.FrontendServiceClient.prototype.removeMatch =
+proto.ubc_package.MatchServiceClient.prototype.setupAddMatches =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/RemoveMatch',
+      '/ubc_package.MatchService/SetupAddMatches',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_RemoveMatch,
+      methodDescriptor_MatchService_SetupAddMatches,
       callback);
 };
 
 
 /**
- * @param {!proto.boxerservice_package.RemoveMatchRequest} request The
+ * @param {!proto.ubc_package.SetupAddMatchesRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.boxerservice_package.RemoveMatchResponse>}
+ * @return {!Promise<!proto.ubc_package.SetupAddMatchesResponse>}
  *     Promise that resolves to the response
  */
-proto.boxerservice_package.FrontendServicePromiseClient.prototype.removeMatch =
+proto.ubc_package.MatchServicePromiseClient.prototype.setupAddMatches =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/RemoveMatch',
+      '/ubc_package.MatchService/SetupAddMatches',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_RemoveMatch);
+      methodDescriptor_MatchService_SetupAddMatches);
 };
 
 
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.boxerservice_package.UpdateMatchRequest,
- *   !proto.boxerservice_package.UpdateMatchResponse>}
+ *   !proto.ubc_package.SetupAddAdminRequest,
+ *   !proto.ubc_package.SetupAddAdminResponse>}
  */
-const methodDescriptor_FrontendService_UpdateMatch = new grpc.web.MethodDescriptor(
-  '/boxerservice_package.FrontendService/UpdateMatch',
+const methodDescriptor_MatchService_SetupAddAdmin = new grpc.web.MethodDescriptor(
+  '/ubc_package.MatchService/SetupAddAdmin',
   grpc.web.MethodType.UNARY,
-  proto.boxerservice_package.UpdateMatchRequest,
-  proto.boxerservice_package.UpdateMatchResponse,
+  proto.ubc_package.SetupAddAdminRequest,
+  proto.ubc_package.SetupAddAdminResponse,
   /**
-   * @param {!proto.boxerservice_package.UpdateMatchRequest} request
+   * @param {!proto.ubc_package.SetupAddAdminRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.UpdateMatchResponse.deserializeBinary
+  proto.ubc_package.SetupAddAdminResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.boxerservice_package.UpdateMatchRequest,
- *   !proto.boxerservice_package.UpdateMatchResponse>}
+ *   !proto.ubc_package.SetupAddAdminRequest,
+ *   !proto.ubc_package.SetupAddAdminResponse>}
  */
-const methodInfo_FrontendService_UpdateMatch = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.boxerservice_package.UpdateMatchResponse,
+const methodInfo_MatchService_SetupAddAdmin = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.SetupAddAdminResponse,
   /**
-   * @param {!proto.boxerservice_package.UpdateMatchRequest} request
+   * @param {!proto.ubc_package.SetupAddAdminRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.UpdateMatchResponse.deserializeBinary
+  proto.ubc_package.SetupAddAdminResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.boxerservice_package.UpdateMatchRequest} request The
+ * @param {!proto.ubc_package.SetupAddAdminRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.boxerservice_package.UpdateMatchResponse)}
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.SetupAddAdminResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.boxerservice_package.UpdateMatchResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.SetupAddAdminResponse>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.boxerservice_package.FrontendServiceClient.prototype.updateMatch =
+proto.ubc_package.MatchServiceClient.prototype.setupAddAdmin =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/UpdateMatch',
+      '/ubc_package.MatchService/SetupAddAdmin',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_UpdateMatch,
+      methodDescriptor_MatchService_SetupAddAdmin,
       callback);
 };
 
 
 /**
- * @param {!proto.boxerservice_package.UpdateMatchRequest} request The
+ * @param {!proto.ubc_package.SetupAddAdminRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.boxerservice_package.UpdateMatchResponse>}
+ * @return {!Promise<!proto.ubc_package.SetupAddAdminResponse>}
  *     Promise that resolves to the response
  */
-proto.boxerservice_package.FrontendServicePromiseClient.prototype.updateMatch =
+proto.ubc_package.MatchServicePromiseClient.prototype.setupAddAdmin =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/UpdateMatch',
+      '/ubc_package.MatchService/SetupAddAdmin',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_UpdateMatch);
+      methodDescriptor_MatchService_SetupAddAdmin);
 };
 
 
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.boxerservice_package.Null,
- *   !proto.boxerservice_package.GetAllStandingsResponse>}
+ *   !proto.ubc_package.Empty,
+ *   !proto.ubc_package.SetupCleanUpResponse>}
  */
-const methodDescriptor_FrontendService_GetAllStandings = new grpc.web.MethodDescriptor(
-  '/boxerservice_package.FrontendService/GetAllStandings',
+const methodDescriptor_MatchService_SetupCleanUp = new grpc.web.MethodDescriptor(
+  '/ubc_package.MatchService/SetupCleanUp',
   grpc.web.MethodType.UNARY,
-  proto.boxerservice_package.Null,
-  proto.boxerservice_package.GetAllStandingsResponse,
+  proto.ubc_package.Empty,
+  proto.ubc_package.SetupCleanUpResponse,
   /**
-   * @param {!proto.boxerservice_package.Null} request
+   * @param {!proto.ubc_package.Empty} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.GetAllStandingsResponse.deserializeBinary
+  proto.ubc_package.SetupCleanUpResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.boxerservice_package.Null,
- *   !proto.boxerservice_package.GetAllStandingsResponse>}
+ *   !proto.ubc_package.Empty,
+ *   !proto.ubc_package.SetupCleanUpResponse>}
  */
-const methodInfo_FrontendService_GetAllStandings = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.boxerservice_package.GetAllStandingsResponse,
+const methodInfo_MatchService_SetupCleanUp = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.SetupCleanUpResponse,
   /**
-   * @param {!proto.boxerservice_package.Null} request
+   * @param {!proto.ubc_package.Empty} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.boxerservice_package.GetAllStandingsResponse.deserializeBinary
+  proto.ubc_package.SetupCleanUpResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.boxerservice_package.Null} request The
+ * @param {!proto.ubc_package.Empty} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.boxerservice_package.GetAllStandingsResponse)}
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.SetupCleanUpResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.boxerservice_package.GetAllStandingsResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.SetupCleanUpResponse>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.boxerservice_package.FrontendServiceClient.prototype.getAllStandings =
+proto.ubc_package.MatchServiceClient.prototype.setupCleanUp =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/GetAllStandings',
+      '/ubc_package.MatchService/SetupCleanUp',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_GetAllStandings,
+      methodDescriptor_MatchService_SetupCleanUp,
       callback);
 };
 
 
 /**
- * @param {!proto.boxerservice_package.Null} request The
+ * @param {!proto.ubc_package.Empty} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.boxerservice_package.GetAllStandingsResponse>}
+ * @return {!Promise<!proto.ubc_package.SetupCleanUpResponse>}
  *     Promise that resolves to the response
  */
-proto.boxerservice_package.FrontendServicePromiseClient.prototype.getAllStandings =
+proto.ubc_package.MatchServicePromiseClient.prototype.setupCleanUp =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/boxerservice_package.FrontendService/GetAllStandings',
+      '/ubc_package.MatchService/SetupCleanUp',
       request,
       metadata || {},
-      methodDescriptor_FrontendService_GetAllStandings);
+      methodDescriptor_MatchService_SetupCleanUp);
 };
 
 
-module.exports = proto.boxerservice_package;
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.Empty,
+ *   !proto.ubc_package.Empty>}
+ */
+const methodDescriptor_MatchService_Mock = new grpc.web.MethodDescriptor(
+  '/ubc_package.MatchService/Mock',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.Empty,
+  proto.ubc_package.Empty,
+  /**
+   * @param {!proto.ubc_package.Empty} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.Empty.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.Empty,
+ *   !proto.ubc_package.Empty>}
+ */
+const methodInfo_MatchService_Mock = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.Empty,
+  /**
+   * @param {!proto.ubc_package.Empty} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.Empty.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.Empty} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.Empty)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.Empty>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.MatchServiceClient.prototype.mock =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.MatchService/Mock',
+      request,
+      metadata || {},
+      methodDescriptor_MatchService_Mock,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.Empty} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.Empty>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.MatchServicePromiseClient.prototype.mock =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.MatchService/Mock',
+      request,
+      metadata || {},
+      methodDescriptor_MatchService_Mock);
+};
+
+
+/**
+ * @param {string} hostname
+ * @param {?Object} credentials
+ * @param {?Object} options
+ * @constructor
+ * @struct
+ * @final
+ */
+proto.ubc_package.StandingsServiceClient =
+    function(hostname, credentials, options) {
+  if (!options) options = {};
+  options['format'] = 'text';
+
+  /**
+   * @private @const {!grpc.web.GrpcWebClientBase} The client
+   */
+  this.client_ = new grpc.web.GrpcWebClientBase(options);
+
+  /**
+   * @private @const {string} The hostname
+   */
+  this.hostname_ = hostname;
+
+};
+
+
+/**
+ * @param {string} hostname
+ * @param {?Object} credentials
+ * @param {?Object} options
+ * @constructor
+ * @struct
+ * @final
+ */
+proto.ubc_package.StandingsServicePromiseClient =
+    function(hostname, credentials, options) {
+  if (!options) options = {};
+  options['format'] = 'text';
+
+  /**
+   * @private @const {!grpc.web.GrpcWebClientBase} The client
+   */
+  this.client_ = new grpc.web.GrpcWebClientBase(options);
+
+  /**
+   * @private @const {string} The hostname
+   */
+  this.hostname_ = hostname;
+
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.GetStandingAndMatchesOfBoxerRequest,
+ *   !proto.ubc_package.GetStandingAndMatchesOfBoxerResponse>}
+ */
+const methodDescriptor_StandingsService_GetStandingAndMatchesOfBoxer = new grpc.web.MethodDescriptor(
+  '/ubc_package.StandingsService/GetStandingAndMatchesOfBoxer',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.GetStandingAndMatchesOfBoxerRequest,
+  proto.ubc_package.GetStandingAndMatchesOfBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.GetStandingAndMatchesOfBoxerRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.GetStandingAndMatchesOfBoxerRequest,
+ *   !proto.ubc_package.GetStandingAndMatchesOfBoxerResponse>}
+ */
+const methodInfo_StandingsService_GetStandingAndMatchesOfBoxer = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.GetStandingAndMatchesOfBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.GetStandingAndMatchesOfBoxerRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.GetStandingAndMatchesOfBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.GetStandingAndMatchesOfBoxerRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.GetStandingAndMatchesOfBoxerResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.GetStandingAndMatchesOfBoxerResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.StandingsServiceClient.prototype.getStandingAndMatchesOfBoxer =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.StandingsService/GetStandingAndMatchesOfBoxer',
+      request,
+      metadata || {},
+      methodDescriptor_StandingsService_GetStandingAndMatchesOfBoxer,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.GetStandingAndMatchesOfBoxerRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.GetStandingAndMatchesOfBoxerResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.StandingsServicePromiseClient.prototype.getStandingAndMatchesOfBoxer =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.StandingsService/GetStandingAndMatchesOfBoxer',
+      request,
+      metadata || {},
+      methodDescriptor_StandingsService_GetStandingAndMatchesOfBoxer);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.Null,
+ *   !proto.ubc_package.GetAllStandingsResponse>}
+ */
+const methodDescriptor_StandingsService_GetAllStandings = new grpc.web.MethodDescriptor(
+  '/ubc_package.StandingsService/GetAllStandings',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.Null,
+  proto.ubc_package.GetAllStandingsResponse,
+  /**
+   * @param {!proto.ubc_package.Null} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.GetAllStandingsResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.Null,
+ *   !proto.ubc_package.GetAllStandingsResponse>}
+ */
+const methodInfo_StandingsService_GetAllStandings = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.GetAllStandingsResponse,
+  /**
+   * @param {!proto.ubc_package.Null} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.GetAllStandingsResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.Null} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.GetAllStandingsResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.GetAllStandingsResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.StandingsServiceClient.prototype.getAllStandings =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.StandingsService/GetAllStandings',
+      request,
+      metadata || {},
+      methodDescriptor_StandingsService_GetAllStandings,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.Null} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.GetAllStandingsResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.StandingsServicePromiseClient.prototype.getAllStandings =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.StandingsService/GetAllStandings',
+      request,
+      metadata || {},
+      methodDescriptor_StandingsService_GetAllStandings);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.Null,
+ *   !proto.ubc_package.Null>}
+ */
+const methodDescriptor_StandingsService_Mock = new grpc.web.MethodDescriptor(
+  '/ubc_package.StandingsService/Mock',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.Null,
+  proto.ubc_package.Null,
+  /**
+   * @param {!proto.ubc_package.Null} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.Null.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.Null,
+ *   !proto.ubc_package.Null>}
+ */
+const methodInfo_StandingsService_Mock = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.Null,
+  /**
+   * @param {!proto.ubc_package.Null} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.Null.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.Null} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.Null)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.Null>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.StandingsServiceClient.prototype.mock =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.StandingsService/Mock',
+      request,
+      metadata || {},
+      methodDescriptor_StandingsService_Mock,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.Null} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.Null>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.StandingsServicePromiseClient.prototype.mock =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.StandingsService/Mock',
+      request,
+      metadata || {},
+      methodDescriptor_StandingsService_Mock);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.SetupAddBoxerRequest,
+ *   !proto.ubc_package.SetupAddBoxerResponse>}
+ */
+const methodDescriptor_StandingsService_SetupAddBoxer = new grpc.web.MethodDescriptor(
+  '/ubc_package.StandingsService/SetupAddBoxer',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.SetupAddBoxerRequest,
+  proto.ubc_package.SetupAddBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.SetupAddBoxerRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupAddBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.SetupAddBoxerRequest,
+ *   !proto.ubc_package.SetupAddBoxerResponse>}
+ */
+const methodInfo_StandingsService_SetupAddBoxer = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.SetupAddBoxerResponse,
+  /**
+   * @param {!proto.ubc_package.SetupAddBoxerRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupAddBoxerResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddBoxerRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.SetupAddBoxerResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.SetupAddBoxerResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.StandingsServiceClient.prototype.setupAddBoxer =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.StandingsService/SetupAddBoxer',
+      request,
+      metadata || {},
+      methodDescriptor_StandingsService_SetupAddBoxer,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddBoxerRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.SetupAddBoxerResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.StandingsServicePromiseClient.prototype.setupAddBoxer =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.StandingsService/SetupAddBoxer',
+      request,
+      metadata || {},
+      methodDescriptor_StandingsService_SetupAddBoxer);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.SetupAddBoxersRequest,
+ *   !proto.ubc_package.SetupAddBoxersResponse>}
+ */
+const methodDescriptor_StandingsService_SetupAddBoxers = new grpc.web.MethodDescriptor(
+  '/ubc_package.StandingsService/SetupAddBoxers',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.SetupAddBoxersRequest,
+  proto.ubc_package.SetupAddBoxersResponse,
+  /**
+   * @param {!proto.ubc_package.SetupAddBoxersRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupAddBoxersResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.SetupAddBoxersRequest,
+ *   !proto.ubc_package.SetupAddBoxersResponse>}
+ */
+const methodInfo_StandingsService_SetupAddBoxers = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.SetupAddBoxersResponse,
+  /**
+   * @param {!proto.ubc_package.SetupAddBoxersRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupAddBoxersResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddBoxersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.SetupAddBoxersResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.SetupAddBoxersResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.StandingsServiceClient.prototype.setupAddBoxers =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.StandingsService/SetupAddBoxers',
+      request,
+      metadata || {},
+      methodDescriptor_StandingsService_SetupAddBoxers,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddBoxersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.SetupAddBoxersResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.StandingsServicePromiseClient.prototype.setupAddBoxers =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.StandingsService/SetupAddBoxers',
+      request,
+      metadata || {},
+      methodDescriptor_StandingsService_SetupAddBoxers);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.SetupAddMatchesRequest,
+ *   !proto.ubc_package.SetupAddMatchesResponse>}
+ */
+const methodDescriptor_StandingsService_SetupAddMatches = new grpc.web.MethodDescriptor(
+  '/ubc_package.StandingsService/SetupAddMatches',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.SetupAddMatchesRequest,
+  proto.ubc_package.SetupAddMatchesResponse,
+  /**
+   * @param {!proto.ubc_package.SetupAddMatchesRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupAddMatchesResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.SetupAddMatchesRequest,
+ *   !proto.ubc_package.SetupAddMatchesResponse>}
+ */
+const methodInfo_StandingsService_SetupAddMatches = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.SetupAddMatchesResponse,
+  /**
+   * @param {!proto.ubc_package.SetupAddMatchesRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupAddMatchesResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddMatchesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.SetupAddMatchesResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.SetupAddMatchesResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.StandingsServiceClient.prototype.setupAddMatches =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.StandingsService/SetupAddMatches',
+      request,
+      metadata || {},
+      methodDescriptor_StandingsService_SetupAddMatches,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.SetupAddMatchesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.SetupAddMatchesResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.StandingsServicePromiseClient.prototype.setupAddMatches =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.StandingsService/SetupAddMatches',
+      request,
+      metadata || {},
+      methodDescriptor_StandingsService_SetupAddMatches);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.Null,
+ *   !proto.ubc_package.SetupCleanUpResponse>}
+ */
+const methodDescriptor_StandingsService_SetupCleanUp = new grpc.web.MethodDescriptor(
+  '/ubc_package.StandingsService/SetupCleanUp',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.Null,
+  proto.ubc_package.SetupCleanUpResponse,
+  /**
+   * @param {!proto.ubc_package.Null} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupCleanUpResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.Null,
+ *   !proto.ubc_package.SetupCleanUpResponse>}
+ */
+const methodInfo_StandingsService_SetupCleanUp = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.SetupCleanUpResponse,
+  /**
+   * @param {!proto.ubc_package.Null} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.SetupCleanUpResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.Null} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.SetupCleanUpResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.SetupCleanUpResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.StandingsServiceClient.prototype.setupCleanUp =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.StandingsService/SetupCleanUp',
+      request,
+      metadata || {},
+      methodDescriptor_StandingsService_SetupCleanUp,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.Null} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.SetupCleanUpResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.StandingsServicePromiseClient.prototype.setupCleanUp =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.StandingsService/SetupCleanUp',
+      request,
+      metadata || {},
+      methodDescriptor_StandingsService_SetupCleanUp);
+};
+
+
+module.exports = proto.ubc_package;
 
