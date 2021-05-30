@@ -17,8 +17,8 @@ spec:
         spec:
             containers:
             -   name: frontend-service
-                imagePullPolicy: IfNotPresent
-                image: segment17hub/frontendservice:0.1.3
+                imagePullPolicy: Always
+                image: segment17hub/frontendservice:0.1.5rc
                 ports:
                 -   containerPort: 80
 ---
