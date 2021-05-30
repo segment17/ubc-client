@@ -1,1 +1,0 @@
-protoc -I. Requests.proto --js_out=import_style=commonjs,binary:./../ubc-client/src/requests_pb --grpc-web_out=import_style=commonjs,mode=grpcwebtext:./../ubc-client/src/requests_pb --experimental_allow_proto3_optional
