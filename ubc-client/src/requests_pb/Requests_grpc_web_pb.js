@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
  * @fileoverview gRPC-Web generated client stub for ubc_package
  * @enhanceable
@@ -599,6 +600,86 @@ proto.ubc_package.BoxerServicePromiseClient.prototype.getBoxer =
       request,
       metadata || {},
       methodDescriptor_BoxerService_GetBoxer);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.ubc_package.GetMultipleBoxersRequest,
+ *   !proto.ubc_package.GetMultipleBoxersResponse>}
+ */
+const methodDescriptor_BoxerService_GetMultipleBoxers = new grpc.web.MethodDescriptor(
+  '/ubc_package.BoxerService/GetMultipleBoxers',
+  grpc.web.MethodType.UNARY,
+  proto.ubc_package.GetMultipleBoxersRequest,
+  proto.ubc_package.GetMultipleBoxersResponse,
+  /**
+   * @param {!proto.ubc_package.GetMultipleBoxersRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.GetMultipleBoxersResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.ubc_package.GetMultipleBoxersRequest,
+ *   !proto.ubc_package.GetMultipleBoxersResponse>}
+ */
+const methodInfo_BoxerService_GetMultipleBoxers = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.ubc_package.GetMultipleBoxersResponse,
+  /**
+   * @param {!proto.ubc_package.GetMultipleBoxersRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.ubc_package.GetMultipleBoxersResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.ubc_package.GetMultipleBoxersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.ubc_package.GetMultipleBoxersResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.ubc_package.GetMultipleBoxersResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.ubc_package.BoxerServiceClient.prototype.getMultipleBoxers =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/ubc_package.BoxerService/GetMultipleBoxers',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_GetMultipleBoxers,
+      callback);
+};
+
+
+/**
+ * @param {!proto.ubc_package.GetMultipleBoxersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.ubc_package.GetMultipleBoxersResponse>}
+ *     Promise that resolves to the response
+ */
+proto.ubc_package.BoxerServicePromiseClient.prototype.getMultipleBoxers =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/ubc_package.BoxerService/GetMultipleBoxers',
+      request,
+      metadata || {},
+      methodDescriptor_BoxerService_GetMultipleBoxers);
 };
 
 

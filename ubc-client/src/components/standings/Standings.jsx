@@ -58,26 +58,59 @@ export default function Standings({requestClient}) {
 
 	const getAllStandings = React.useCallback(async () => {
     const resp = await requestClient.GetAllStandings();
-    //TO-DO: Format response and add snackbar
-    let standings = [
-      { id: 1, boxer: 'Mike Tyson', winCount: '74', lossCount: '6', score: 283 },
-      { id: 2, boxer: 'Muhammad Ali', winCount: '76', lossCount: '4', score: 300 },
-    ];
-    return standings;
-	}, [])
+    const { code, standings } = resp;
+    let _standings = [];
+    if (code === 200) {
+      _standings = standings || [];
+    }
+
+    if (_standings.length > 0) {
+      _standings = _standings.map(standing => {
+        return {
+          boxerId: standing.getBoxerid(),
+          winCount: standing.getWincount(),
+          lossCount: standing.getLosscount(),
+          score: standing.getScore(),
+        }
+      });
+
+      const boxerIds = _standings.map(standing => standing.boxerId);
+      const boxersResponse = await requestClient.GetMultipleBoxers(boxerIds);
+      const { code: _code, boxers } = boxersResponse;
+      const _boxers = boxers.reduce((acc, curr) => {
+        acc[curr.id] = {
+          id: curr.id,
+          boxer: curr.fullName,
+        };
+        return acc;
+      }, {});
+
+      _standings = _standings.map(standing => {
+        return {
+          ...standing,
+          ...(_boxers[standing.boxerId] || { id: -1, boxer: 'No name' })
+        }
+      });
+    }
+
+    return _standings;
+	}, [requestClient])
 
   const openBoxerDetails = (id) => {
     window.open("/boxers/" + id);
   }
 
   const deleteBoxer = async (oldData) => {
-		//TEMP
-		const dataDelete = [...data];
-		const index = oldData.tableData.id;
-		dataDelete.splice(index, 1);
-		setData([...dataDelete]);
-		//REAL
-		//await RemoveBoxer(oldData.id, Session.getUser().token);
+    const resp = await requestClient.RemoveBoxer(oldData.boxerId, Session.getUser().token);
+    console.log('resp: ', resp);
+    const { code, message, boxer } = resp;
+    if (code === 201) {
+      const dataDelete = [...data];
+      const index = oldData.tableData.id;
+      dataDelete.splice(index, 1);
+      setData([...dataDelete]);
+      window.location.reload();
+    }
 	}
 
   const CreateBoxerButton = () => {

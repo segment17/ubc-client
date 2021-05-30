@@ -65,26 +65,40 @@ export default function BoxerModal({modal, setModal, oldBoxerProps, requestClien
   }
 
   const submitBoxer = async () => {
+    console.log('boxerProps: ', boxerProps);
     const resp = await requestClient.AddBoxer(
       boxerProps.name,
-      boxerProps.birthdate,
+      boxerProps.birthdate?.getTime(),
       boxerProps.weight,
       boxerProps.height,
       Session.getUser().token
     );
+    console.log('resp: ', resp);
+    window.location.reload();
     //SNACKBAR
   };
 
   const updateBoxer = async () => {
+    console.log('oldBoxerProps: ', oldBoxerProps);
+    console.log({
+      name: boxerProps.name,
+      birthdate: boxerProps.birthdate,
+      weight: boxerProps.weight,
+      height: boxerProps.height,
+      token: Session.getUser().token,
+    });
+    console.log('requestClient: ', requestClient);
+    console.log('requestClient.EditBoxer: ', requestClient.EditBoxer);
     const resp = await requestClient.EditBoxer(
       oldBoxerProps.id,
       boxerProps.name,
       boxerProps.birthdate,
-      boxerProps.weight,
-      boxerProps.height,
+      parseInt(boxerProps.weight, 10),
+      parseInt(boxerProps.height, 10),
       Session.getUser().token
     );
-    //SNACKBAR
+    window.location.reload();
+    console.log('updateBoxer resp: ', resp);
   };
 
   const init = React.useCallback(async () => {

@@ -61,33 +61,71 @@ export default function AllMatches({requestClient}) {
 
 	const getAllMatches = React.useCallback(async () => {
 		const resp = await requestClient.GetAllMatches();
-    //TO-DO: Format response and add snackbar
-    let matches = [
-			{ id: 1, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: {id:2, name: 'Muhammad Ali'}, isFinished: true },
-			{ id: 2, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: null, isFinished: false },
-			{ id: 3, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: null, isFinished: false },
-			{ id: 4, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: {id: 1, name: 'Mike Tyson'}, isFinished: true },
-			{ id: 5, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: {id:2, name: 'Muhammad Ali'}, isFinished: true },
-			{ id: 6, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: null, isFinished: false },
-			{ id: 7, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: {id:2, name: 'Muhammad Ali'}, isFinished: true },
-			{ id: 8, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: null, isFinished: false },
-			{ id: 9, homeBoxer: {id: 1, name: 'Mike Tyson'}, awayBoxer: {id:2, name: 'Muhammad Ali'}, matchTime: 157419968, winnerBoxer: null, isFinished: false },
-		];
-    return matches;
-	}, [])
+    const { code, matches } = resp;
+    let _matches = [];
+    if (code === 200) {
+      _matches = matches || [];
+    }
+
+    if (_matches.length > 0) {
+      _matches = _matches.map(match => {
+        return {
+          id: match.getId(),
+          homeBoxerId: match.getHomeboxerid(),
+          awayBoxerId: match.getAwayboxerid(),
+          matchTime: match.getMatchtime(),
+          isFinished: match.getIsfinished(),
+          winnerBoxerId: match.getWinnerboxerid(),
+        };
+      });
+
+      const awayBoxerIds = _matches.map(match => match.awayBoxerId);
+      const homeBoxerIds = _matches.map(match => match.homeBoxerId);
+      const boxerIds = Array.from(new Set([...awayBoxerIds, ...homeBoxerIds]));
+      const boxersResponse = await requestClient.GetMultipleBoxers(boxerIds);
+      const { code: _code, boxers } = boxersResponse;
+      const _boxers = boxers.reduce((acc, curr) => {
+        acc[curr.id] = {
+          id: curr.id,
+          name: curr.fullName
+        };
+        return acc;
+      }, {});
+
+      _matches = _matches.map(match => {
+        const _match = {
+          ...match,
+          homeBoxer: _boxers[match.homeBoxerId] || {id: -1, name: 'No name'},
+          awayBoxer: _boxers[match.awayBoxerId] || {id: -1, name: 'No name'},
+        };
+
+        if (match.winnerBoxerId) {
+          _match.winnerBoxer = _boxers[match.winnerBoxerId] || {id: -1, name: 'No name'}
+        }
+        return _match;
+      });
+    }
+
+    console.log('_matches: ', _matches);
+    return _matches;
+	}, [requestClient])
 
 	const openBoxerDetails = (id) => {
     window.open("/boxers/" + id);
   }
 
 	const deleteMatch = async (oldData) => {
-		//TEMP
-		const dataDelete = [...data];
-		const index = oldData.tableData.id;
-		dataDelete.splice(index, 1);
-		setData([...dataDelete]);
-		//REAL
-		//await RemoveMatch(oldData.id, Session.getUser().token);
+    const { id: matchId } = oldData;
+		const resp = await requestClient.RemoveMatch(matchId, Session.getUser().token);
+    console.log('resp: ', resp);
+    const { code, message, boxer } = resp;
+    if (code === 200) {
+      const dataDelete = [...data];
+      const index = oldData.tableData.id;
+      dataDelete.splice(index, 1);
+      setData([...dataDelete]);
+      window.location.reload();
+    }
 	}
 
 	const updateMatch = async (rowData) => {

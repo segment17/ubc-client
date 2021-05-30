@@ -1,6 +1,5 @@
 import React, { forwardRef } from "react";
 import { useLocation } from "react-router-dom";
-import { GetBoxerWithStandingAndMatches } from "../common/Requests";
 import { Button, Divider, Grid, makeStyles, Typography } from '@material-ui/core';
 import MaterialTable from "@material-table/core";
 import {
@@ -117,16 +116,62 @@ function BoxerDetails({requestClient}) {
 		]);
 
     const resp = await requestClient.GetBoxerWithStandingAndMatches(id);
-    console.log('resp: ', resp);
+    console.log('boxer resp: ', resp);
     resp.boxer && setBoxerProps({
       id: resp.boxer?.id,
       name: resp.boxer?.fullName,
-      birthdate: resp.boxer?.birthDate,
+      birthdate: resp.boxer?.birthDate / 1000,
       weight: resp.boxer?.weight,
       height: resp.boxer?.height
     });
-    resp.standingAndMatches?.standing && setStanding(resp.standingAndMatches.standing);
-    resp.standingAndMatches?.matches && setMatches(resp.standingAndMatches.matches);
+    const { standingAndMatches: { standing, matches: __matches }, code } = resp;
+    let _matches = [];
+    if (code === 200) {
+      _matches = __matches || [];
+      if (standing) {
+        setStanding(standing);
+      }
+    }
+
+    if (_matches.length > 0) {
+      _matches = _matches.map(match => {
+        return {
+          id: match.getId(),
+          homeBoxerId: match.getHomeboxerid(),
+          awayBoxerId: match.getAwayboxerid(),
+          matchTime: match.getMatchtime(),
+          isFinished: match.getIsfinished(),
+          winnerBoxerId: match.getWinnerboxerid(),
+        };
+      });
+
+      const awayBoxerIds = _matches.map(match => match.awayBoxerId);
+      const homeBoxerIds = _matches.map(match => match.homeBoxerId);
+      const boxerIds = Array.from(new Set([...awayBoxerIds, ...homeBoxerIds]));
+      const boxersResponse = await requestClient.GetMultipleBoxers(boxerIds);
+      const { code: _code, boxers } = boxersResponse;
+      const _boxers = boxers.reduce((acc, curr) => {
+        acc[curr.id] = {
+          id: curr.id,
+          fullName: curr.fullName
+        };
+        return acc;
+      }, {});
+
+      _matches = _matches.map(match => {
+        const _match = {
+          ...match,
+          homeBoxer: _boxers[match.homeBoxerId] || {id: -1, fullName: 'No name'},
+          awayBoxer: _boxers[match.awayBoxerId] || {id: -1, fullName: 'No name'},
+        };
+
+        if (match.winnerBoxerId) {
+          _match.winnerBoxer = _boxers[match.winnerBoxerId] || {id: -1, fullName: 'No name'}
+        }
+        return _match;
+      });
+      setMatches(_matches);
+    }
   }, [requestClient, id, classes.boxerButton]);
   React.useEffect(() => {
     init();
@@ -134,7 +179,7 @@ function BoxerDetails({requestClient}) {
 
   return (
     <Grid container className={classes.root} spacing={2}>
-      <BoxerModal modal={boxerModal} setModal={setBoxerModal} oldBoxerProps={boxerProps} />
+      <BoxerModal modal={boxerModal} setModal={setBoxerModal} oldBoxerProps={boxerProps} requestClient={requestClient} />
 
       <Grid item xs={5}>
 

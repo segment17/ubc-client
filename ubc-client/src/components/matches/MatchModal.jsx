@@ -76,12 +76,12 @@ export default function MatchModal({ modal, setModal, oldMatchProps, requestClie
     const resp = await requestClient.AddMatch(
       matchProps.homeBoxer,
       matchProps.awayBoxer,
-      matchProps.matchTime,
+      moment(matchProps.matchTime).unix(),
       matchProps.isFinished,
       matchProps.winnerBoxer,
       Session.getUser().token
     );
-    //SNACKBAR
+    window.location.reload();
   };
 
   const updateMatch = async () => {
@@ -89,12 +89,12 @@ export default function MatchModal({ modal, setModal, oldMatchProps, requestClie
       oldMatchProps.id,
       matchProps.homeBoxer,
       matchProps.awayBoxer,
-      matchProps.matchTime,
+      moment(matchProps.matchTime).unix(),
       matchProps.isFinished,
       matchProps.winnerBoxer,
       Session.getUser().token
     );
-    //SNACKBAR
+    window.location.reload();
   };
 
   const getOptions = async () => {
@@ -124,7 +124,7 @@ export default function MatchModal({ modal, setModal, oldMatchProps, requestClie
         awayBoxer: oldMatchProps.awayBoxer.id,
         matchTime: moment.unix(oldMatchProps.matchTime).format(),
         isFinished: oldMatchProps.isFinished,
-        winnerBoxer: oldMatchProps.winnerBoxer.id,
+        winnerBoxer: oldMatchProps?.winnerBoxer?.id || null,
       });
   }, [oldMatchProps]);
   React.useEffect(() => {
