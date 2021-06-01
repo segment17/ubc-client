@@ -1,4 +1,4 @@
-tag=0.1.5rc
+tag=0.1.5
 yarn &&
 yarn build &&
 docker build -t segment17hub/frontendservice:$tag . &&
