@@ -18,7 +18,7 @@ spec:
             containers:
             -   name: frontend-service
                 imagePullPolicy: Always
-                image: segment17hub/frontendservice:0.1.5rc
+                image: segment17hub/frontendservice:0.1.5
                 ports:
                 -   containerPort: 80
 ---
