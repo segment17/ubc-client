@@ -89,7 +89,7 @@ function BoxerDetails({requestClient}) {
           className={classes.boxerButton}
 				>
 					{rowData.homeBoxer?.fullName}
-				</Button>        
+				</Button>
 			},
 			{ field: 'awayBoxer', title: 'Away Boxer', width: 300, render: rowData => 
 				<Button 
@@ -99,9 +99,9 @@ function BoxerDetails({requestClient}) {
           className={classes.boxerButton}
 				>
 					{rowData.awayBoxer?.fullName}
-				</Button>        
+				</Button>
 			},
-			{ field: 'matchTime', title: 'Match Time' },
+			{ field: 'matchTime', title: 'Match Time', render: rowData => moment.unix(rowData.matchTime).format("DD/MM/yyyy HH:mm") },
 			{ emptyValue: "-", field: 'winnerBoxer', title: 'Winner', width: 300, render: rowData => 
 				<Button 
 					onClick={() => openBoxerDetails(rowData.winnerBoxer?.id)}
@@ -110,7 +110,7 @@ function BoxerDetails({requestClient}) {
           className={classes.boxerButton}
 				>
 					{rowData.winnerBoxer?.fullName}
-				</Button>        
+				</Button>
 			},
 			{ field: 'isFinished', title: 'Is Finished?', render: rowData =>  rowData.isFinished === true ? 'Yes' : 'No' }
 		]);
